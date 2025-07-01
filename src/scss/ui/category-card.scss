@@ -1,0 +1,22 @@
+.category-card {
+  padding: 16px;
+  border-radius: 20px;
+  background-color: var(--gray-1);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  transition: background-color .2s ease;
+  @include hover {
+    background-color: var(--gray-3);
+  }
+  &__body {
+    
+  }
+  &__img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+}

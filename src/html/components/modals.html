@@ -1,0 +1,32 @@
+<div class="modal fade" id="connect-modal">
+  <div class="modal-dialog">
+    <div class="modal-content modal__body">
+      <h3 class="h3">Напишите нам</h3>
+      <div data-bs-dismiss="modal" class="modal__close">
+        <svg>
+          <use xlink:href='img/icons/icons.svg#icon-close'></use>
+        </svg>
+      </div>
+      <p class="text mb-md-5 mb-3 mt-md-4 mt-2 opacity-80">Мы свяжемся с вами в ближайшее время и ответим на все интересующие вопросы.</p>
+      <form action="#" class="modal__form">
+        <div class="input-control">
+          <label for="connect-name" class="label-input">Ваше имя</label>
+          <input type="text" name="Имя" id="connect-name" class="input">
+        </div>
+        <div class="input-control">
+          <label for="connect-email-tel" class="label-input">Email или Телефон для связи</label>
+          <input type="text" name="Email или Телефон" id="connect-email-tel" class="input">
+        </div>
+        <div class="input-control">
+          <label for="connect-question" class="label-input">Ваш вопрос</label>
+          <textarea rows="4" class="input"></textarea>
+        </div>
+        <div class="form-footer">
+          <input type="checkbox" id="connect-policy" class="d-none form-policy-input">
+          <label for="connect-policy" class="form-policy-label"><span>Подтверждаю, что согласен/согласна с <a href="#">политикой конфиденциальности</a></span></label>
+          <button class="btn-s">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

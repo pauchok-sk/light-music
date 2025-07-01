@@ -1,0 +1,71 @@
+.btn-s {
+  @include flex-center;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 13px 19px;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  outline: none;
+  width: fit-content;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: white;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+
+  @include hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+  }
+  @include pressed {
+    background-color: white;
+    color: var(--primary);
+    border-color: var(--primary);
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.btn-rect {
+  @include flex-center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+
+  color: white;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+
+  @include hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+  }
+  @include pressed {
+    background-color: white;
+    color: var(--primary);
+    border-color: var(--primary);
+  }
+
+  @include tablet {
+    width: 32px;
+    height: 32px;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}

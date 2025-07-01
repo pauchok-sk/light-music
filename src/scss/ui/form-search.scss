@@ -1,0 +1,22 @@
+.form-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 535px;
+  max-width: 100%;
+
+  @include laptop {
+    width: 400px;
+  }
+  @include laptop-middle {
+    width: 300px;
+  }
+  @include laptop-min {
+    width: 100%;
+  }
+
+  .btn-rect {
+    position: absolute;
+    right: 4px;
+  }
+}

@@ -1,0 +1,52 @@
+.nav-btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 80px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133%;
+  text-align: center;
+
+  transition: color .2s ease;
+
+  @include hover {
+    color: var(--primary)
+  }
+  @include pressed {
+    color: var(--primary-hover)
+  }
+
+  @include laptop-middle {
+    font-size: 10px;
+    width: 70px;
+  }
+
+  &__number {
+    @include flex-center;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--pink);
+    border: 2px solid white;
+    top: -2px;
+    right: 19px;
+
+    color: white;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 120%;
+    text-align: center;
+
+    z-index: 1;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}

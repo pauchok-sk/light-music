@@ -1,0 +1,94 @@
+.input-control {
+}
+.label-input {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  margin-bottom: 8px;
+  @include tablet {
+    font-size: 13px;
+    line-height: 154%;
+    margin-bottom: 5px;
+  }
+}
+.input {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--gray-3);
+  outline: 2px solid transparent;
+  width: 100%;
+
+  font-size: 16px;
+  line-height: 175%;
+
+  transition: outline-color 0.2s ease;
+
+  &::placeholder {
+    color: var(--gray-4);
+  }
+  &:focus {
+    outline-color: var(--primary);
+  }
+
+  &._error {
+    outline-color: var(--red);
+  }
+
+  @include tablet {
+    padding: 10px;
+
+    font-size: 14px;
+    line-height: 143%;
+  }
+}
+textarea.input {
+  resize: none;
+}
+.form-footer {
+  @include flex-between;
+  margin-top: 20px;
+  gap: 20px;
+  @include tablet {
+    margin-top: 10px;
+  }
+  @include tablet-min {
+    flex-wrap: wrap;
+
+    .btn-s {
+      width: 100%;
+    }
+  }
+}
+.form-policy-input {
+  &:checked + label {
+    &::before {
+      border-color: var(--primary);
+      background: url("@img/check-primary.svg") center / 10px 10px no-repeat;
+    }
+  }
+}
+.form-policy-label {
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  line-height: 154%;
+  gap: 10px;
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    border-radius: 2px;
+    border: 1px solid var(--gray-3);
+    flex-shrink: 0;
+  }
+
+  a {
+    color: var(--primary);
+    @include hover {
+      text-decoration: underline;
+    }
+  }
+}

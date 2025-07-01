@@ -1,0 +1,29 @@
+@import "./base/normalize";
+@import "./base/vars";
+@import "./base/templates";
+@import "./base/settings";
+@import "./base/media";
+@import "./base/body-config";
+@import "./base/config-container";
+
+// ui
+@import "./ui/button";
+@import "./ui/list";
+@import "./ui/text";
+@import "./ui/form";
+@import "./ui/modal";
+@import "./ui/title";
+@import "./ui/classes";
+@import "./ui/nav-btn";
+@import "./ui/form-search";
+@import "./ui/category-card";
+
+// widgets
+@import "./widgets/catalog";
+
+// components
+@import "./components/header";
+
+
+
+@import "./components/footer";

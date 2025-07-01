@@ -1,0 +1,58 @@
+.modal-dialog {
+  width: 800px !important;
+  max-width: calc(100% - 30px);
+}
+
+.modal {
+  &__body {
+    border: none;
+    padding: 40px;
+    width: 100%;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.09);
+    border-radius: 20px;
+    position: relative;
+    @include tablet {
+      padding: 20px;
+    }
+  }
+  &__close {
+    @include flex-center;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+
+    transition: color .2s ease;
+    @include hover {
+      color: var(--primary);
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @include tablet {
+      gap: 10px;
+    }
+
+    .input-control {
+      &:nth-child(3) {
+        grid-column: 2 span;
+      }
+      @include tablet {
+        grid-column: 2 span;
+      }
+    }
+    .form-footer {
+      grid-column: 2 span;
+    }
+  }
+}
