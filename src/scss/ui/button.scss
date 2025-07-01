@@ -1,3 +1,12 @@
+.btn-reset {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  color: inherit;
+}
+
 .btn-s {
   @include flex-center;
   gap: 16px;
@@ -26,6 +35,25 @@
     background-color: white;
     color: var(--primary);
     border-color: var(--primary);
+  }
+  @include tablet {
+    padding: 8px 15px;
+  }
+
+  &._white {
+    background-color: white;
+    color: var(--black);
+    border-color: white;
+
+    @include hover {
+      background-color: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+    @include pressed {
+      background-color: var(--primary-hover);
+      border-color: var(--primary-hover);
+    }
   }
 
   svg {

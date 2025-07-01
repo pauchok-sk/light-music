@@ -1,0 +1,49 @@
+.reklam-wrapper {
+  position: relative;
+  overflow: hidden;
+  @include tablet {
+    overflow: visible;
+
+    .slider-pagination {
+      margin-top: 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 20px;
+      z-index: 10;
+    }
+  }
+}
+.reklam-slider {
+  color: white;
+  @include tablet {
+    overflow: visible !important;
+    margin: 0 -15px;
+  }
+
+  &__slide {
+    box-sizing: border-box;
+    padding: 40px 80px;
+    border-radius: 20px;
+    height: 100%;
+    min-height: 300px;
+    @include tablet {
+      padding: 55px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      border-radius: 0;
+    }
+  }
+  &__slide-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    @include laptop {
+      font-size: 38px;
+    }
+    @include tablet {
+      font-size: 32px;
+    }
+  }
+}

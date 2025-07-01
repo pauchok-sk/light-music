@@ -13,6 +13,24 @@
 
   transition: color .2s ease;
 
+  &._stroke {
+    @include hover {
+      svg {
+        stroke: var(--primary);
+      }
+    }
+    @include pressed {
+      svg {
+        stroke: var(--primary-hover);
+      }
+    }
+    svg {
+      color: transparent;
+      stroke: var(--black);
+      transition: stroke .2s ease;
+    }
+  }
+
   @include hover {
     color: var(--primary)
   }

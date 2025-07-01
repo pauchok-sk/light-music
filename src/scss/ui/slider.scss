@@ -1,0 +1,105 @@
+.slider-btn {
+  @include flex-center;
+  position: absolute;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: white;
+  top: 50%;
+
+  color: var(--primary);
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
+  z-index: 10;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+
+  @include hover {
+    color: var(--primary-hover);
+  }
+  &.swiper-button-disabled {
+    pointer-events: none;
+  }
+  @include tablet {
+    display: none;
+  }
+
+  &._dark {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    @include hover {
+      background-color: var(--black);
+    }
+
+    &.swiper-button-disabled {
+      pointer-events: none;
+    }
+  }
+
+  &._prev {
+    left: -20px;
+    transform: translateY(-50%);
+
+    svg {
+      transform: translateX(-1px);
+    }
+  }
+  &._next {
+    right: -20px;
+    transform: translateY(-50%);
+    svg {
+      transform: translateX(1px);
+    }
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.slider-pagination {
+  @include flex-center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+
+  .swiper-pagination-bullet {
+    position: relative;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    width: 32px;
+    height: 8px;
+    border-radius: 0;
+    margin: 0 !important;
+    background-color: transparent;
+
+    @include hover {
+      &::before {
+        background-color: var(--primary-hover);
+      }
+    }
+    @include tablet {
+      width: 20px;
+    }
+    &.swiper-pagination-bullet-active {
+      &::before {
+        background-color: var(--primary);
+      }
+    }
+  
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: var(--gray-3);
+
+      transition: background-color .2s ease;
+    }
+  }
+}
