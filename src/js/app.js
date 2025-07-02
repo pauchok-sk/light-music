@@ -12,6 +12,6 @@ tabsCatalog();
 headerScroll();
 
 // document.addEventListener('DOMContentLoaded', function() {
-//     var myModal = new bootstrap.Modal(document.getElementById('connect-modal'));
+//     var myModal = new bootstrap.Modal(document.getElementById('call-modal'));
 //     myModal.show();
 // });

@@ -9,6 +9,103 @@
       @@include('html/components/s-rec.html',{"title": "Популярные товары"})
       @@include('html/components/s-reklam.html')
       @@include('html/components/s-categories.html')
+      @@include('html/components/s-brands.html')
+      @@include('html/components/s-sale.html')
+      <section class="s-reklam sect-p bg-gray-1">
+        <div class="container">
+          <div class="s-reklam__slider-wrapper reklam-wrapper">
+            <div class="slider-btn _prev">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+              </svg>
+            </div>
+            <div class="slider-btn _next">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+              </svg>
+            </div>
+            <div class="swiper reklam-slider s-reklam__slider" data-autoplay-delay="3000">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide reklam-slider__slide"
+                  style="
+                    background: url(&quot;@img/reklam-2.jpg&quot;) center / cover
+                      no-repeat;
+                  "
+                >
+                  <div class="reklam-slider__slide-title">
+                    Заголовок <br />
+                    рекламы
+                  </div>
+                  <a href="#" class="btn-s mt-4 _white">
+                    <span>Перейти в раздел</span>
+                    <svg>
+                      <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide reklam-slider__slide"
+                  style="
+                    background: url(&quot;@img/reklam-2.jpg&quot;) center / cover
+                      no-repeat;
+                  "
+                >
+                  <div class="reklam-slider__slide-title">
+                    Заголовок <br />
+                    рекламы
+                  </div>
+                  <a href="#" class="btn-s mt-4 _white">
+                    <span>Перейти в раздел</span>
+                    <svg>
+                      <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide reklam-slider__slide"
+                  style="
+                    background: url(&quot;@img/reklam-2.jpg&quot;) center / cover
+                      no-repeat;
+                  "
+                >
+                  <div class="reklam-slider__slide-title">
+                    Заголовок <br />
+                    рекламы
+                  </div>
+                  <a href="#" class="btn-s mt-4 _white">
+                    <span>Перейти в раздел</span>
+                    <svg>
+                      <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide reklam-slider__slide"
+                  style="
+                    background: url(&quot;@img/reklam-2.jpg&quot;) center / cover
+                      no-repeat;
+                  "
+                >
+                  <div class="reklam-slider__slide-title">
+                    Заголовок <br />
+                    рекламы
+                  </div>
+                  <a href="#" class="btn-s mt-4 _white">
+                    <span>Перейти в раздел</span>
+                    <svg>
+                      <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slider-pagination"></div>
+          </div>
+        </div>
+      </section>
+      @@include('html/components/s-about.html')
+      @@include('html/components/s-news.html')
 
     </main>
     @@include('html/components/modals.html')

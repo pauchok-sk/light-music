@@ -55,6 +55,21 @@
       border-color: var(--primary-hover);
     }
   }
+  &._gray {
+    background-color: var(--gray-2);
+    color: var(--black);
+    border-color: var(--gray-2);
+    @include hover {
+      background-color: var(--primary-hover);
+      color: white;
+      border-color: var(--primary-hover);
+    }
+    @include pressed {
+      background-color: var(--primary);
+      border-color: var(--primary);
+    }
+  }
+
   &._outline {
     background-color: white;
     color: var(--primary);

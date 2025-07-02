@@ -1,0 +1,16 @@
+.s-news {
+  overflow: hidden;
+  &__slider {
+    @include desktop {
+      overflow: visible !important;
+      .card-new {
+        width: 370px !important;
+      }
+    }
+    @include tablet {
+      .card-new {
+        width: 300px !important;
+      }
+    }
+  }
+}

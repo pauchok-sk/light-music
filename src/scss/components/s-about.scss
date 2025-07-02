@@ -1,0 +1,20 @@
+.s-about {
+  &__wrapper {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    @include laptop-min {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__logo {
+    display: block;
+    width: 160px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}

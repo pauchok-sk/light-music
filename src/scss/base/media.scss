@@ -1,5 +1,5 @@
 @mixin desktop {
-  @media (max-width: 1539px) {
+  @media (max-width: 1599px) {
     @content;
   }
 }
@@ -29,7 +29,7 @@
   }
 }
 @mixin mobile {
-  @media (max-width: 479px) {
+  @media (max-width: 480px) {
     @content;
   }
 }

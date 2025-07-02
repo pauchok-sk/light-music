@@ -127,9 +127,86 @@ export default function sliders() {
         },
         pagination: {
           el: slider.nextElementSibling,
-          clickable: true
-        }
+          clickable: true,
+        },
       });
+    });
+  }
+
+  const categoriesSlider = document.querySelector(".s-categories__slider");
+
+  if (categoriesSlider) {
+    const swiper = new Swiper(categoriesSlider, {
+      speed: 800,
+      spaceBetween: 10,
+      slidesPerView: "auto",
+      autoplay: {
+        delay: 3500,
+      },
+      navigation: {
+        prevEl: ".s-categories .slider-btn._prev",
+        nextEl: ".s-categories .slider-btn._next",
+      },
+      breakpoints: {
+        1600: {
+          spaceBetween: 20,
+          slidesPerView: 6,
+        },
+        768: {
+          spaceBetween: 20,
+          slidesPerView: "auto",
+        },
+      },
+    });
+  }
+
+  const brandsSlider = document.querySelector(".s-brands__slider");
+
+  if (brandsSlider) {
+    const swiper = new Swiper(brandsSlider, {
+      speed: 800,
+      spaceBetween: 10,
+      slidesPerView: "auto",
+      autoplay: {
+        delay: 3500,
+      },
+      navigation: {
+        prevEl: ".s-brands .slider-btn._prev",
+        nextEl: ".s-brands .slider-btn._next",
+      },
+      breakpoints: {
+        1600: {
+          spaceBetween: 20,
+          slidesPerView: 6,
+        },
+        768: {
+          spaceBetween: 20,
+          slidesPerView: "auto",
+        },
+      },
+    });
+  }
+
+  const newsSlider = document.querySelector(".s-news__slider");
+
+  if (newsSlider) {
+    const swiper = new Swiper(newsSlider, {
+      speed: 800,
+      spaceBetween: 20,
+      slidesPerView: "auto",
+      autoplay: {
+        delay: 3000,
+      },
+      navigation: {
+        prevEl: ".s-news .slider-btn._prev",
+        nextEl: ".s-news .slider-btn._next",
+      },
+      breakpoints: {
+        1600: {
+          spaceBetween: 20,
+          slidesPerView: 4,
+        },
+      },
     });
   }
 }

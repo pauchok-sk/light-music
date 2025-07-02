@@ -1,0 +1,41 @@
+.s-categories {
+  @include desktop {
+    overflow: hidden;
+  }
+  &__slider {
+    @include desktop {
+      overflow: visible !important;
+    }
+  }
+  &__slide {
+    text-align: center;
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--primary);
+    }
+    @include desktop {
+      width: 240px !important;
+    }
+    @include tablet {
+      width: 120px !important;
+    }
+  }
+  &__slide-img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  &__slide-title {
+    margin-top: 18px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    @include tablet {
+      font-size: 13px;
+      line-height: 123%;
+    }
+  }
+}

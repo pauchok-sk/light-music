@@ -31,6 +31,8 @@ export default function catalogChange() {
       catalog.classList.add("_open");
       btnCatalog.classList.add("_active");
 
+      changeOffsetTop();
+
       if (!header.classList.contains("_scroll")) {
         header.classList.add("_shadow");
       }
@@ -50,7 +52,17 @@ export default function catalogChange() {
     }
 
     function changeOffsetTop() {
-      const offsetTop = header.clientHeight + headerLine.clientHeight;
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      let offsetTop = header.clientHeight + headerLine.clientHeight;
+
+      if (scrollTop >= headerLine.clientHeight) {
+        offsetTop = header.clientHeight;
+      } else if (scrollTop > 0 && scrollTop < headerLine.clientHeight) {
+        offsetTop = header.clientHeight + scrollTop;
+      }
+
       catalog.style.top = offsetTop + "px";
     }
   }

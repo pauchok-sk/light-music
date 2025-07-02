@@ -19,6 +19,8 @@
 @import "./ui/category-card";
 @import "./ui/slider";
 @import "./ui/card-product";
+@import "./ui/card-new";
+@import "./ui/breadcrumbs";
 
 // widgets
 @import "./widgets/catalog";
@@ -31,5 +33,9 @@
 @import "./components/s-rec";
 @import "./components/s-reklam";
 @import "./components/s-categories";
+@import "./components/s-brands";
+@import "./components/s-about";
+@import "./components/s-news";
+@import "./components/intro";
 
 @import "./components/footer";
