@@ -45,12 +45,18 @@
     svg {
       transform: translateX(-1px);
     }
+    @media (max-width: 1599px) {
+      left: -5px;
+    }
   }
   &._next {
     right: -20px;
     transform: translateY(-50%);
     svg {
       transform: translateX(1px);
+    }
+    @media (max-width: 1599px) {
+      right: -5px;
     }
   }
 

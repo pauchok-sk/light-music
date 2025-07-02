@@ -72,4 +72,35 @@ export default function sliders() {
       },
     });
   }
+
+  const recSliders = document.querySelectorAll(".s-rec__slider");
+
+  if (recSliders.length) {
+    recSliders.forEach((slider) => {
+      const autoplayDelay = +slider.dataset.autoplayDelay;
+
+      const swiper = new Swiper(slider, {
+        speed: 800,
+        spaceBetween: 20,
+        slidesPerView: "auto",
+        // autoplay: {
+        //   delay: autoplayDelay || 3000,
+        // },
+        navigation: {
+          prevEl: slider
+            .closest(".s-rec__slider-wrapper")
+            .querySelector(".slider-btn._prev"),
+          nextEl: slider
+            .closest(".s-rec__slider-wrapper")
+            .querySelector(".slider-btn._next"),
+        },
+        breakpoints: {
+          1600: {
+            spaceBetween: 20,
+            slidesPerView: 6,
+          },
+        },
+      });
+    });
+  }
 }

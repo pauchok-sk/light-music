@@ -2,6 +2,10 @@
   opacity: 0.8;
 }
 
+.mt-auto {
+  margin-top: auto !important;
+}
+
 .w-fit {
   width: fit-content !important;
 }
@@ -16,6 +20,13 @@
   background-color: var(--pink);
 }
 
+.pt-6 {
+  padding-top: 60px;
+}
+.pb-8 {
+  padding-bottom: 80px;
+}
+
 .tag {
   padding: 2px 12px;
   border-radius: 4px;
@@ -27,4 +38,28 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 143%;
+}
+.sect-m {
+  margin: 60px 0px;
+  @include tablet {
+    margin: 30px 0px;
+  }
+}
+.sect-p {
+  padding: 60px 0px;
+  @include tablet {
+    padding: 30px 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pt-md-6 {
+    padding-top: 60px !important;
+  }
+  .pb-md-8 {
+    padding-bottom: 80px !important;
+  }
+  .mt-md-auto {
+    margin-top: auto !important;
+  }
 }

@@ -1,0 +1,21 @@
+.s-rec {
+  @media (max-width: 1599px) {
+    overflow: hidden;
+  }
+  &__slider-wrapper {
+    position: relative;
+  }
+  &__slider {
+    @media (max-width: 1599px) {
+      overflow: visible !important;
+    }
+    .card-product {
+      @media (max-width: 1599px) {
+        width: 240px !important;
+      }
+      @include tablet {
+        width: 200px !important;
+      }
+    }
+  }
+}

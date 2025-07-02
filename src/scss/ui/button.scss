@@ -55,6 +55,20 @@
       border-color: var(--primary-hover);
     }
   }
+  &._outline {
+    background-color: white;
+    color: var(--primary);
+    border-color: var(--primary);
+    @include hover {
+      background-color: var(--primary-hover);
+      border-color: var(--primary-hover);
+      color: white;
+    }
+    @include pressed {
+      background-color: var(--primary);
+      color: white;
+    }
+  }
 
   svg {
     width: 20px;
