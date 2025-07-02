@@ -19,8 +19,14 @@
       flex: none;
       width: 100%;
     }
+    @include tablet {
+      margin: 0;
+    }
   }
   &__reklam-slider {
+    @include tablet {
+      margin: 0 -10px;
+    }
     .slider-btn {
       &._prev {
         left: 20px;

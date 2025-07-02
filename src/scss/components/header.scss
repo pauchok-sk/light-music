@@ -73,7 +73,9 @@
 
 .header {
   position: sticky;
+  top: 0;
   padding: 20px 0px;
+  background-color: white;
   transition: box-shadow 0.2s ease;
   z-index: 120;
   @include tablet {

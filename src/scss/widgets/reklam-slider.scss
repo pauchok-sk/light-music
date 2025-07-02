@@ -3,6 +3,7 @@
   overflow: hidden;
   @include tablet {
     overflow: visible;
+    margin: 0 -10px;
 
     .slider-pagination {
       margin-top: 0;
@@ -18,7 +19,6 @@
   color: white;
   @include tablet {
     overflow: visible !important;
-    margin: 0 -15px;
   }
 
   &__slide {

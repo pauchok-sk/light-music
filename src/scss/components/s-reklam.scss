@@ -1,0 +1,18 @@
+.s-reklam {
+  overflow: hidden;
+  @include tablet {
+    padding: 0;
+  }
+  &__slider-wrapper {
+    position: relative;
+    overflow: visible !important;
+    @include tablet {
+      overflow: hidden;
+    }
+  }
+  &__slider {
+    overflow: visible !important;
+    width: 1410px !important;
+    max-width: 100%;
+  }
+}

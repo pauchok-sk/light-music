@@ -11,7 +11,10 @@
   transform: translateY(30px);
   visibility: hidden;
 
-  transition: opacity .4s ease, visibility .4s ease, transform .4s ease;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease,
+    transform 0.4s ease;
 
   &._open {
     opacity: 1;
@@ -52,7 +55,6 @@
 
     &._active {
       background-color: white;
-      pointer-events: none;
       &::after {
         top: 0;
       }
@@ -74,10 +76,18 @@
       flex-shrink: 0;
     }
   }
+  &__tab {
+    flex: 1;
+    display: none;
+    transition: opacity .3s linear;
+    &._active {
+      display: block;
+    }
+  }
   &__body {
     height: 100%;
     overflow-y: auto;
-    flex: 1;
+    width: 100%;
     padding: 30px 40px;
     @include laptop-middle {
       padding: 25px;
@@ -109,12 +119,12 @@
 
     color: var(--primary);
 
-    transition: color .2s ease;
+    transition: color 0.2s ease;
 
     @include hover {
       color: var(--black);
     }
-    
+
     svg {
       width: 20px;
       height: 20px;
