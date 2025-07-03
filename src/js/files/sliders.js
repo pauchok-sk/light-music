@@ -209,4 +209,24 @@ export default function sliders() {
       },
     });
   }
+
+  const productionSlider = document.querySelector(".s-production__slider");
+
+  if (productionSlider) {
+    const swiper = new Swiper(productionSlider, {
+      speed: 800,
+      spaceBetween: 20,
+      navigation: {
+        prevEl: ".s-production .slider-btn._prev",
+        nextEl: ".s-production .slider-btn._next",
+      },
+      // autoplay: {
+      //   delay: 3000,
+      // },
+      pagination: {
+        el: ".s-production .slider-pagination",
+        clickable: true
+      }
+    });
+  }
 }

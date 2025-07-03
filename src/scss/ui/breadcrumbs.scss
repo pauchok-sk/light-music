@@ -1,0 +1,25 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 30px 0px;
+
+  font-size: 13px;
+  line-height: 154%;
+
+  a {
+    display: flex;
+    gap: 8px;
+    transition: color .2s ease;
+    @include hover {
+      color: var(--primary);
+    }
+
+    &::after {
+      content: "/";
+    }
+  }
+  span {
+    color: var(--gray-4);
+  }
+}

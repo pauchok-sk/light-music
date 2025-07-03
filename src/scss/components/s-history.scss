@@ -1,0 +1,125 @@
+.s-history {
+  overflow: hidden;
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    gap: 115px;
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+  }
+  &__nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    z-index: 1;
+    @include tablet {
+      flex-direction: row;
+      flex: none;
+      width: calc(100% + 20px);
+      margin-left: -10px;
+      padding: 0 10px;
+    }
+  }
+  &__nav-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 160%;
+
+    @include hover {
+      div {
+        color: white;
+        background-color: var(--primary);
+      }
+    }
+    @include pressed {
+      div {
+        color: white;
+        background-color: var(--primary-hover);
+      }
+    }
+    &._active {
+      div {
+        color: white;
+        background-color: var(--primary);
+      }
+    }
+
+    @include tablet {
+      flex-direction: column;
+      text-align: center;
+      gap: 8px;
+
+      font-size: 13px;
+      line-height: 154%;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 32px;
+      &::before {
+        position: absolute;
+        content: "";
+        left: 15px;
+        width: 1px;
+        top: 0;
+        bottom: 0;
+        background-color: var(--gray-3);
+        z-index: -1;
+      }
+
+      @include tablet {
+        padding-bottom: 0;
+        padding-right: 35px;
+
+        &::before {
+          bottom: auto;
+          top: 15px;
+          right: 0;
+          left: 0;
+          height: 1px;
+          width: auto;
+        }
+      }
+    }
+    &:nth-child(1) {
+      @include tablet {
+        &::before {
+          left: 50%;
+        }
+      }
+    }
+    @include last(2) {
+      @include tablet {
+        &::before {
+          right: -32px;
+        }
+      }
+    }
+
+    div {
+      @include flex-center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: var(--gray-3);
+
+      transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+    }
+  }
+  &__content {
+    flex: 1;
+  }
+  &__tab-body {
+    max-width: 875px;
+  }
+}

@@ -25,12 +25,19 @@
 .bg-dark-deep {
   background-color: var(--dark-deep);
 }
+.bg-primary {
+  background-color: var(--primary) !important;
+}
 
 .pt-6 {
   padding-top: 60px;
 }
 .pb-8 {
   padding-bottom: 80px;
+}
+
+.max-w-115 {
+  max-width: 1150px;
 }
 
 .tag {
