@@ -1,0 +1,17 @@
+.tab-bar {
+  position: sticky;
+  bottom: 0;
+  padding: 10px 0px;
+  background-color: white;
+  border-top: 1px solid var(--gray-2);
+  display: none;
+  z-index: 100;
+  @include laptop-min {
+    display: block;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+}

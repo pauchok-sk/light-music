@@ -1,9 +1,40 @@
 .s-production {
+  overflow: hidden;
   &__slider {
+    width: 1410px !important;
+    max-width: 100%;
+    height: 640px;
+    overflow: visible;
 
+    @include laptop {
+      height: 500px;
+    }
+    @include laptop-min {
+      height: 400px;
+    }
+    @include tablet {
+      height: 300px;
+    }
   }
   &__slide {
+    border-radius: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    transition: opacity .2s ease;
 
+    &.swiper-slide-active {
+      opacity: 1;
+    }
+
+    @include mobile {
+      border-radius: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
-  
 }

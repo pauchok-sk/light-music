@@ -1,0 +1,20 @@
+.s-certificates {
+  overflow: hidden;
+  &__slider {
+    margin: -15px;
+    padding: 15px;
+
+    @include desktop {
+      overflow: visible;
+    }
+
+    .card-certificate {
+      @include desktop {
+        width: 370px !important;
+      }
+      @include tablet {
+        width: 300px !important;
+      }
+    }
+  }
+}

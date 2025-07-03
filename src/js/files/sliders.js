@@ -216,17 +216,64 @@ export default function sliders() {
     const swiper = new Swiper(productionSlider, {
       speed: 800,
       spaceBetween: 20,
+      initialSlide: 2,
       navigation: {
         prevEl: ".s-production .slider-btn._prev",
         nextEl: ".s-production .slider-btn._next",
       },
-      // autoplay: {
-      //   delay: 3000,
-      // },
+      autoplay: {
+        delay: 3000,
+      },
       pagination: {
         el: ".s-production .slider-pagination",
-        clickable: true
-      }
+        clickable: true,
+      },
+    });
+  }
+
+  const certificatesSlider = document.querySelector(".s-certificates__slider");
+
+  if (certificatesSlider) {
+    const swiper = new Swiper(certificatesSlider, {
+      speed: 800,
+      spaceBetween: 20,
+      slidesPerView: "auto",
+      navigation: {
+        prevEl: ".s-certificates .slider-btn._prev",
+        nextEl: ".s-certificates .slider-btn._next",
+      },
+      autoplay: {
+        delay: 3200,
+      },
+      breakpoints: {
+        1600: {
+          spaceBetween: 20,
+          slidesPerView: 4,
+        },
+      },
+    });
+  }
+
+  const reviewsSlider = document.querySelector(".s-reviews__slider");
+
+  if (reviewsSlider) {
+    const swiper = new Swiper(reviewsSlider, {
+      speed: 800,
+      spaceBetween: 20,
+      slidesPerView: "auto",
+      navigation: {
+        prevEl: ".s-reviews .slider-btn._prev",
+        nextEl: ".s-reviews .slider-btn._next",
+      },
+      autoplay: {
+        delay: 3200,
+      },
+      breakpoints: {
+        1600: {
+          spaceBetween: 20,
+          slidesPerView: 3,
+        },
+      },
     });
   }
 }

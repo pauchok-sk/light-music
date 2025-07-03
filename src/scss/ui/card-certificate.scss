@@ -1,0 +1,49 @@
+.card-certificate {
+  display: flex !important;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: auto !important;
+  box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.09);
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid var(--gray-2);
+  transition: color 0.2s ease;
+  @include hover {
+    color: var(--primary);
+    .card-certificate__weight {
+      color: var(--primary);
+    }
+  }
+  @include tablet {
+    padding: 10px;
+  }
+
+  &__img {
+    display: block;
+    border-radius: 20px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex: 1;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    margin: 0px 0px 20px 0px;
+    @include overflowText(3);
+  }
+  &__weight {
+    margin-top: auto;
+    font-size: 13px;
+    line-height: 154%;
+    color: var(--gray-4);
+    transition: color 0.2s ease;
+  }
+}

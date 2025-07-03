@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <title>pauchoo0k</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250212164335"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap&_v=20250212164335"
+      rel="stylesheet"
+    />
+    <style>
+      .main-list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        padding: 50px 20px;
+      }
+      .main-list li {
+        font-size: 22px;
+      }
+
+      .main-list a {
+        position: relative;
+        text-decoration: none;
+        color: black;
+      }
+      .main-list a:hover::before {
+        left: 0;
+        right: 0;
+      }
+      .main-list a::before {
+        position: absolute;
+        content: "";
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        height: 1px;
+        background-color: currentColor;
+        transition:
+          left 0.2s ease,
+          right 0.2s ease;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h2>Компоненты</h2>
+    <ul class="list main-list">
+      <li>
+        <a target="_blank" href="dist/auth.html">Вид шапки и таб-бара с авторизацией</a>
+      </li>
+    </ul>
+    <h2>Страницы</h2>
+    <ul class="list main-list">
+      <li>
+        <a target="_blank" href="dist/index.html">Главная</a>
+      </li>
+      <li>
+        <a target="_blank" href="dist/about.html">О компании</a>
+      </li>
+    </ul>
+  </body>
+</html>

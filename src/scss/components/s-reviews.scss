@@ -1,0 +1,20 @@
+.s-reviews {
+  overflow: hidden;
+  &__slider {
+    margin: 0 -15px;
+    padding: 15px;
+
+    @include desktop {
+      overflow: visible !important;
+    }
+
+    .card-review {
+      @include desktop {
+        width: 500px !important;
+      }
+      @include tablet {
+        width: 300px !important;
+      }
+    }
+  }
+}

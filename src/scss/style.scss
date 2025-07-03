@@ -23,10 +23,13 @@
 @import "./ui/breadcrumbs";
 @import "./ui/tab";
 @import "./ui/scrollable";
+@import "./ui/card-certificate";
+@import "./ui/card-review";
 
 // widgets
 @import "./widgets/catalog";
 @import "./widgets/reklam-slider";
+@import "./widgets/tab-bar";
 
 // components
 @import "./components/header";
@@ -41,5 +44,8 @@
 @import "./components/intro";
 @import "./components/s-history";
 @import "./components/s-production";
+@import "./components/s-services";
+@import "./components/s-certificates";
+@import "./components/s-reviews";
 
 @import "./components/footer";
