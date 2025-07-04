@@ -20,6 +20,6 @@ reviewsOpen();
 Fancybox.bind("[data-fancybox]", {});
 
 // document.addEventListener('DOMContentLoaded', function() {
-//     var myModal = new bootstrap.Modal(document.getElementById('call-modal'));
+//     var myModal = new bootstrap.Modal(document.getElementById('brands-modal'));
 //     myModal.show();
 // });

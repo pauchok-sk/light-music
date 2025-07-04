@@ -1,0 +1,53 @@
+.pagination {
+  display: flex;
+  margin: 0 auto;
+  &__btn {
+    @include flex-center;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+
+    transition:
+      color 0.2s ease,
+      border-color 0.2s ease,
+      background-color 0.2s ease;
+    @include hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+    @include pressed {
+      border-color: var(--primary);
+      background-color: var(--primary);
+      color: white;
+    }
+
+    @include tablet-min {
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        display: none;
+      }
+    }
+
+    &._active {
+      pointer-events: none;
+      color: var(--primary);
+    }
+    &._disabled {
+      pointer-events: none;
+      color: var(--gray-3);
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

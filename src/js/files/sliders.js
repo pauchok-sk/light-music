@@ -168,7 +168,7 @@ export default function sliders() {
       spaceBetween: 10,
       slidesPerView: "auto",
       autoplay: {
-        delay: 3500,
+        delay: 3000,
       },
       navigation: {
         prevEl: ".s-brands .slider-btn._prev",
@@ -178,6 +178,7 @@ export default function sliders() {
         1600: {
           spaceBetween: 20,
           slidesPerView: 6,
+          
         },
         768: {
           spaceBetween: 20,

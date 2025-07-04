@@ -25,11 +25,15 @@
 @import "./ui/scrollable";
 @import "./ui/card-certificate";
 @import "./ui/card-review";
+@import "./ui/card-brand";
+@import "./ui/card-category";
 
 // widgets
 @import "./widgets/catalog";
 @import "./widgets/reklam-slider";
 @import "./widgets/tab-bar";
+@import "./widgets/brands";
+@import "./widgets/pagination";
 
 // components
 @import "./components/header";
@@ -47,5 +51,7 @@
 @import "./components/s-services";
 @import "./components/s-certificates";
 @import "./components/s-reviews";
+@import "./components/s-catalog";
+@import "./components/s-archive-brands";
 
 @import "./components/footer";

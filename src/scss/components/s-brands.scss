@@ -4,23 +4,13 @@
     @include desktop {
       overflow: visible !important;
     }
-  }
-  &__slide {
-    @include flex-center;
-    border-radius: 20px;
-    height: 175px !important;
-    background-color: var(--gray-1);
-
-    @include desktop {
-      width: 240px !important;
-    }
-    @include tablet {
-      width: 120px !important;
-      height: 90px !important;
-      border-radius: 8px;
-
-      img {
-        width: 60%;
+    .card-brand {
+      @include desktop {
+        width: 240px !important;
+      }
+      @include tablet {
+        width: 120px !important;
+        height: 90px !important;
       }
     }
   }

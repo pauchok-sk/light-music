@@ -1,0 +1,16 @@
+.card-brand {
+  @include flex-center;
+  border-radius: 20px;
+  height: 175px !important;
+  background-color: var(--gray-1);
+
+  @include tablet {
+    height: 125px !important;
+    border-radius: 8px;
+
+    img {
+      width: 60%;
+      max-width: 150px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  @@include('html/head.html',{ "title":"pauchoo0k" })
+  <body class="body">
+    @@include('html/components/header.html')
+    <main>
+      
+      <section class="intro">
+        <div class="container">
+          <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <span>О Каталог</span>
+          </div>
+        </div>
+      </section>
+      @@include('html/components/s-catalog.html')
+      @@include('html/components/s-archive-brands.html')
+      @@include('html/components/s-rec.html',{"title": "Хиты продаж"})
+
+    </main>
+    @@include('html/components/modals.html')
+    @@include('html/components/footer.html')
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

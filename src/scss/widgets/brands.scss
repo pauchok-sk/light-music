@@ -1,0 +1,90 @@
+.brands {
+  width: 960px !important;
+
+  &__form-search {
+    width: auto;
+    flex-basis: 438px;
+    @include laptop-min {
+      width: 100%;
+      flex: none;
+    }
+
+    .btn-rect {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  &__body {
+    max-height: 565px;
+    margin-top: 40px;
+    width: 100%;
+    overflow-y: auto;
+    @include laptop-min {
+      max-height: 350px;
+    }
+    @include tablet {
+      margin-top: 25px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 20px;
+    }
+  }
+  &__row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__count {
+    flex: 0 1 80px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    @include tablet {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex: 1;
+    @include tablet-min {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    a {
+      font-size: 16px;
+      line-height: 175%;
+      transition: color 0.2s ease;
+      @include hover {
+        color: var(--primary);
+      }
+    }
+  }
+}

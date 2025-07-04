@@ -1,8 +1,4 @@
 .intro {
-  margin-bottom: 60px;
-  @include tablet {
-    margin-bottom: 30px;
-  }
   &__img {
     display: block;
     width: 100%;
