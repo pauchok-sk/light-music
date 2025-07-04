@@ -27,6 +27,7 @@
 @import "./ui/card-review";
 @import "./ui/card-brand";
 @import "./ui/card-category";
+@import "./ui/scrollbar";
 
 // widgets
 @import "./widgets/catalog";
@@ -34,6 +35,7 @@
 @import "./widgets/tab-bar";
 @import "./widgets/brands";
 @import "./widgets/pagination";
+@import "./widgets/filters";
 
 // components
 @import "./components/header";
@@ -53,5 +55,6 @@
 @import "./components/s-reviews";
 @import "./components/s-catalog";
 @import "./components/s-archive-brands";
+@import "./components/s-category";
 
 @import "./components/footer";

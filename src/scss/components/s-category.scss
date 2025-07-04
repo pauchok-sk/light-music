@@ -1,0 +1,10 @@
+.s-category {
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+  }
+  &__body {
+    flex: 1;
+  }
+}

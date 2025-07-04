@@ -25,19 +25,6 @@
     @include tablet {
       margin-top: 25px;
     }
-
-    &::-webkit-scrollbar {
-      width: 4px;
-    }
-
-    &::-webkit-scrollbar-track {
-      background-color: transparent;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: rgba(0, 0, 0, 0.2);
-      border-radius: 20px;
-    }
   }
   &__row {
     display: flex;
