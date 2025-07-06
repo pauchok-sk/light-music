@@ -1,5 +1,6 @@
 import "../scss/style.scss";
 import catalogChange from "./files/catalogChange.js";
+import filters from "./files/filters.js";
 import headerScroll from "./files/headerScroll.js";
 import reviewsOpen from "./files/reviewsOpen.js";
 import scrollables from "./files/scrollables.js";
@@ -16,6 +17,7 @@ headerScroll();
 scrollables();
 tabs();
 reviewsOpen();
+filters();
 
 Fancybox.bind("[data-fancybox]", {});
 

@@ -6,7 +6,9 @@
   visibility: hidden;
   z-index: 120;
 
-  transition: opacity .4s ease, visibility .4s ease;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
 
   &._active {
     opacity: 0.5;
@@ -28,19 +30,76 @@
     z-index: 130;
     width: 375px;
     overflow-y: auto;
-    transition: opacity .4s ease, visibility .4s ease, transform .4s ease;
+    opacity: 0;
+    transform: translateX(-100%);
+    visibility: hidden;
+
+    transition:
+      opacity 0.4s ease,
+      visibility 0.4s ease,
+      transform 0.4s ease;
+
+    &._open {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &__head {
+    display: none;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid var(--gray-2);
+    @include laptop-middle {
+      @include flex-between;
+    }
+  }
+  &__prev {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--primary);
+    }
+    @include pressed {
+      color: var(--primary-hover);
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &__off {
+    display: block;
+    padding: 10px;
+
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 154%;
+    color: var(--gray-4);
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--primary);
+    }
+    @include pressed {
+      color: var(--primary-hover);
+    }
   }
   &__body {
     width: 100%;
     @include laptop-middle {
-      padding: 10px;
+      padding: 10px 10px 30px 10px;
     }
   }
   &__item {
     width: 100%;
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
   }
   &__btn {
     display: flex;
@@ -69,7 +128,7 @@
     svg {
       width: 16px;
       height: 16px;
-      transform: rotate(180deg);
+      transform: rotate(-90deg);
 
       transition: transform 0.2s ease;
     }

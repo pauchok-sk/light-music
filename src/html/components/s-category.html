@@ -1,9 +1,98 @@
 <section class="s-category sect-m">
   <div class="container">
     <div class="s-category__wrapper">
-      <div class="filters-overlay _active" id="filters-overlay"></div>
-      <div class="filters">
+      <div class="filters-overlay" id="filters-overlay"></div>
+      <div class="filters" id="filters">
+        <div class="filters__head">
+          <div class="filters__prev" id="filters-close">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-arrow-line-prev"></use>
+            </svg>
+            <span>Фильтры</span>
+          </div>
+          <a href="#" class="filters__off">Сбросить все</a>
+        </div>
         <div data-spollers class="filters__body">
+          <div class="d-xl-none d-flex flex-wrap gap-2 mb-2">
+            <a href="#" class="btn-filter">
+              <span>Фильтр</span>
+              <div>
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-close"></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="btn-filter">
+              <span>Выбранный фильтр</span>
+              <div>
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-close"></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="btn-filter">
+              <span>Выбранный фильтр</span>
+              <div>
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-close"></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="btn-filter">
+              <span>Фильтр</span>
+              <div>
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-close"></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="btn-filter">
+              <span>Фильтр</span>
+              <div>
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-close"></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="btn-filter">
+              <span>Выбранный фильтр</span>
+              <div>
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-close"></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="btn-filter">
+              <span>Выбранный фильтр</span>
+              <div>
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-close"></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="btn-filter">
+              <span>Выбранный фильтр</span>
+              <div>
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-close"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="mt-5">
+            <input type="checkbox" id="speed-filter-4" class="input-check" />
+            <label for="speed-filter-4" class="label-check"
+              >Быстрый фильтр</label
+            >
+            <input type="checkbox" id="speed-filter-5" class="input-check" />
+            <label for="speed-filter-5" class="label-check"
+              >Быстрый фильтр</label
+            >
+            <input type="checkbox" id="speed-filter-6" class="input-check" />
+            <label for="speed-filter-6" class="label-check"
+              >Быстрый фильтр</label
+            >
+          </div>
           <div class="filters__item">
             <button data-spoller class="btn-reset filters__btn _spoller-active">
               <svg>
@@ -223,7 +312,7 @@
             </p>
           </div>
         </div>
-        <div class="d-sm-flex d-none flex-wrap gap-4 mt-lg-5 mt-4 mb-2">
+        <div class="d-xl-flex d-none flex-wrap gap-4 mt-lg-5 mt-4 mb-2">
           <input type="checkbox" id="speed-filter-1" class="input-check" />
           <label for="speed-filter-1" class="label-check">Быстрый фильтр</label>
           <input type="checkbox" id="speed-filter-2" class="input-check" />
@@ -231,7 +320,7 @@
           <input type="checkbox" id="speed-filter-3" class="input-check" />
           <label for="speed-filter-3" class="label-check">Быстрый фильтр</label>
         </div>
-        <div class="d-sm-flex d-none gap-2 flex-wrap">
+        <div class="d-xl-flex d-none gap-2 flex-wrap">
           <a href="#" class="btn-filter">
             <span>Выбранный фильтр</span>
             <div>
@@ -313,7 +402,7 @@
             </button>
           </form>
           <div class="s-category__filters-wrapper">
-            <div class="s-category__filters-btn d-xl-none">
+            <div class="s-category__filters-btn d-xl-none" id="filters-open">
               <svg>
                 <use xlink:href="img/icons/icons.svg#icon-filter"></use>
               </svg>
@@ -745,6 +834,26 @@
               </button>
             </div>
           </div>
+        </div>
+        <button class="btn-more">Загрузить ещё</button>
+        <div class="pagination">
+          <a href="#" class="pagination__btn _disabled">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+            </svg>
+          </a>
+          <a href="#" class="pagination__btn _active">1</a>
+          <a href="#" class="pagination__btn">2</a>
+          <a href="#" class="pagination__btn">3</a>
+          <a href="#" class="pagination__btn">4</a>
+          <a href="#" class="pagination__btn">5</a>
+          <div class="pagination__btn">...</div>
+          <a href="#" class="pagination__btn">32</a>
+          <a href="#" class="pagination__btn">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </div>

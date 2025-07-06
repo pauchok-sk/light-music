@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  @@include('html/head.html',{ "title":"pauchoo0k" })
+  <body class="body">
+    @@include('html/components/header.html')
+    <main>
+      
+      <section class="intro">
+        <div class="container">
+          <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <a href="#">Каталог</a>
+            <span>Название категории</span>
+          </div>
+          <img src="@img/category-cards.jpg" alt="image" class="intro__img">
+        </div>
+      </section>
+      @@include('html/components/s-category-lines.html')
+
+    </main>
+    @@include('html/components/modals.html')
+    @@include('html/components/footer.html')
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
