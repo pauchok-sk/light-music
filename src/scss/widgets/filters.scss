@@ -1,8 +1,40 @@
+.filters-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 120;
+
+  transition: opacity .4s ease, visibility .4s ease;
+
+  &._active {
+    opacity: 0.5;
+    visibility: visible;
+  }
+}
 .filters {
+  position: sticky;
+  top: 100px;
   width: 305px;
+  max-width: 100%;
+  background-color: white;
   flex-shrink: 0;
+  @include laptop-middle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 130;
+    width: 375px;
+    overflow-y: auto;
+    transition: opacity .4s ease, visibility .4s ease, transform .4s ease;
+  }
   &__body {
     width: 100%;
+    @include laptop-middle {
+      padding: 10px;
+    }
   }
   &__item {
     width: 100%;
@@ -65,5 +97,9 @@
   &__scroll {
     max-height: 250px;
     overflow-y: auto;
+  }
+  &__send {
+    width: 100%;
+    margin-top: 40px;
   }
 }

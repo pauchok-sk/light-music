@@ -1,6 +1,7 @@
 <section class="s-category sect-m">
   <div class="container">
     <div class="s-category__wrapper">
+      <div class="filters-overlay _active" id="filters-overlay"></div>
       <div class="filters">
         <div data-spollers class="filters__body">
           <div class="filters__item">
@@ -207,10 +208,11 @@
               </div>
             </div>
           </div>
+          <div class="btn-s filters__send d-xl-none">Применить</div>
         </div>
       </div>
       <div class="s-category__body">
-        <div class="py-4">
+        <div class="py-lg-4">
           <h1 class="md-h1 h3 mb-3">Название категории</h1>
           <div class="text">
             <p>
@@ -219,6 +221,529 @@
               концертов или онлайн-выступлений – и пусть ваш контент звучит и
               выглядит безупречно!
             </p>
+          </div>
+        </div>
+        <div class="d-sm-flex d-none flex-wrap gap-4 mt-lg-5 mt-4 mb-2">
+          <input type="checkbox" id="speed-filter-1" class="input-check" />
+          <label for="speed-filter-1" class="label-check">Быстрый фильтр</label>
+          <input type="checkbox" id="speed-filter-2" class="input-check" />
+          <label for="speed-filter-2" class="label-check">Быстрый фильтр</label>
+          <input type="checkbox" id="speed-filter-3" class="input-check" />
+          <label for="speed-filter-3" class="label-check">Быстрый фильтр</label>
+        </div>
+        <div class="d-sm-flex d-none gap-2 flex-wrap">
+          <a href="#" class="btn-filter">
+            <span>Выбранный фильтр</span>
+            <div>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-close"></use>
+              </svg>
+            </div>
+          </a>
+          <a href="#" class="btn-filter">
+            <span>Выбранный фильтр</span>
+            <div>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-close"></use>
+              </svg>
+            </div>
+          </a>
+          <a href="#" class="btn-filter">
+            <span>Выбранный фильтр</span>
+            <div>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-close"></use>
+              </svg>
+            </div>
+          </a>
+          <a href="#" class="btn-filter">
+            <span>Фильтр</span>
+            <div>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-close"></use>
+              </svg>
+            </div>
+          </a>
+          <a href="#" class="btn-filter">
+            <span>Выбранный фильтр</span>
+            <div>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-close"></use>
+              </svg>
+            </div>
+          </a>
+          <a href="#" class="btn-filter">
+            <span>Выбранный фильтр</span>
+            <div>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-close"></use>
+              </svg>
+            </div>
+          </a>
+          <a href="#" class="btn-filter">
+            <span>Фильтр</span>
+            <div>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-close"></use>
+              </svg>
+            </div>
+          </a>
+          <a href="#" class="btn-filter">
+            <span>Выбранный фильтр</span>
+            <div>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-close"></use>
+              </svg>
+            </div>
+          </a>
+          <div class="btn-simple">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-close"></use>
+            </svg>
+            <span>Сбросить все</span>
+          </div>
+        </div>
+        <div class="d-flex flex-wrap justify-content-between gap-2 mt-4">
+          <form action="#" class="form-search">
+            <input type="text" placeholder="Поиск" class="input" />
+            <button class="btn-rect">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+          <div class="s-category__filters-wrapper">
+            <div class="s-category__filters-btn d-xl-none">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-filter"></use>
+              </svg>
+            </div>
+            <div class="sort-btn">
+              <span>Сначала популярные</span>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-sort"></use>
+              </svg>
+            </div>
+            <div class="view">
+              <a href="#" class="view__btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-lines"></use>
+                </svg>
+              </a>
+              <a href="#" class="view__btn _active">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-grid"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="s-category__grid">
+          <div class="card-product">
+            <a href="#" class="card-product__gallery">
+              <div class="tag">Акция!</div>
+              <img src="@img/product.png" alt="image" />
+            </a>
+            <a href="#" class="card-product__title">Sennheiser E 901</a>
+            <div
+              class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2"
+            >
+              <div class="card-product__price">15 000 ₽</div>
+              <div class="card-product__old-price">30 000</div>
+            </div>
+            <div
+              class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3"
+            >
+              <button class="btn-s card-product__cart-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-cart"></use>
+                </svg>
+                <span>В корзину</span>
+              </button>
+              <button class="btn-reset card-product__btn-like">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="card-product">
+            <a href="#" class="card-product__gallery">
+              <div class="tag">Акция!</div>
+              <img src="@img/product.png" alt="image" />
+            </a>
+            <a href="#" class="card-product__title">Sennheiser E 901</a>
+            <div
+              class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2"
+            >
+              <div class="card-product__price">15 000 ₽</div>
+              <div class="card-product__old-price">30 000</div>
+            </div>
+            <div
+              class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3"
+            >
+              <button class="btn-s card-product__cart-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-cart"></use>
+                </svg>
+                <span>В корзину</span>
+              </button>
+              <button class="btn-reset card-product__btn-like _active">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="card-product">
+            <a href="#" class="card-product__gallery">
+              <div class="tag">Акция!</div>
+              <img src="@img/product.png" alt="image" />
+            </a>
+            <a href="#" class="card-product__title"
+              >EUROSOUND La Bomba SB-1000SV</a
+            >
+            <div
+              class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2"
+            >
+              <div class="card-product__price">15 000 ₽</div>
+              <div class="card-product__old-price">30 000</div>
+            </div>
+            <div
+              class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3"
+            >
+              <button class="btn-s card-product__cart-btn _outline">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-cart"></use>
+                </svg>
+                <span>В корзине</span>
+              </button>
+              <button class="btn-reset card-product__btn-like">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <a href="#" class="product-reklam">
+            <img src="@img/grid-reklam.jpg" alt="image" />
+          </a>
+          <div class="card-product">
+            <a href="#" class="card-product__gallery">
+              <div class="tag">Акция!</div>
+              <img src="@img/product.png" alt="image" />
+            </a>
+            <a href="#" class="card-product__title">Sennheiser E 901</a>
+            <div
+              class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2"
+            >
+              <div class="card-product__price">15 000 ₽</div>
+              <div class="card-product__old-price">30 000</div>
+            </div>
+            <div
+              class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3"
+            >
+              <button class="btn-s card-product__cart-btn _outline">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-cart"></use>
+                </svg>
+                <span>В корзине</span>
+              </button>
+              <button class="btn-reset card-product__btn-like">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="card-product">
+            <a href="#" class="card-product__gallery">
+              <div class="tag">Акция!</div>
+              <img src="@img/product.png" alt="image" />
+            </a>
+            <a href="#" class="card-product__title">Sennheiser E 901</a>
+            <div
+              class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2"
+            >
+              <div class="card-product__price">15 000 ₽</div>
+              <div class="card-product__old-price">30 000</div>
+            </div>
+            <div
+              class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3"
+            >
+              <button class="btn-s card-product__cart-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-cart"></use>
+                </svg>
+                <span>В корзину</span>
+              </button>
+              <button class="btn-reset card-product__btn-like">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="card-product">
+            <a href="#" class="card-product__gallery">
+              <div class="tag">Акция!</div>
+              <img src="@img/product.png" alt="image" />
+            </a>
+            <a href="#" class="card-product__title">Sennheiser E 901</a>
+            <div
+              class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2"
+            >
+              <div class="card-product__price">15 000 ₽</div>
+              <div class="card-product__old-price">30 000</div>
+            </div>
+            <div
+              class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3"
+            >
+              <button class="btn-s card-product__cart-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-cart"></use>
+                </svg>
+                <span>В корзину</span>
+              </button>
+              <button class="btn-reset card-product__btn-like _active">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="card-product">
+            <a href="#" class="card-product__gallery">
+              <div class="tag">Акция!</div>
+              <img src="@img/product.png" alt="image" />
+            </a>
+            <a href="#" class="card-product__title"
+              >EUROSOUND La Bomba SB-1000SV</a
+            >
+            <div
+              class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2"
+            >
+              <div class="card-product__price">15 000 ₽</div>
+              <div class="card-product__old-price">30 000</div>
+            </div>
+            <div
+              class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3"
+            >
+              <button class="btn-s card-product__cart-btn _outline">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-cart"></use>
+                </svg>
+                <span>В корзине</span>
+              </button>
+              <button class="btn-reset card-product__btn-like">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <a href="#" class="product-reklam">
+            <img src="@img/grid-reklam.jpg" alt="image" />
+          </a>
+          <div class="card-product">
+            <a href="#" class="card-product__gallery">
+              <div class="tag">Акция!</div>
+              <img src="@img/product.png" alt="image" />
+            </a>
+            <a href="#" class="card-product__title">Sennheiser E 901</a>
+            <div
+              class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2"
+            >
+              <div class="card-product__price">15 000 ₽</div>
+              <div class="card-product__old-price">30 000</div>
+            </div>
+            <div
+              class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3"
+            >
+              <button class="btn-s card-product__cart-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-cart"></use>
+                </svg>
+                <span>В корзину</span>
+              </button>
+              <button class="btn-reset card-product__btn-like">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="card-product">
+            <a href="#" class="card-product__gallery">
+              <div class="tag">Акция!</div>
+              <img src="@img/product.png" alt="image" />
+            </a>
+            <a href="#" class="card-product__title">Sennheiser E 901</a>
+            <div
+              class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2"
+            >
+              <div class="card-product__price">15 000 ₽</div>
+              <div class="card-product__old-price">30 000</div>
+            </div>
+            <div
+              class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3"
+            >
+              <button class="btn-s card-product__cart-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-cart"></use>
+                </svg>
+                <span>В корзину</span>
+              </button>
+              <button class="btn-reset card-product__btn-like _active">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="card-product">
+            <a href="#" class="card-product__gallery">
+              <div class="tag">Акция!</div>
+              <img src="@img/product.png" alt="image" />
+            </a>
+            <a href="#" class="card-product__title"
+              >EUROSOUND La Bomba SB-1000SV</a
+            >
+            <div
+              class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2"
+            >
+              <div class="card-product__price">15 000 ₽</div>
+              <div class="card-product__old-price">30 000</div>
+            </div>
+            <div
+              class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3"
+            >
+              <button class="btn-s card-product__cart-btn _outline">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-cart"></use>
+                </svg>
+                <span>В корзине</span>
+              </button>
+              <button class="btn-reset card-product__btn-like">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="card-product">
+            <a href="#" class="card-product__gallery">
+              <div class="tag">Акция!</div>
+              <img src="@img/product.png" alt="image" />
+            </a>
+            <a href="#" class="card-product__title">Sennheiser E 901</a>
+            <div
+              class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2"
+            >
+              <div class="card-product__price">15 000 ₽</div>
+              <div class="card-product__old-price">30 000</div>
+            </div>
+            <div
+              class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3"
+            >
+              <button class="btn-s card-product__cart-btn _outline">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-cart"></use>
+                </svg>
+                <span>В корзине</span>
+              </button>
+              <button class="btn-reset card-product__btn-like">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="card-product">
+            <a href="#" class="card-product__gallery">
+              <div class="tag">Акция!</div>
+              <img src="@img/product.png" alt="image" />
+            </a>
+            <a href="#" class="card-product__title">Sennheiser E 901</a>
+            <div
+              class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2"
+            >
+              <div class="card-product__price">15 000 ₽</div>
+              <div class="card-product__old-price">30 000</div>
+            </div>
+            <div
+              class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3"
+            >
+              <button class="btn-s card-product__cart-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-cart"></use>
+                </svg>
+                <span>В корзину</span>
+              </button>
+              <button class="btn-reset card-product__btn-like">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="card-product">
+            <a href="#" class="card-product__gallery">
+              <div class="tag">Акция!</div>
+              <img src="@img/product.png" alt="image" />
+            </a>
+            <a href="#" class="card-product__title">Sennheiser E 901</a>
+            <div
+              class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2"
+            >
+              <div class="card-product__price">15 000 ₽</div>
+              <div class="card-product__old-price">30 000</div>
+            </div>
+            <div
+              class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3"
+            >
+              <button class="btn-s card-product__cart-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-cart"></use>
+                </svg>
+                <span>В корзину</span>
+              </button>
+              <button class="btn-reset card-product__btn-like _active">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="card-product">
+            <a href="#" class="card-product__gallery">
+              <div class="tag">Акция!</div>
+              <img src="@img/product.png" alt="image" />
+            </a>
+            <a href="#" class="card-product__title"
+              >EUROSOUND La Bomba SB-1000SV</a
+            >
+            <div
+              class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2"
+            >
+              <div class="card-product__price">15 000 ₽</div>
+              <div class="card-product__old-price">30 000</div>
+            </div>
+            <div
+              class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3"
+            >
+              <button class="btn-s card-product__cart-btn _outline">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-cart"></use>
+                </svg>
+                <span>В корзине</span>
+              </button>
+              <button class="btn-reset card-product__btn-like">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>

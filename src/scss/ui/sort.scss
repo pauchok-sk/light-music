@@ -1,0 +1,65 @@
+.sort-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  line-height: 175%;
+
+  @include tablet {
+    justify-content: center;
+    width: 60px;
+    height: 48px;
+  }
+
+  span {
+    @include tablet {
+      display: none;
+    }
+  }
+  svg {
+    width: 16px;
+    height: 16px;
+    @include tablet {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+.view {
+  display: flex;
+  padding: 4px;
+  border-radius: 8px;
+  background: var(--gray-1);
+  gap: 4px;
+  &__btn {
+    @include flex-center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition:
+      color 0.2s ease,
+      border-color 0.2s ease,
+      background-color 0.2s ease;
+    @include hover {
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+    @include pressed {
+      color: white;
+      background-color: var(--primary);
+      border-color: var(--primary);
+    }
+    &._active {
+      pointer-events: none;
+      color: white;
+      background-color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
