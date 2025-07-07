@@ -69,5 +69,13 @@
       gap: 9px;
       row-gap: 40px;
     }
+
+    &._lines {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      @include tablet {
+        gap: 20px;
+      }
+    }
   }
 }

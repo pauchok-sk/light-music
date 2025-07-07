@@ -47,6 +47,10 @@
   max-width: 1150px;
 }
 
+.border-gray-3 {
+  border: 1px solid var(--gray-3);
+}
+
 .tag {
   padding: 2px 12px;
   border-radius: 4px;
@@ -81,5 +85,8 @@
   }
   .mt-md-auto {
     margin-top: auto !important;
+  }
+  .border-md-gray-3 {
+    border: 1px solid var(--gray-3);
   }
 }

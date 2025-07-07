@@ -161,4 +161,32 @@
     width: 100%;
     margin-top: 40px;
   }
+  &__sub-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--primary);
+    }
+
+    &._spoller-active {
+      svg {
+        transform: rotate(0);
+      }
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+      transform: rotate(-90deg);
+      transition: transform 0.2s ease;
+    }
+  }
 }

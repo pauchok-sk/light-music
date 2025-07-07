@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>pauchoo0k</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250707154939" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/bootstrap/bootstrap.min.css?_v=20250707154939">
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250707154939">
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250707154939">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250707154939" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<div class="header-line">
+		<div class="container">
+			<div class="d-none d-lg-flex align-items-center xl-gap-4 gap-3">
+				<div class="header-line__location">
+					<div class="header-line__location-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-location"></use>
+						</svg>
+						<span>Улан-Удэ</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+						</svg>
+					</div>
+				</div>
+				<ul class="list d-flex xl-gap-4 gap-3 header-line__list">
+					<li><a href="#">Магазины</a></li>
+					<li><a href="#">Оплата и доставка</a></li>
+					<li><a href="#">Сервис и поддержка</a></li>
+					<li><a href="#">Оптовым клиентам</a></li>
+				</ul>
+				<div class="header-line__contacts ms-auto d-flex align-items-center xl-gap-4 gap-3">
+					<a href="tel:88005518070" class="header-line__contacts-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+						</svg>
+						<span>8 (800) 551-80-70</span>
+					</a>
+					<div data-bs-toggle="modal" data-bs-target="#connect-modal" class="header-line__contacts-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-chat"></use>
+						</svg>
+						<span>Напишите нам</span>
+					</div>
+				</div>
+			</div>
+			<div class="header-line__text d-lg-none text-center">
+				Музыкальные инструменты и оборудование
+			</div>
+		</div>
+	</div>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<div class="d-flex align-items-center gap-xl-3 gap-2 header__logo-wrapper">
+					<a href="/" class="header__logo">
+						<img src="img/logo.svg" alt="logo" />
+					</a>
+					<span class="header__logo-descr d-none d-sm-block">Музыкальные инструменты и оборудование</span>
+				</div>
+				<div class="d-none d-lg-flex gap-2">
+					<button class="btn-s header__btn-catalog" id="btn-catalog">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-catalog"></use>
+						</svg>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+						<span>Каталог</span>
+					</button>
+					<form action="#" class="form-search">
+						<input type="text" placeholder="Поиск" class="input" />
+						<button class="btn-rect">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-search"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+				<div class="d-none d-lg-flex gap-2">
+					<a href="#" class="nav-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-profile"></use>
+						</svg>
+						<span>Войти</span>
+					</a>
+					<a href="#" class="nav-btn _stroke">
+						<div class="nav-btn__number">2</div>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+						</svg>
+						<span>Избранное</span>
+					</a>
+					<a href="#" class="nav-btn">
+						<div class="nav-btn__number">2</div>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+						</svg>
+						<span>Корзина</span>
+					</a>
+				</div>
+				<ul class="list d-flex d-lg-none">
+					<li>
+						<a href="#" class="header__mob-btn">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-location"></use>
+							</svg>
+							<span>Новосибирск</span>
+						</a>
+					</li>
+					<li>
+						<a href="tel:88005518070" class="header__mob-btn">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="header-search">
+		<div class="container">
+			<form action="#" class="form-search">
+				<input type="text" placeholder="Поиск" class="input" />
+				<button class="btn-rect">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-search"></use>
+					</svg>
+				</button>
+			</form>
+		</div>
+	</div>
+	<div class="header-categories">
+		<div class="container">
+			<div class="swiper header-categories__slider">
+				<div class="swiper-wrapper">
+					<a href="#" class="swiper-slide d-flex align-items-center gap-2 w-fit header-categories__slide">
+						<img src="img/sound.svg" alt="icon" />
+						<span>Звук</span>
+					</a>
+					<a href="#" class="swiper-slide d-flex align-items-center gap-2 w-fit header-categories__slide">
+						<img src="img/sound.svg" alt="icon" />
+						<span>Свет и спецэффекты</span>
+					</a>
+					<a href="#" class="swiper-slide d-flex align-items-center gap-2 w-fit header-categories__slide">
+						<img src="img/sound.svg" alt="icon" />
+						<span>Музыкальные инструменты</span>
+					</a>
+					<a href="#" class="swiper-slide d-flex align-items-center gap-2 w-fit header-categories__slide">
+						<img src="img/sound.svg" alt="icon" />
+						<span>Видео</span>
+					</a>
+					<a href="#" class="swiper-slide d-flex align-items-center gap-2 w-fit header-categories__slide">
+						<img src="img/sound.svg" alt="icon" />
+						<span>Стойки и кейсы</span>
+					</a>
+					<a href="#" class="swiper-slide d-flex align-items-center gap-2 w-fit header-categories__slide">
+						<img src="img/sound.svg" alt="icon" />
+						<span>Коммутация</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="catalog" id="catalog">
+		<div class="catalog__wrapper">
+			<div class="catalog__menu">
+				<a data-tab-catalog="tab-1" href="#" class="catalog__menu-btn">
+					<img src="img/sound.svg" alt="icon" />
+					<span>Звук</span>
+				</a>
+				<a data-tab-catalog="tab-2" href="#" class="catalog__menu-btn">
+					<img src="img/sound.svg" alt="icon" />
+					<span>Свет и спецэффекты</span>
+				</a>
+				<a data-tab-catalog="tab-3" href="#" class="catalog__menu-btn">
+					<img src="img/sound.svg" alt="icon" />
+					<span>Музыкальные инструменты</span>
+				</a>
+				<a data-tab-catalog="tab-4" href="#" class="catalog__menu-btn _active">
+					<img src="img/sound.svg" alt="icon" />
+					<span>Видео</span>
+				</a>
+				<a data-tab-catalog="tab-5" href="#" class="catalog__menu-btn">
+					<img src="img/sound.svg" alt="icon" />
+					<span>Стойки и кейсы</span>
+				</a>
+				<a data-tab-catalog="tab-6" href="#" class="catalog__menu-btn">
+					<img src="img/sound.svg" alt="icon" />
+					<span>Коммутация</span>
+				</a>
+			</div>
+			<div data-tab-catalog-content="tab-1" class="catalog__tab">
+				<div class="catalog__body">
+					<div class="catalog__body-inside">
+						<div class="d-flex flex-wrap mb-4 gap-4">
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+						</div>
+						<h2 class="h1 mb-3">Звук</h2>
+						<p class="text mb-4">
+							В разделе «Видеооборудование» вы найдёте всё для профессиональной
+							съёмки и трансляций. Выбирайте оборудование для съёмки клипов,
+							концертов или онлайн-выступлений – и пусть ваш контент звучит и
+							выглядит безупречно!
+						</p>
+						<div class="catalog__categories">
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="catalog__btn-more">
+							<span class="btn-text">Все товары раздела</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div data-tab-catalog-content="tab-2" class="catalog__tab">
+				<div class="catalog__body">
+					<div class="catalog__body-inside">
+						<div class="d-flex flex-wrap mb-4 gap-4">
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+						</div>
+						<h2 class="h1 mb-3">Свет</h2>
+						<p class="text mb-4">
+							В разделе «Видеооборудование» вы найдёте всё для профессиональной
+							съёмки и трансляций. Выбирайте оборудование для съёмки клипов,
+							концертов или онлайн-выступлений – и пусть ваш контент звучит и
+							выглядит безупречно!
+						</p>
+						<div class="catalog__categories">
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="catalog__btn-more">
+							<span class="btn-text">Все товары раздела</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div data-tab-catalog-content="tab-3" class="catalog__tab">
+				<div class="catalog__body">
+					<div class="catalog__body-inside">
+						<div class="d-flex flex-wrap mb-4 gap-4">
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+						</div>
+						<h2 class="h1 mb-3">Музыка</h2>
+						<p class="text mb-4">
+							В разделе «Видеооборудование» вы найдёте всё для профессиональной
+							съёмки и трансляций. Выбирайте оборудование для съёмки клипов,
+							концертов или онлайн-выступлений – и пусть ваш контент звучит и
+							выглядит безупречно!
+						</p>
+						<div class="catalog__categories">
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="catalog__btn-more">
+							<span class="btn-text">Все товары раздела</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div data-tab-catalog-content="tab-4" class="catalog__tab _active">
+				<div class="catalog__body">
+					<div class="catalog__body-inside">
+						<div class="d-flex flex-wrap mb-4 gap-4">
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+						</div>
+						<h2 class="h1 mb-3">Видеооборудование</h2>
+						<p class="text mb-4">
+							В разделе «Видеооборудование» вы найдёте всё для профессиональной
+							съёмки и трансляций. Выбирайте оборудование для съёмки клипов,
+							концертов или онлайн-выступлений – и пусть ваш контент звучит и
+							выглядит безупречно!
+						</p>
+						<div class="catalog__categories">
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="catalog__btn-more">
+							<span class="btn-text">Все товары раздела</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div data-tab-catalog-content="tab-5" class="catalog__tab">
+				<div class="catalog__body">
+					<div class="catalog__body-inside">
+						<div class="d-flex flex-wrap mb-4 gap-4">
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+						</div>
+						<h2 class="h1 mb-3">Стойки</h2>
+						<p class="text mb-4">
+							В разделе «Видеооборудование» вы найдёте всё для профессиональной
+							съёмки и трансляций. Выбирайте оборудование для съёмки клипов,
+							концертов или онлайн-выступлений – и пусть ваш контент звучит и
+							выглядит безупречно!
+						</p>
+						<div class="catalog__categories">
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="catalog__btn-more">
+							<span class="btn-text">Все товары раздела</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div data-tab-catalog-content="tab-6" class="catalog__tab">
+				<div class="catalog__body">
+					<div class="catalog__body-inside">
+						<div class="d-flex flex-wrap mb-4 gap-4">
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+						</div>
+						<h2 class="h1 mb-3">Коммутация</h2>
+						<p class="text mb-4">
+							В разделе «Видеооборудование» вы найдёте всё для профессиональной
+							съёмки и трансляций. Выбирайте оборудование для съёмки клипов,
+							концертов или онлайн-выступлений – и пусть ваш контент звучит и
+							выглядит безупречно!
+						</p>
+						<div class="catalog__categories">
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="catalog__btn-more">
+							<span class="btn-text">Все товары раздела</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<main>
+
+		<section class="intro">
+			<div class="container">
+				<div class="breadcrumbs">
+					<a href="#">Главная</a>
+					<a href="#">Каталог</a>
+					<span>Название бренда</span>
+				</div>
+				<img src="img/intro-brand.jpg" alt="image" class="intro__img border-md-gray-3">
+			</div>
+		</section>
+		<section class="s-category sect-m">
+			<div class="container">
+				<div class="s-category__wrapper">
+					<div class="filters-overlay" id="filters-overlay"></div>
+					<div class="filters" id="filters">
+						<div class="filters__head">
+							<div class="filters__prev" id="filters-close">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow-line-prev"></use>
+								</svg>
+								<span>Фильтры</span>
+							</div>
+							<a href="#" class="filters__off">Сбросить все</a>
+						</div>
+						<div data-spollers class="filters__body">
+							<div class="d-xl-none d-flex flex-wrap gap-2 mb-2">
+								<a href="#" class="btn-filter">
+									<span>Фильтр</span>
+									<div>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-close"></use>
+										</svg>
+									</div>
+								</a>
+								<a href="#" class="btn-filter">
+									<span>Выбранный фильтр</span>
+									<div>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-close"></use>
+										</svg>
+									</div>
+								</a>
+								<a href="#" class="btn-filter">
+									<span>Выбранный фильтр</span>
+									<div>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-close"></use>
+										</svg>
+									</div>
+								</a>
+								<a href="#" class="btn-filter">
+									<span>Фильтр</span>
+									<div>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-close"></use>
+										</svg>
+									</div>
+								</a>
+								<a href="#" class="btn-filter">
+									<span>Фильтр</span>
+									<div>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-close"></use>
+										</svg>
+									</div>
+								</a>
+								<a href="#" class="btn-filter">
+									<span>Выбранный фильтр</span>
+									<div>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-close"></use>
+										</svg>
+									</div>
+								</a>
+								<a href="#" class="btn-filter">
+									<span>Выбранный фильтр</span>
+									<div>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-close"></use>
+										</svg>
+									</div>
+								</a>
+								<a href="#" class="btn-filter">
+									<span>Выбранный фильтр</span>
+									<div>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-close"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+							<div class="d-xl-none mt-5">
+								<input type="checkbox" id="speed-filter-4" class="input-check" />
+								<label for="speed-filter-4" class="label-check">Быстрый фильтр</label>
+								<input type="checkbox" id="speed-filter-5" class="input-check" />
+								<label for="speed-filter-5" class="label-check">Быстрый фильтр</label>
+								<input type="checkbox" id="speed-filter-6" class="input-check" />
+								<label for="speed-filter-6" class="label-check">Быстрый фильтр</label>
+							</div>
+							<div class="filters__item">
+								<button data-spoller class="btn-reset filters__btn _spoller-active">
+									<span>Категории</span>
+								</button>
+								<div>
+									<div class="filters__spoller">
+										<button data-spoller class="btn-reset filters__sub-btn">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+											</svg>
+											<span>Категория</span>
+										</button>
+										<div>
+											<input type="checkbox" id="sc-1" class="input-check" />
+											<label for="sc-1" class="label-check">Категория</label>
+											<input type="checkbox" id="sc-2" class="input-check" />
+											<label for="sc-2" class="label-check">Категория</label>
+											<input type="checkbox" id="sc-3" class="input-check" />
+											<label for="sc-3" class="label-check">Категория</label>
+										</div>
+										<button data-spoller class="btn-reset filters__sub-btn">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+											</svg>
+											<span>Категория</span>
+										</button>
+										<div>
+											<input type="checkbox" id="sc-4" class="input-check" />
+											<label for="sc-4" class="label-check">Категория</label>
+											<input type="checkbox" id="sc-5" class="input-check" />
+											<label for="sc-5" class="label-check">Категория</label>
+											<input type="checkbox" id="sc-6" class="input-check" />
+											<label for="sc-6" class="label-check">Категория</label>
+										</div>
+										<button data-spoller class="btn-reset filters__sub-btn">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+											</svg>
+											<span>Категория</span>
+										</button>
+										<div>
+											<input type="checkbox" id="sc-8" class="input-check" />
+											<label for="sc-8" class="label-check">Категория</label>
+											<input type="checkbox" id="sc-9" class="input-check" />
+											<label for="sc-9" class="label-check">Категория</label>
+											<input type="checkbox" id="sc-10" class="input-check" />
+											<label for="sc-10" class="label-check">Категория</label>
+										</div>
+									</div>
+								</div>
+								<button data-spoller class="btn-reset filters__btn">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+									</svg>
+									<span>Название категории</span>
+								</button>
+								<div>
+									<div class="filters__spoller">
+										<input type="checkbox" id="subcategory-1" class="input-check" />
+										<label for="subcategory-1" class="label-check">Подкатегория</label>
+										<input type="checkbox" id="subcategory-2" class="input-check" />
+										<label for="subcategory-2" class="label-check">Подкатегория</label>
+										<input type="checkbox" id="subcategory-3" class="input-check" />
+										<label for="subcategory-3" class="label-check">Подкатегория</label>
+										<input type="checkbox" id="subcategory-4" class="input-check" />
+										<label for="subcategory-4" class="label-check">Подкатегория</label>
+										<input type="checkbox" id="subcategory-5" class="input-check" />
+										<label for="subcategory-5" class="label-check">Подкатегория</label>
+										<input type="checkbox" id="subcategory-6" class="input-check" />
+										<label for="subcategory-6" class="label-check">Подкатегория</label>
+									</div>
+								</div>
+							</div>
+							<div class="filters__item">
+								<button data-spoller class="btn-reset filters__btn _spoller-active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+									</svg>
+									<span>Назначение</span>
+									<div>1</div>
+								</button>
+								<div>
+									<div class="filters__spoller">
+										<input type="checkbox" id="point-1" class="input-check" />
+										<label for="point-1" class="label-check">Фильтр</label>
+										<input type="checkbox" id="point-2" class="input-check" />
+										<label for="point-2" class="label-check">Фильтр</label>
+										<input type="checkbox" id="point-3" class="input-check" />
+										<label for="point-3" class="label-check">Фильтр</label>
+										<input type="checkbox" id="point-4" class="input-check" />
+										<label for="point-4" class="label-check">Фильтр</label>
+										<input type="checkbox" id="point-5" class="input-check" />
+										<label for="point-5" class="label-check">Фильтр</label>
+										<input type="checkbox" id="point-6" class="input-check" />
+										<label for="point-6" class="label-check">Фильтр</label>
+									</div>
+								</div>
+							</div>
+							<div class="filters__item">
+								<button data-spoller class="btn-reset filters__btn _spoller-active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+									</svg>
+									<span>Тех. характеристики</span>
+									<div>1</div>
+								</button>
+								<div>
+									<div class="filters__spoller">
+										<input type="checkbox" id="specification-1" class="input-check" />
+										<label for="specification-1" class="label-check">Фильтр</label>
+										<input type="checkbox" id="specification-2" class="input-check" />
+										<label for="specification-2" class="label-check">Фильтр</label>
+										<input type="checkbox" id="specification-3" class="input-check" />
+										<label for="specification-3" class="label-check">Фильтр</label>
+										<input type="checkbox" id="specification-4" class="input-check" />
+										<label for="specification-4" class="label-check">Фильтр</label>
+										<input type="checkbox" id="specification-5" class="input-check" />
+										<label for="specification-5" class="label-check">Фильтр</label>
+										<input type="checkbox" id="specification-6" class="input-check" />
+										<label for="specification-6" class="label-check">Фильтр</label>
+									</div>
+								</div>
+							</div>
+							<div class="filters__item">
+								<button data-spoller class="btn-reset filters__btn _spoller-active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+									</svg>
+									<span>Бренд</span>
+									<div>1</div>
+								</button>
+								<div>
+									<div class="filters__spoller">
+										<form action="#" class="form-search">
+											<input type="text" placeholder="Поиск" class="input" />
+											<button class="btn-rect">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#icon-search"></use>
+												</svg>
+											</button>
+										</form>
+										<div class="filters__scroll _scrollbar">
+											<input type="checkbox" id="brand-1" class="input-check" />
+											<label for="brand-1" class="label-check">Фильтр</label>
+											<input type="checkbox" id="brand-2" class="input-check" />
+											<label for="brand-2" class="label-check">Фильтр</label>
+											<input type="checkbox" id="brand-3" class="input-check" />
+											<label for="brand-3" class="label-check">Фильтр</label>
+											<input type="checkbox" id="brand-4" class="input-check" />
+											<label for="brand-4" class="label-check">Фильтр</label>
+											<input type="checkbox" id="brand-5" class="input-check" />
+											<label for="brand-5" class="label-check">Фильтр</label>
+											<input type="checkbox" id="brand-6" class="input-check" />
+											<label for="brand-6" class="label-check">Фильтр</label>
+
+											<input type="checkbox" id="brand-7" class="input-check" />
+											<label for="brand-7" class="label-check">Фильтр</label>
+											<input type="checkbox" id="brand-8" class="input-check" />
+											<label for="brand-8" class="label-check">Фильтр</label>
+											<input type="checkbox" id="brand-9" class="input-check" />
+											<label for="brand-9" class="label-check">Фильтр</label>
+											<input type="checkbox" id="brand-10" class="input-check" />
+											<label for="brand-10" class="label-check">Фильтр</label>
+											<input type="checkbox" id="brand-11" class="input-check" />
+											<label for="brand-11" class="label-check">Фильтр</label>
+											<input type="checkbox" id="brand-12" class="input-check" />
+											<label for="brand-12" class="label-check">Фильтр</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="filters__item">
+								<button data-spoller class="btn-reset filters__btn _spoller-active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+									</svg>
+									<span>Цена</span>
+									<div>1</div>
+								</button>
+								<div>
+									<div class="filters__spoller">
+										<div class="d-flex gap-2">
+											<div class="input-control flex-fill">
+												<input type="number" placeholder="От" class="input _min" />
+											</div>
+											<div class="input-control flex-fill">
+												<input type="number" placeholder="До" class="input _min" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="filters__item">
+								<button data-spoller class="btn-reset filters__btn _spoller-active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+									</svg>
+									<span>Наличие</span>
+									<div>1</div>
+								</button>
+								<div>
+									<div class="filters__spoller">
+										<input type="checkbox" id="is-has-1" class="input-check" />
+										<label for="is-has-1" class="label-check">Фильтр</label>
+										<input type="checkbox" id="is-has-2" class="input-check" />
+										<label for="is-has-2" class="label-check">Фильтр</label>
+										<input type="checkbox" id="is-has-3" class="input-check" />
+										<label for="is-has-3" class="label-check">Фильтр</label>
+										<input type="checkbox" id="is-has-4" class="input-check" />
+										<label for="is-has-4" class="label-check">Фильтр</label>
+										<input type="checkbox" id="is-has-5" class="input-check" />
+										<label for="is-has-5" class="label-check">Фильтр</label>
+										<input type="checkbox" id="is-has-6" class="input-check" />
+										<label for="is-has-6" class="label-check">Фильтр</label>
+									</div>
+								</div>
+							</div>
+							<div class="btn-s filters__send d-xl-none">Применить</div>
+						</div>
+					</div>
+					<div class="s-category__body">
+						<div class="py-lg-4">
+							<h1 class="md-h1 h3 mb-3">Yamaha</h1>
+							<img src="img/single-brand.jpg" alt="logo" class="mb-3" />
+							<div class="text">
+								<p>
+									Высококачественное звуковое оборудование Ямаха уже давно считается
+									эталоном профессиональной техники. Более чем столетняя история
+									существования, а также японское происхождение данного бренда
+									говорят сами за себя, не нуждаясь в дополнительном представлении.
+									Продукция этой компании рассчитана на профессиональное применение,
+									способна удовлетворить требования даже самых взыскательных
+									пользователей.
+								</p>
+							</div>
+						</div>
+						<div class="d-flex flex-wrap justify-content-between gap-2 mt-4">
+							<form action="#" class="form-search">
+								<input type="text" placeholder="Поиск" class="input" />
+								<button class="btn-rect">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-search"></use>
+									</svg>
+								</button>
+							</form>
+							<div class="s-category__filters-wrapper">
+								<div class="s-category__filters-btn d-xl-none" id="filters-open">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-filter"></use>
+									</svg>
+								</div>
+								<div class="dropdown sort-filters-dropdown">
+									<div class="dropdown-btn sort-btn">
+										<span>Сначала популярные</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-sort"></use>
+										</svg>
+									</div>
+									<div class="dropdown__body sort-filters">
+										<div class="sort-filters__head">
+											<span class="sort-filters__head-title">Сначала показывать</span>
+											<div class="dropdown-close">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#icon-close"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="sort-filters__body">
+											<input type="radio" id="radio-sort-1" name="radio-sort" checked class="input-radio" />
+											<label for="radio-sort-1" class="label-radio">Популярные</label>
+											<input type="radio" id="radio-sort-2" name="radio-sort" class="input-radio" />
+											<label for="radio-sort-2" class="label-radio">Дешёвые</label>
+											<input type="radio" id="radio-sort-3" name="radio-sort" class="input-radio" />
+											<label for="radio-sort-3" class="label-radio">Дорогие</label>
+											<input type="radio" id="radio-sort-4" name="radio-sort" class="input-radio" />
+											<label for="radio-sort-4" class="label-radio">По акции</label>
+											<input type="radio" id="radio-sort-5" name="radio-sort" class="input-radio" />
+											<label for="radio-sort-5" class="label-radio">Новые</label>
+										</div>
+									</div>
+								</div>
+								<div class="sort-filters-overlay"></div>
+								<div class="view">
+									<a href="#" class="view__btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-lines"></use>
+										</svg>
+									</a>
+									<a href="#" class="view__btn _active">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-grid"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="s-category__grid">
+							<div class="card-product">
+								<a href="#" class="card-product__gallery">
+									<div class="tag">Акция!</div>
+									<img src="img/product.png" alt="image" />
+								</a>
+								<a href="#" class="card-product__title">Sennheiser E 901</a>
+								<div class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2">
+									<div class="card-product__price">15 000 ₽</div>
+									<div class="card-product__old-price">30 000</div>
+								</div>
+								<div class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3">
+									<button class="btn-s card-product__cart-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<button class="btn-reset card-product__btn-like">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="card-product">
+								<a href="#" class="card-product__gallery">
+									<div class="tag">Акция!</div>
+									<img src="img/product.png" alt="image" />
+								</a>
+								<a href="#" class="card-product__title">Sennheiser E 901</a>
+								<div class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2">
+									<div class="card-product__price">15 000 ₽</div>
+									<div class="card-product__old-price">30 000</div>
+								</div>
+								<div class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3">
+									<button class="btn-s card-product__cart-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<button class="btn-reset card-product__btn-like _active">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="card-product">
+								<a href="#" class="card-product__gallery">
+									<div class="tag">Акция!</div>
+									<img src="img/product.png" alt="image" />
+								</a>
+								<a href="#" class="card-product__title">EUROSOUND La Bomba SB-1000SV</a>
+								<div class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2">
+									<div class="card-product__price">15 000 ₽</div>
+									<div class="card-product__old-price">30 000</div>
+								</div>
+								<div class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3">
+									<button class="btn-s card-product__cart-btn _outline">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+										</svg>
+										<span>В корзине</span>
+									</button>
+									<button class="btn-reset card-product__btn-like">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<a href="#" class="product-reklam">
+								<img src="img/grid-reklam.jpg" alt="image" />
+							</a>
+							<div class="card-product">
+								<a href="#" class="card-product__gallery">
+									<div class="tag">Акция!</div>
+									<img src="img/product.png" alt="image" />
+								</a>
+								<a href="#" class="card-product__title">Sennheiser E 901</a>
+								<div class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2">
+									<div class="card-product__price">15 000 ₽</div>
+									<div class="card-product__old-price">30 000</div>
+								</div>
+								<div class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3">
+									<button class="btn-s card-product__cart-btn _outline">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+										</svg>
+										<span>В корзине</span>
+									</button>
+									<button class="btn-reset card-product__btn-like">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="card-product">
+								<a href="#" class="card-product__gallery">
+									<div class="tag">Акция!</div>
+									<img src="img/product.png" alt="image" />
+								</a>
+								<a href="#" class="card-product__title">Sennheiser E 901</a>
+								<div class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2">
+									<div class="card-product__price">15 000 ₽</div>
+									<div class="card-product__old-price">30 000</div>
+								</div>
+								<div class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3">
+									<button class="btn-s card-product__cart-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<button class="btn-reset card-product__btn-like">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="card-product">
+								<a href="#" class="card-product__gallery">
+									<div class="tag">Акция!</div>
+									<img src="img/product.png" alt="image" />
+								</a>
+								<a href="#" class="card-product__title">Sennheiser E 901</a>
+								<div class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2">
+									<div class="card-product__price">15 000 ₽</div>
+									<div class="card-product__old-price">30 000</div>
+								</div>
+								<div class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3">
+									<button class="btn-s card-product__cart-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<button class="btn-reset card-product__btn-like _active">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="card-product">
+								<a href="#" class="card-product__gallery">
+									<div class="tag">Акция!</div>
+									<img src="img/product.png" alt="image" />
+								</a>
+								<a href="#" class="card-product__title">EUROSOUND La Bomba SB-1000SV</a>
+								<div class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2">
+									<div class="card-product__price">15 000 ₽</div>
+									<div class="card-product__old-price">30 000</div>
+								</div>
+								<div class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3">
+									<button class="btn-s card-product__cart-btn _outline">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+										</svg>
+										<span>В корзине</span>
+									</button>
+									<button class="btn-reset card-product__btn-like">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<a href="#" class="product-reklam">
+								<img src="img/grid-reklam.jpg" alt="image" />
+							</a>
+							<div class="card-product">
+								<a href="#" class="card-product__gallery">
+									<div class="tag">Акция!</div>
+									<img src="img/product.png" alt="image" />
+								</a>
+								<a href="#" class="card-product__title">Sennheiser E 901</a>
+								<div class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2">
+									<div class="card-product__price">15 000 ₽</div>
+									<div class="card-product__old-price">30 000</div>
+								</div>
+								<div class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3">
+									<button class="btn-s card-product__cart-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<button class="btn-reset card-product__btn-like">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="card-product">
+								<a href="#" class="card-product__gallery">
+									<div class="tag">Акция!</div>
+									<img src="img/product.png" alt="image" />
+								</a>
+								<a href="#" class="card-product__title">Sennheiser E 901</a>
+								<div class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2">
+									<div class="card-product__price">15 000 ₽</div>
+									<div class="card-product__old-price">30 000</div>
+								</div>
+								<div class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3">
+									<button class="btn-s card-product__cart-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<button class="btn-reset card-product__btn-like _active">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="card-product">
+								<a href="#" class="card-product__gallery">
+									<div class="tag">Акция!</div>
+									<img src="img/product.png" alt="image" />
+								</a>
+								<a href="#" class="card-product__title">EUROSOUND La Bomba SB-1000SV</a>
+								<div class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2">
+									<div class="card-product__price">15 000 ₽</div>
+									<div class="card-product__old-price">30 000</div>
+								</div>
+								<div class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3">
+									<button class="btn-s card-product__cart-btn _outline">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+										</svg>
+										<span>В корзине</span>
+									</button>
+									<button class="btn-reset card-product__btn-like">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="card-product">
+								<a href="#" class="card-product__gallery">
+									<div class="tag">Акция!</div>
+									<img src="img/product.png" alt="image" />
+								</a>
+								<a href="#" class="card-product__title">Sennheiser E 901</a>
+								<div class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2">
+									<div class="card-product__price">15 000 ₽</div>
+									<div class="card-product__old-price">30 000</div>
+								</div>
+								<div class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3">
+									<button class="btn-s card-product__cart-btn _outline">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+										</svg>
+										<span>В корзине</span>
+									</button>
+									<button class="btn-reset card-product__btn-like">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="card-product">
+								<a href="#" class="card-product__gallery">
+									<div class="tag">Акция!</div>
+									<img src="img/product.png" alt="image" />
+								</a>
+								<a href="#" class="card-product__title">Sennheiser E 901</a>
+								<div class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2">
+									<div class="card-product__price">15 000 ₽</div>
+									<div class="card-product__old-price">30 000</div>
+								</div>
+								<div class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3">
+									<button class="btn-s card-product__cart-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<button class="btn-reset card-product__btn-like">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="card-product">
+								<a href="#" class="card-product__gallery">
+									<div class="tag">Акция!</div>
+									<img src="img/product.png" alt="image" />
+								</a>
+								<a href="#" class="card-product__title">Sennheiser E 901</a>
+								<div class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2">
+									<div class="card-product__price">15 000 ₽</div>
+									<div class="card-product__old-price">30 000</div>
+								</div>
+								<div class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3">
+									<button class="btn-s card-product__cart-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<button class="btn-reset card-product__btn-like _active">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="card-product">
+								<a href="#" class="card-product__gallery">
+									<div class="tag">Акция!</div>
+									<img src="img/product.png" alt="image" />
+								</a>
+								<a href="#" class="card-product__title">EUROSOUND La Bomba SB-1000SV</a>
+								<div class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2">
+									<div class="card-product__price">15 000 ₽</div>
+									<div class="card-product__old-price">30 000</div>
+								</div>
+								<div class="d-flex justify-content-between gap-2 mt-4 w-full order-md-0 order-3">
+									<button class="btn-s card-product__cart-btn _outline">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+										</svg>
+										<span>В корзине</span>
+									</button>
+									<button class="btn-reset card-product__btn-like">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<button class="btn-more">Загрузить ещё</button>
+						<div class="pagination">
+							<a href="#" class="pagination__btn _disabled">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+								</svg>
+							</a>
+							<a href="#" class="pagination__btn _active">1</a>
+							<a href="#" class="pagination__btn">2</a>
+							<a href="#" class="pagination__btn">3</a>
+							<a href="#" class="pagination__btn">4</a>
+							<a href="#" class="pagination__btn">5</a>
+							<div class="pagination__btn">...</div>
+							<a href="#" class="pagination__btn">32</a>
+							<a href="#" class="pagination__btn">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<div class="modal fade" id="connect-modal">
+		<div class="modal-dialog">
+			<div class="modal-content modal__body">
+				<h3 class="h3">Напишите нам</h3>
+				<div data-bs-dismiss="modal" class="modal__close">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-close"></use>
+					</svg>
+				</div>
+				<p class="text mb-md-5 mb-3 mt-md-4 mt-2 opacity-80">
+					Мы свяжемся с вами в ближайшее время и ответим на все интересующие
+					вопросы.
+				</p>
+				<form action="#" class="modal__form">
+					<div class="input-control">
+						<label for="connect-name" class="label-input">Ваше имя</label>
+						<input type="text" name="Имя" id="connect-name" class="input" />
+					</div>
+					<div class="input-control">
+						<label for="connect-email-tel" class="label-input">Email или Телефон для связи</label>
+						<input type="text" name="Email или Телефон" id="connect-email-tel" class="input" />
+					</div>
+					<div class="input-control">
+						<label for="connect-question" class="label-input">Ваш вопрос</label>
+						<textarea rows="4" class="input"></textarea>
+					</div>
+					<div class="form-footer">
+						<input type="checkbox" id="connect-policy" class="d-none form-policy-input" />
+						<label for="connect-policy" class="form-policy-label"><span>Подтверждаю, что согласен/согласна с
+								<a href="#">политикой конфиденциальности</a></span></label>
+						<button class="btn-s">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="call-modal">
+		<div class="modal-dialog">
+			<div class="modal-content modal__body">
+				<h3 class="h3">Заказать обратный звонок</h3>
+				<div data-bs-dismiss="modal" class="modal__close">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-close"></use>
+					</svg>
+				</div>
+				<p class="text mb-md-5 mb-3 mt-md-4 mt-2 opacity-80">
+					Мы свяжемся с вами в ближайшее время и ответим на все интересующие
+					вопросы.
+				</p>
+				<form action="#" class="modal__call-form">
+					<div class="input-control">
+						<label for="call-name" class="label-input">Ваше имя</label>
+						<input type="text" name="Имя" id="call-name" placeholder="Фамилия Имя Отчество" class="input" />
+					</div>
+					<div class="input-control">
+						<label for="call-tel" class="label-input">Телефон для связи</label>
+						<input type="tel" name="Телефон" placeholder="+7 (---) --- ----" id="call-tel" class="input" />
+					</div>
+					<div class="form-footer">
+						<input type="checkbox" id="call-policy" class="d-none form-policy-input" />
+						<label for="call-policy" class="form-policy-label"><span>Подтверждаю, что согласен/согласна с
+								<a href="#">политикой конфиденциальности</a></span></label>
+						<button class="btn-s">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="brands-modal">
+		<div class="modal-dialog brands">
+			<div class="modal-content modal__body">
+				<h3 class="h3 mb-4">Бренды</h3>
+				<div data-bs-dismiss="modal" class="modal__close">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-close"></use>
+					</svg>
+				</div>
+				<div class="d-flex align-items-center flex-wrap justify-content-between gap-2">
+					<form action="#" class="form-search brands__form-search">
+						<input type="text" placeholder="Поиск" class="input _min" />
+						<button class="btn-rect">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-search"></use>
+							</svg>
+						</button>
+					</form>
+					<div class="pagination mt-0 gap-0">
+						<a href="#" class="pagination__btn _disabled">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+							</svg>
+						</a>
+						<a href="#" class="pagination__btn _active">0-9</a>
+						<a href="#" class="pagination__btn">A</a>
+						<a href="#" class="pagination__btn">B</a>
+						<a href="#" class="pagination__btn">C</a>
+						<a href="#" class="pagination__btn">D</a>
+						<div class="pagination__btn">...</div>
+						<a href="#" class="pagination__btn">А-Я</a>
+						<a href="#" class="pagination__btn">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="brands__body _scrollbar">
+					<div class="brands__row">
+						<div class="brands__count">0-9</div>
+						<div class="brands__grid">
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="brands__row">
+						<div class="brands__count">A</div>
+						<div class="brands__grid">
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="brands__row">
+						<div class="brands__count">B</div>
+						<div class="brands__grid">
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="brands__row">
+						<div class="brands__count">C</div>
+						<div class="brands__grid">
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="brands__row">
+						<div class="brands__count">D</div>
+						<div class="brands__grid">
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="bg-dark-deep text-white sect-p">
+			<div class="container">
+				<div class="footer__grid">
+					<div class="footer__item">
+						<h4 class="h4 mb-4">Компания</h4>
+						<ul class="list footer__list">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Магазины</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Сертификаты и лицензии</a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h4 class="h4 mb-4">Покупателям</h4>
+						<ul class="list footer__list">
+							<li><a href="#">Сервис и поддержка</a></li>
+							<li><a href="#">Оплата и доставка</a></li>
+							<li><a href="#">Оптовым клиентам</a></li>
+							<li><a href="#">Отзывы о компании</a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h4 class="h4 mb-4">Свяжитесь с нами</h4>
+						<ul class="list footer__list">
+							<li><a href="tel:88005518070">8 (800) 551-80-70</a></li>
+							<li><a href="mailto:shop@svetomuz.ru">shop@svetomuz.ru</a></li>
+							<li>
+								<button data-bs-toggle="modal" data-bs-target="#call-modal" class="btn-reset footer__btn-call text-start">
+									Заказать обратный звонок
+								</button>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h4 class="h5 mb-4">Мы в социальных сетях</h4>
+						<div class="footer__social">
+							<a href="#" target="_blank" class="footer__social-btn">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-vk"></use>
+								</svg>
+							</a>
+							<a href="#" target="_blank" class="footer__social-btn">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-yt"></use>
+								</svg>
+							</a>
+							<a href="#" target="_blank" class="footer__social-btn">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="footer__bottom-wrapper">
+					<div class="footer__copyright">2025 © УК "Свет и Музыка"</div>
+					<ul class="list footer__bottom-list">
+						<li><a href="#">Пользовательское соглашение</a></li>
+						<li><a href="#">Договор оферты</a></li>
+					</ul>
+					<div class="footer__logo-wrapper">
+						<a href="/" class="footer__logo">
+							<img src="img/logo.svg" alt="image" />
+						</a>
+						<ul class="list footer__bottom-list">
+							<li><a href="#">Реквизиты организации</a></li>
+						</ul>
+					</div>
+					<div class="footer__dev">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-settings"></use>
+						</svg>
+						<span>
+							Разработка сайта –
+							<a href="https://xn--80adei2bu.xn--p1ai/" target="_blank">
+								Вангер.рф</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="tab-bar">
+		<div class="container">
+			<div class="tab-bar__wrapper">
+				<a href="#" class="nav-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-home"></use>
+					</svg>
+					<span>Главная</span>
+				</a>
+				<a href="#" class="nav-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-catalog"></use>
+					</svg>
+					<span>Каталог</span>
+				</a>
+				<a href="#" class="nav-btn _stroke">
+					<div class="nav-btn__number">2</div>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+					</svg>
+					<span>Избранное</span>
+				</a>
+				<a href="#" class="nav-btn">
+					<div class="nav-btn__number">2</div>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+					</svg>
+					<span>Корзина</span>
+				</a>
+				<a href="#" class="nav-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-profile"></use>
+					</svg>
+					<span>Войти</span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="./files/bootstrap/bootstrap.min.js?_v=20250707154939"></script>
+	<script src="./files/swiper/swiper.min.js?_v=20250707154939"></script>
+	<script src="./files/fancybox/fancybox.min.js?_v=20250707154939"></script>
+
+	<script src="js/app.min.js?_v=20250707154939"></script>
+</body>
+
+</html>

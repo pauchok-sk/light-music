@@ -118,3 +118,143 @@
     object-fit: cover;
   }
 }
+
+.card-product-line {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  @include laptop-min {
+    align-items: start;
+    gap: 20px;
+  }
+  @include tablet-min {
+    gap: 10px;
+  }
+  &__gallery {
+    @include flex-center;
+    width: 240px;
+    aspect-ratio: 1/1;
+    border: 1px solid var(--gray-3);
+    flex-shrink: 0;
+    border-radius: 12px;
+    @include laptop-min {
+      position: sticky;
+      top: 20px;
+    }
+    @include tablet-min {
+      width: 80px;
+    }
+  }
+  &__body {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 30px;
+    @include laptop-min {
+      align-items: start;
+      flex-direction: column;
+      gap: 20px;
+    }
+    @include tablet-min {
+      gap: 10px;
+    }
+  }
+  &__info {
+    flex: 1;
+  }
+  &__title {
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--primary);
+    }
+    @include tablet-min {
+      font-size: 16px;
+      line-height: 125%;
+    }
+  }
+  &__more {
+    display: block;
+    width: fit-content;
+    font-size: 13px;
+    line-height: 154%;
+    color: var(--primary);
+    @include hover {
+      text-decoration: underline;
+    }
+  }
+  &__price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    @include tablet-min {
+      font-size: 16px;
+      line-height: 125%;
+    }
+  }
+  &__old-price {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 187%;
+    text-decoration: line-through;
+    color: var(--gray-4);
+
+    @include tablet-min {
+      font-size: 13px;
+      line-height: 123%;
+    }
+  }
+  &__btn-like {
+    @include flex-center;
+    width: 60px;
+    min-height: 48px;
+    color: transparent;
+
+    transition: color 0.2s ease;
+
+    @include hover {
+      svg {
+        stroke: var(--pink);
+      }
+    }
+    @include tablet-min {
+      width: 40px;
+      min-height: 40px;
+    }
+
+    &._active {
+      color: var(--pink);
+      svg {
+        stroke: var(--pink);
+      }
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--gray-4);
+
+      transition: stroke 0.2s ease;
+    }
+  }
+}
+
+.product-reklam-line {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 240px;
+
+  @include tablet {
+    height: 200px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

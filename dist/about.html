@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>pauchoo0k</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250707154939" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/bootstrap/bootstrap.min.css?_v=20250707154939">
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250707154939">
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250707154939">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250707154939" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<div class="header-line">
+		<div class="container">
+			<div class="d-none d-lg-flex align-items-center xl-gap-4 gap-3">
+				<div class="header-line__location">
+					<div class="header-line__location-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-location"></use>
+						</svg>
+						<span>Улан-Удэ</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+						</svg>
+					</div>
+				</div>
+				<ul class="list d-flex xl-gap-4 gap-3 header-line__list">
+					<li><a href="#">Магазины</a></li>
+					<li><a href="#">Оплата и доставка</a></li>
+					<li><a href="#">Сервис и поддержка</a></li>
+					<li><a href="#">Оптовым клиентам</a></li>
+				</ul>
+				<div class="header-line__contacts ms-auto d-flex align-items-center xl-gap-4 gap-3">
+					<a href="tel:88005518070" class="header-line__contacts-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+						</svg>
+						<span>8 (800) 551-80-70</span>
+					</a>
+					<div data-bs-toggle="modal" data-bs-target="#connect-modal" class="header-line__contacts-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-chat"></use>
+						</svg>
+						<span>Напишите нам</span>
+					</div>
+				</div>
+			</div>
+			<div class="header-line__text d-lg-none text-center">
+				Музыкальные инструменты и оборудование
+			</div>
+		</div>
+	</div>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<div class="d-flex align-items-center gap-xl-3 gap-2 header__logo-wrapper">
+					<a href="/" class="header__logo">
+						<img src="img/logo.svg" alt="logo" />
+					</a>
+					<span class="header__logo-descr d-none d-sm-block">Музыкальные инструменты и оборудование</span>
+				</div>
+				<div class="d-none d-lg-flex gap-2">
+					<button class="btn-s header__btn-catalog" id="btn-catalog">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-catalog"></use>
+						</svg>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+						<span>Каталог</span>
+					</button>
+					<form action="#" class="form-search">
+						<input type="text" placeholder="Поиск" class="input" />
+						<button class="btn-rect">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-search"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+				<div class="d-none d-lg-flex gap-2">
+					<a href="#" class="nav-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-profile"></use>
+						</svg>
+						<span>Войти</span>
+					</a>
+					<a href="#" class="nav-btn _stroke">
+						<div class="nav-btn__number">2</div>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+						</svg>
+						<span>Избранное</span>
+					</a>
+					<a href="#" class="nav-btn">
+						<div class="nav-btn__number">2</div>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+						</svg>
+						<span>Корзина</span>
+					</a>
+				</div>
+				<ul class="list d-flex d-lg-none">
+					<li>
+						<a href="#" class="header__mob-btn">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-location"></use>
+							</svg>
+							<span>Новосибирск</span>
+						</a>
+					</li>
+					<li>
+						<a href="tel:88005518070" class="header__mob-btn">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="header-search">
+		<div class="container">
+			<form action="#" class="form-search">
+				<input type="text" placeholder="Поиск" class="input" />
+				<button class="btn-rect">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-search"></use>
+					</svg>
+				</button>
+			</form>
+		</div>
+	</div>
+	<div class="header-categories">
+		<div class="container">
+			<div class="swiper header-categories__slider">
+				<div class="swiper-wrapper">
+					<a href="#" class="swiper-slide d-flex align-items-center gap-2 w-fit header-categories__slide">
+						<img src="img/sound.svg" alt="icon" />
+						<span>Звук</span>
+					</a>
+					<a href="#" class="swiper-slide d-flex align-items-center gap-2 w-fit header-categories__slide">
+						<img src="img/sound.svg" alt="icon" />
+						<span>Свет и спецэффекты</span>
+					</a>
+					<a href="#" class="swiper-slide d-flex align-items-center gap-2 w-fit header-categories__slide">
+						<img src="img/sound.svg" alt="icon" />
+						<span>Музыкальные инструменты</span>
+					</a>
+					<a href="#" class="swiper-slide d-flex align-items-center gap-2 w-fit header-categories__slide">
+						<img src="img/sound.svg" alt="icon" />
+						<span>Видео</span>
+					</a>
+					<a href="#" class="swiper-slide d-flex align-items-center gap-2 w-fit header-categories__slide">
+						<img src="img/sound.svg" alt="icon" />
+						<span>Стойки и кейсы</span>
+					</a>
+					<a href="#" class="swiper-slide d-flex align-items-center gap-2 w-fit header-categories__slide">
+						<img src="img/sound.svg" alt="icon" />
+						<span>Коммутация</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="catalog" id="catalog">
+		<div class="catalog__wrapper">
+			<div class="catalog__menu">
+				<a data-tab-catalog="tab-1" href="#" class="catalog__menu-btn">
+					<img src="img/sound.svg" alt="icon" />
+					<span>Звук</span>
+				</a>
+				<a data-tab-catalog="tab-2" href="#" class="catalog__menu-btn">
+					<img src="img/sound.svg" alt="icon" />
+					<span>Свет и спецэффекты</span>
+				</a>
+				<a data-tab-catalog="tab-3" href="#" class="catalog__menu-btn">
+					<img src="img/sound.svg" alt="icon" />
+					<span>Музыкальные инструменты</span>
+				</a>
+				<a data-tab-catalog="tab-4" href="#" class="catalog__menu-btn _active">
+					<img src="img/sound.svg" alt="icon" />
+					<span>Видео</span>
+				</a>
+				<a data-tab-catalog="tab-5" href="#" class="catalog__menu-btn">
+					<img src="img/sound.svg" alt="icon" />
+					<span>Стойки и кейсы</span>
+				</a>
+				<a data-tab-catalog="tab-6" href="#" class="catalog__menu-btn">
+					<img src="img/sound.svg" alt="icon" />
+					<span>Коммутация</span>
+				</a>
+			</div>
+			<div data-tab-catalog-content="tab-1" class="catalog__tab">
+				<div class="catalog__body">
+					<div class="catalog__body-inside">
+						<div class="d-flex flex-wrap mb-4 gap-4">
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+						</div>
+						<h2 class="h1 mb-3">Звук</h2>
+						<p class="text mb-4">
+							В разделе «Видеооборудование» вы найдёте всё для профессиональной
+							съёмки и трансляций. Выбирайте оборудование для съёмки клипов,
+							концертов или онлайн-выступлений – и пусть ваш контент звучит и
+							выглядит безупречно!
+						</p>
+						<div class="catalog__categories">
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="catalog__btn-more">
+							<span class="btn-text">Все товары раздела</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div data-tab-catalog-content="tab-2" class="catalog__tab">
+				<div class="catalog__body">
+					<div class="catalog__body-inside">
+						<div class="d-flex flex-wrap mb-4 gap-4">
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+						</div>
+						<h2 class="h1 mb-3">Свет</h2>
+						<p class="text mb-4">
+							В разделе «Видеооборудование» вы найдёте всё для профессиональной
+							съёмки и трансляций. Выбирайте оборудование для съёмки клипов,
+							концертов или онлайн-выступлений – и пусть ваш контент звучит и
+							выглядит безупречно!
+						</p>
+						<div class="catalog__categories">
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="catalog__btn-more">
+							<span class="btn-text">Все товары раздела</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div data-tab-catalog-content="tab-3" class="catalog__tab">
+				<div class="catalog__body">
+					<div class="catalog__body-inside">
+						<div class="d-flex flex-wrap mb-4 gap-4">
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+						</div>
+						<h2 class="h1 mb-3">Музыка</h2>
+						<p class="text mb-4">
+							В разделе «Видеооборудование» вы найдёте всё для профессиональной
+							съёмки и трансляций. Выбирайте оборудование для съёмки клипов,
+							концертов или онлайн-выступлений – и пусть ваш контент звучит и
+							выглядит безупречно!
+						</p>
+						<div class="catalog__categories">
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="catalog__btn-more">
+							<span class="btn-text">Все товары раздела</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div data-tab-catalog-content="tab-4" class="catalog__tab _active">
+				<div class="catalog__body">
+					<div class="catalog__body-inside">
+						<div class="d-flex flex-wrap mb-4 gap-4">
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+						</div>
+						<h2 class="h1 mb-3">Видеооборудование</h2>
+						<p class="text mb-4">
+							В разделе «Видеооборудование» вы найдёте всё для профессиональной
+							съёмки и трансляций. Выбирайте оборудование для съёмки клипов,
+							концертов или онлайн-выступлений – и пусть ваш контент звучит и
+							выглядит безупречно!
+						</p>
+						<div class="catalog__categories">
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="catalog__btn-more">
+							<span class="btn-text">Все товары раздела</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div data-tab-catalog-content="tab-5" class="catalog__tab">
+				<div class="catalog__body">
+					<div class="catalog__body-inside">
+						<div class="d-flex flex-wrap mb-4 gap-4">
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+						</div>
+						<h2 class="h1 mb-3">Стойки</h2>
+						<p class="text mb-4">
+							В разделе «Видеооборудование» вы найдёте всё для профессиональной
+							съёмки и трансляций. Выбирайте оборудование для съёмки клипов,
+							концертов или онлайн-выступлений – и пусть ваш контент звучит и
+							выглядит безупречно!
+						</p>
+						<div class="catalog__categories">
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="catalog__btn-more">
+							<span class="btn-text">Все товары раздела</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div data-tab-catalog-content="tab-6" class="catalog__tab">
+				<div class="catalog__body">
+					<div class="catalog__body-inside">
+						<div class="d-flex flex-wrap mb-4 gap-4">
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+							<a href="#" target="_blank" class="catalog__brand-btn">
+								<img src="img/catalog-img.jpg" alt="image" />
+							</a>
+						</div>
+						<h2 class="h1 mb-3">Коммутация</h2>
+						<p class="text mb-4">
+							В разделе «Видеооборудование» вы найдёте всё для профессиональной
+							съёмки и трансляций. Выбирайте оборудование для съёмки клипов,
+							концертов или онлайн-выступлений – и пусть ваш контент звучит и
+							выглядит безупречно!
+						</p>
+						<div class="catalog__categories">
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">
+										LCD Видеостены и Профессиональные дисплеи
+									</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+							<a href="#" class="category-card">
+								<img src="img/category.jpg" alt="image" class="category-card__img" />
+								<div class="category-card__body text-center">
+									<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+									<div class="sm-text">123 товаров</div>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="catalog__btn-more">
+							<span class="btn-text">Все товары раздела</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<main>
+
+		<section class="intro">
+			<div class="container">
+				<div class="breadcrumbs">
+					<a href="#">Главная</a>
+					<span>О компании</span>
+				</div>
+				<img src="img/intro-about.jpg" alt="image" class="intro__img">
+			</div>
+		</section>
+		<section class="sect-m">
+			<div class="container">
+				<h1 class="md-h1 h3 mb-4">О компании</h1>
+				<div class="text max-w-115">
+					<p>
+						«Свет и Музыка» – крупная сеть магазинов профессионального музыкального и сценического оборудования. Мы работаем с 1997 года и представлены в 12 городах России.
+					</p>
+					<p>
+						У нас есть всё для музыкантов и мероприятий: инструменты, звуковое и световое оборудование, готовые решения для клубов, ресторанов, театров и других площадок. Наши специалисты помогут подобрать технику, сделают проект «под ключ» и проведут монтаж.
+					</p>
+					<p>
+						Дарим скидки, сертификаты, бесплатно доставляем крупные заказы по городу. Участвуем в концертах, фестивалях и проводим мастер-классы с известными музыкантами.
+					</p>
+					<p>
+						Мы ценим каждого клиента и гарантируем качество оборудования!
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="s-history sect-p bg-gray-1">
+			<div class="container">
+				<h2 class="h3 md-h2 mb-4">История</h2>
+				<div class="s-history__wrapper tabs">
+					<div class="s-history__nav">
+						<div data-tab-btn="tab-1" class="s-history__nav-btn _active">
+							<div>1</div>
+							<span>1997 год</span>
+						</div>
+						<div data-tab-btn="tab-2" class="s-history__nav-btn">
+							<div>2</div>
+							<span>2005 год</span>
+						</div>
+						<div data-tab-btn="tab-3" class="s-history__nav-btn">
+							<div>3</div>
+							<span>2010 год</span>
+						</div>
+						<div data-tab-btn="tab-4" class="s-history__nav-btn">
+							<div>4</div>
+							<span>2015 год</span>
+						</div>
+						<div data-tab-btn="tab-5" class="s-history__nav-btn">
+							<div>5</div>
+							<span>2025 год</span>
+						</div>
+					</div>
+					<div class="s-history__content">
+						<div data-tab="tab-1" class="_active">
+							<div class="s-history__tab-body">
+								<h4 class="h4 mb-2">
+									Открытие первого магазина «Свет и Музыка» в Иркутске
+								</h4>
+								<div class="text">
+									<p>
+										«Свет и Музыка» – крупная сеть магазинов профессионального
+										музыкального и сценического оборудования. Мы работаем с 1997
+										года и представлены в 12 городах России.
+									</p>
+									<p>
+										У нас есть всё для музыкантов и мероприятий: инструменты,
+										звуковое и световое оборудование, готовые решения для клубов,
+										ресторанов, театров и других площадок. Наши специалисты помогут
+										подобрать технику, сделают проект «под ключ» и проведут монтаж.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div data-tab="tab-2">
+							<div class="s-history__tab-body">
+								<h4 class="h4 mb-2">
+									Открытие первого магазина «Свет и Музыка» в Иркутске 2
+								</h4>
+								<div class="text">
+									<p>
+										«Свет и Музыка» – крупная сеть магазинов профессионального
+										музыкального и сценического оборудования. Мы работаем с 1997
+										года и представлены в 12 городах России.
+									</p>
+									<p>
+										У нас есть всё для музыкантов и мероприятий: инструменты,
+										звуковое и световое оборудование, готовые решения для клубов,
+										ресторанов, театров и других площадок. Наши специалисты помогут
+										подобрать технику, сделают проект «под ключ» и проведут монтаж.
+									</p>
+									<p>
+										У нас есть всё для музыкантов и мероприятий: инструменты,
+										звуковое и световое оборудование, готовые решения для клубов,
+										ресторанов, театров и других площадок. Наши специалисты помогут
+										подобрать технику, сделают проект «под ключ» и проведут монтаж.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div data-tab="tab-3">
+							<div class="s-history__tab-body">
+								<h4 class="h4 mb-2">
+									Открытие первого магазина «Свет и Музыка» в Иркутске 3
+								</h4>
+								<div class="text">
+									<p>
+										«Свет и Музыка» – крупная сеть магазинов профессионального
+										музыкального и сценического оборудования. Мы работаем с 1997
+										года и представлены в 12 городах России.
+									</p>
+									<p>
+										У нас есть всё для музыкантов и мероприятий: инструменты,
+										звуковое и световое оборудование, готовые решения для клубов,
+										ресторанов, театров и других площадок. Наши специалисты помогут
+										подобрать технику, сделают проект «под ключ» и проведут монтаж.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div data-tab="tab-4">
+							<div class="s-history__tab-body">
+								<h4 class="h4 mb-2">
+									Открытие первого магазина «Свет и Музыка» в Иркутске 4
+								</h4>
+								<div class="text">
+									<p>
+										«Свет и Музыка» – крупная сеть магазинов профессионального
+										музыкального и сценического оборудования. Мы работаем с 1997
+										года и представлены в 12 городах России.
+									</p>
+									<p>
+										У нас есть всё для музыкантов и мероприятий: инструменты,
+										звуковое и световое оборудование, готовые решения для клубов,
+										ресторанов, театров и других площадок. Наши специалисты помогут
+										подобрать технику, сделают проект «под ключ» и проведут монтаж.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div data-tab="tab-5">
+							<div class="s-history__tab-body">
+								<h4 class="h4 mb-2">
+									Открытие первого магазина «Свет и Музыка» в Иркутске 5
+								</h4>
+								<div class="text">
+									<p>
+										«Свет и Музыка» – крупная сеть магазинов профессионального
+										музыкального и сценического оборудования. Мы работаем с 1997
+										года и представлены в 12 городах России.
+									</p>
+									<p>
+										У нас есть всё для музыкантов и мероприятий: инструменты,
+										звуковое и световое оборудование, готовые решения для клубов,
+										ресторанов, театров и других площадок. Наши специалисты помогут
+										подобрать технику, сделают проект «под ключ» и проведут монтаж.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s-production sect-m">
+			<div class="container">
+				<div class="s-production__wrapper max-w-115">
+					<div class="d-flex align-items-center justify-content-between mb-4">
+						<h2 class="md-h2 h3 m-0">Собственное производство</h2>
+						<a href="#" target="_blank" class="btn-s _gray d-md-flex d-none">
+							<span>Подробнее на сайте asiamusic.ru</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="text">
+						<p>
+							Наша фабрика располагается в г. Иркутске, и фортепианный цех
+							насчитывает 4 500 кв. м. площадей, оснащенных современными станками и
+							необходимым технологическим оборудованием. Мы извлекаем преимущество
+							из местоположения своей фабрики. Особое внимание уделяется
+							изготовлению футора, материалом для которого служат твёрдые породы
+							древесины, произрастающей в уникальном и экологически чистом районе
+							озера Байкал. Здесь наши специалисты вручную отбирают экземпляры для
+							производства.
+						</p>
+						<h4 class="h4">Производственные мощности</h4>
+						<p>
+							Производственные мощности расположены единым комплексом на территории
+							Иркутской области и занимают площадь более 17,7 тыс. кв. м. Здесь
+							изготавливаются профессиональные акустические системы, кресла
+							зрительного зала, одежда и механика сцены, фортепиано "Соната".
+						</p>
+					</div>
+					<a href="#" target="_blank" class="btn-s _gray d-md-none mt-4">
+						<span>Подробнее на сайте asiamusic.ru</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<img src="img/production.jpg" alt="image" class="w-full d-block mt-4" />
+			<div class="bg-primary text-white py-5">
+				<div class="container">
+					<div class="text max-w-115">
+						<h4 class="h4">Цеха и оборудование</h4>
+						<p>
+							На сегодняшний день производственные линии фабрики "Азия Мьюзик
+							Компани" оснащены современными итальянскими станками и всем
+							необходимым технологическим оборудованием.
+						</p>
+					</div>
+					<div class="position-relative mt-4 mt-md-5">
+						<div class="slider-btn _dark _prev">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+							</svg>
+						</div>
+						<div class="slider-btn _dark _next">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</div>
+						<div class="swiper s-production__slider">
+							<div class="swiper-wrapper">
+								<a href="img/production-slide.jpg" data-fancybox="production" class="swiper-slide s-production__slide">
+									<img src="img/production-slide.jpg" alt="image" />
+								</a>
+								<a href="img/production-slide.jpg" data-fancybox="production" class="swiper-slide s-production__slide">
+									<img src="img/production-slide.jpg" alt="image" />
+								</a>
+								<a href="img/production-slide.jpg" data-fancybox="production" class="swiper-slide s-production__slide">
+									<img src="img/production-slide.jpg" alt="image" />
+								</a>
+								<a href="img/production-slide.jpg" data-fancybox="production" class="swiper-slide s-production__slide">
+									<img src="img/production-slide.jpg" alt="image" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="slider-pagination _pink"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-services sect-m">
+			<div class="container">
+				<div class="max-w-115">
+					<h2 class="md-h2 h3 mb-4">Услуги</h2>
+					<div class="text">
+						<p>
+							Магазин «Свет и Музыка» предлагает полный спектр услуг для музыкантов,
+							артистов и организаторов мероприятий: продажа музыкальных инструментов,
+							профессионального звукового и светового оборудования, разработка и
+							реализация проектов любой сложности «под ключ» (включая проектирование,
+							монтаж и пусконаладку), бесплатные консультации по подбору техники,
+							тестирование оборудования, гарантийное и постгарантийное обслуживание, а
+							также бесплатная доставка крупногабаритных заказов в черте города. Мы
+							работаем с ведущими брендами и предлагаем специальные условия для наших
+							клиентов – скидки, акции и подарочные сертификаты.
+						</p>
+					</div>
+					<div class="s-services__grid">
+						<div class="s-services__item">
+							<img src="img/service-icon.svg" alt="icon" class="s-services__item-icon">
+							<span>Проектирование и монтаж</span>
+						</div>
+						<div class="s-services__item">
+							<img src="img/service-icon.svg" alt="icon" class="s-services__item-icon">
+							<span>Сервис и поддержка</span>
+						</div>
+						<div class="s-services__item">
+							<img src="img/service-icon.svg" alt="icon" class="s-services__item-icon">
+							<span>Концертный департамент</span>
+						</div>
+						<div class="s-services__item">
+							<img src="img/service-icon.svg" alt="icon" class="s-services__item-icon">
+							<span>Оснащение Кинотеатров</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-certificates sect-p bg-gray-1">
+			<div class="container">
+				<div class="d-flex align-items-center gap-4 mb-md-4 mb-3">
+					<h2 class="md-h2 h3 m-0">Сертификаты и лицензии</h2>
+					<a href="#" class="btn-s _gray d-md-flex d-none">
+						<span>Перейти в раздел</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="position-relative">
+					<div class="slider-btn _prev">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+						</svg>
+					</div>
+					<div class="slider-btn _next">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</div>
+					<div class="swiper s-certificates__slider">
+						<div class="swiper-wrapper">
+							<a href="img/catalog-category.jpg" data-fancybox="certificates" class="swiper-slide card-certificate">
+								<img src="img/catalog-category.jpg" alt="image" class="card-certificate__img" />
+								<div class="card-certificate__body">
+									<h5 class="card-certificate__title">Название сертификата</h5>
+									<div class="card-certificate__weight">129.2 кб</div>
+								</div>
+							</a>
+							<a href="img/catalog-category.jpg" data-fancybox="certificates" class="swiper-slide card-certificate">
+								<img src="img/catalog-category.jpg" alt="image" class="card-certificate__img" />
+								<div class="card-certificate__body">
+									<h5 class="card-certificate__title">
+										Название сертификата Название сертификата Название сертификата
+									</h5>
+									<div class="card-certificate__weight">129.2 кб</div>
+								</div>
+							</a>
+							<a href="img/catalog-category.jpg" data-fancybox="certificates" class="swiper-slide card-certificate">
+								<img src="img/catalog-category.jpg" alt="image" class="card-certificate__img" />
+								<div class="card-certificate__body">
+									<h5 class="card-certificate__title">
+										Название сертификата Название сертификата Название сертификата
+										Название сертификата Название сертификата Название сертификата
+									</h5>
+									<div class="card-certificate__weight">129.2 кб</div>
+								</div>
+							</a>
+							<a href="img/catalog-category.jpg" data-fancybox="certificates" class="swiper-slide card-certificate">
+								<img src="img/catalog-category.jpg" alt="image" class="card-certificate__img" />
+								<div class="card-certificate__body">
+									<h5 class="card-certificate__title">Название сертификата</h5>
+									<div class="card-certificate__weight">129.2 кб</div>
+								</div>
+							</a>
+							<a href="img/catalog-category.jpg" data-fancybox="certificates" class="swiper-slide card-certificate">
+								<img src="img/catalog-category.jpg" alt="image" class="card-certificate__img" />
+								<div class="card-certificate__body">
+									<h5 class="card-certificate__title">
+										Название сертификата Название сертификата Название сертификата
+									</h5>
+									<div class="card-certificate__weight">129.2 кб</div>
+								</div>
+							</a>
+							<a href="img/catalog-category.jpg" data-fancybox="certificates" class="swiper-slide card-certificate">
+								<img src="img/catalog-category.jpg" alt="image" class="card-certificate__img" />
+								<div class="card-certificate__body">
+									<h5 class="card-certificate__title">
+										Название сертификата Название сертификата Название сертификата
+										Название сертификата Название сертификата Название сертификата
+									</h5>
+									<div class="card-certificate__weight">129.2 кб</div>
+								</div>
+							</a>
+							<a href="img/catalog-category.jpg" data-fancybox="certificates" class="swiper-slide card-certificate">
+								<img src="img/catalog-category.jpg" alt="image" class="card-certificate__img" />
+								<div class="card-certificate__body">
+									<h5 class="card-certificate__title">Название сертификата</h5>
+									<div class="card-certificate__weight">129.2 кб</div>
+								</div>
+							</a>
+							<a href="img/catalog-category.jpg" data-fancybox="certificates" class="swiper-slide card-certificate">
+								<img src="img/catalog-category.jpg" alt="image" class="card-certificate__img" />
+								<div class="card-certificate__body">
+									<h5 class="card-certificate__title">
+										Название сертификата Название сертификата Название сертификата
+									</h5>
+									<div class="card-certificate__weight">129.2 кб</div>
+								</div>
+							</a>
+							<a href="img/catalog-category.jpg" data-fancybox="certificates" class="swiper-slide card-certificate">
+								<img src="img/catalog-category.jpg" alt="image" class="card-certificate__img" />
+								<div class="card-certificate__body">
+									<h5 class="card-certificate__title">
+										Название сертификата Название сертификата Название сертификата
+										Название сертификата Название сертификата Название сертификата
+									</h5>
+									<div class="card-certificate__weight">129.2 кб</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="btn-s _gray d-md-none mt-4">
+					<span>Перейти в раздел</span>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+					</svg>
+				</a>
+			</div>
+		</section>
+
+		<section class="s-reviews sect-m">
+			<div class="container">
+				<div class="d-flex align-items-center gap-4 mb-md-4 mb-3">
+					<h2 class="md-h2 h3 m-0">Отзывы</h2>
+					<a href="#" class="btn-s _gray d-md-flex d-none">
+						<span>Все отзывы</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="position-relative">
+					<div class="slider-btn _prev">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+						</svg>
+					</div>
+					<div class="slider-btn _next">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</div>
+					<div class="swiper s-reviews__slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide card-review">
+								<div class="sm-text text-gray-4 mb-md-4 mb-3">30.03.2023</div>
+								<div class="text card-review__content">
+									Установлена хорошая так называемая репетиционная механика. Лично я
+									изъянов нигде не нашел. Взаимодействие узлов и деталей,
+									звуковоспроизведение – на хорошем уровне. Элементы выполнены из
+									норвежской ели самого высокого качества, как правило такая
+									древесина заготавливается в горных экологически чистых районах.
+									Также меня приятно удивил способ закрепления модератора. Обычно
+									модератор достаточно хлопотно снимать, в данном случае он
+									снимается просто и без лишних усилий. На молоточках стоит
+									маркировка немецкого производителя высокого качества, да и на
+									ощупь сразу понятно, что это настоящая качественная овечья шерсть.
+									Звучание инструмента мягкое, чистый звук удара по струне и,
+									соответственно, резонанс. Отсутствуют резкие шлепающие или
+									лязгающие призвуки. Достойная протяженность звучания одной
+									отдельно взятой ноты. Динамика звука также приятно удивляет:
+									позволяет тонко извлекать тихие ноты и прекрасно выдает громкий
+									звук.
+								</div>
+								<div class="card-review__more-btn">Развернуть</div>
+								<div class="card-review__author">
+									<img src="img/avatar.jpg" alt="avatar" class="card-review__author-avatar" />
+									<div>
+										<div class="card-review__author-name">
+											Филатов Владимир Владимирович
+										</div>
+										<div class="sm-text mt-1 text-gray-4">Эксперт Росохранкультуры</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide card-review">
+								<div class="sm-text text-gray-4 mb-md-4 mb-3">30.03.2023</div>
+								<div class="text card-review__content">
+									Установлена хорошая так называемая репетиционная механика. Лично я
+									изъянов нигде не нашел. Взаимодействие узлов и деталей,
+									звуковоспроизведение – на хорошем уровне. Элементы выполнены из
+									норвежской ели самого высокого качества, как правило такая
+									древесина заготавливается в горных экологически чистых районах.
+									Также меня приятно удивил способ закрепления модератора. Обычно
+									модератор достаточно хлопотно снимать, в данном случае он
+									снимается просто и без лишних усилий. На молоточках стоит
+									маркировка немецкого производителя высокого качества, да и на
+									ощупь сразу понятно, что это настоящая качественная овечья шерсть.
+									Звучание инструмента мягкое, чистый звук удара по струне и,
+									соответственно, резонанс. Отсутствуют резкие шлепающие или
+									лязгающие призвуки. Достойная протяженность звучания одной
+									отдельно взятой ноты. Динамика звука также приятно удивляет:
+									позволяет тонко извлекать тихие ноты и прекрасно выдает громкий
+									звук.
+								</div>
+								<div class="card-review__more-btn">Развернуть</div>
+								<div class="card-review__author">
+									<img src="img/avatar.jpg" alt="avatar" class="card-review__author-avatar" />
+									<div>
+										<div class="card-review__author-name">
+											Филатов Владимир Владимирович
+										</div>
+										<div class="sm-text mt-1 text-gray-4">Эксперт Росохранкультуры</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide card-review">
+								<div class="sm-text text-gray-4 mb-md-4 mb-3">30.03.2023</div>
+								<div class="text card-review__content">
+									Установлена хорошая так называемая репетиционная механика. Лично я
+									изъянов нигде не нашел. Взаимодействие узлов и деталей,
+									звуковоспроизведение – на хорошем уровне. Элементы выполнены из
+									норвежской ели самого высокого качества, как правило такая
+									древесина заготавливается в горных экологически чистых районах.
+									Также меня приятно удивил способ закрепления модератора. Обычно
+									модератор достаточно хлопотно снимать, в данном случае он
+									снимается просто и без лишних усилий. На молоточках стоит
+									маркировка немецкого производителя высокого качества, да и на
+									ощупь сразу понятно, что это настоящая качественная овечья шерсть.
+									Звучание инструмента мягкое, чистый звук удара по струне и,
+									соответственно, резонанс. Отсутствуют резкие шлепающие или
+									лязгающие призвуки. Достойная протяженность звучания одной
+									отдельно взятой ноты. Динамика звука также приятно удивляет:
+									позволяет тонко извлекать тихие ноты и прекрасно выдает громкий
+									звук.
+								</div>
+								<div class="card-review__more-btn">Развернуть</div>
+								<div class="card-review__author">
+									<img src="img/avatar.jpg" alt="avatar" class="card-review__author-avatar" />
+									<div>
+										<div class="card-review__author-name">
+											Филатов Владимир Владимирович
+										</div>
+										<div class="sm-text mt-1 text-gray-4">Эксперт Росохранкультуры</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide card-review">
+								<div class="sm-text text-gray-4 mb-md-4 mb-3">30.03.2023</div>
+								<div class="text card-review__content">
+									Установлена хорошая так называемая репетиционная механика. Лично я
+									изъянов нигде не нашел. Взаимодействие узлов и деталей,
+									звуковоспроизведение – на хорошем уровне. Элементы выполнены из
+									норвежской ели самого высокого качества, как правило такая
+									древесина заготавливается в горных экологически чистых районах.
+									Также меня приятно удивил способ закрепления модератора. Обычно
+									модератор достаточно хлопотно снимать, в данном случае он
+									снимается просто и без лишних усилий. На молоточках стоит
+									маркировка немецкого производителя высокого качества, да и на
+									ощупь сразу понятно, что это настоящая качественная овечья шерсть.
+									Звучание инструмента мягкое, чистый звук удара по струне и,
+									соответственно, резонанс. Отсутствуют резкие шлепающие или
+									лязгающие призвуки. Достойная протяженность звучания одной
+									отдельно взятой ноты. Динамика звука также приятно удивляет:
+									позволяет тонко извлекать тихие ноты и прекрасно выдает громкий
+									звук.
+								</div>
+								<div class="card-review__more-btn">Развернуть</div>
+								<div class="card-review__author">
+									<img src="img/avatar.jpg" alt="avatar" class="card-review__author-avatar" />
+									<div>
+										<div class="card-review__author-name">
+											Филатов Владимир Владимирович
+										</div>
+										<div class="sm-text mt-1 text-gray-4">Эксперт Росохранкультуры</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide card-review">
+								<div class="sm-text text-gray-4 mb-md-4 mb-3">30.03.2023</div>
+								<div class="text card-review__content">
+									Установлена хорошая так называемая репетиционная механика. Лично я
+									изъянов нигде не нашел. Взаимодействие узлов и деталей,
+									звуковоспроизведение – на хорошем уровне. Элементы выполнены из
+									норвежской ели самого высокого качества, как правило такая
+									древесина заготавливается в горных экологически чистых районах.
+									Также меня приятно удивил способ закрепления модератора. Обычно
+									модератор достаточно хлопотно снимать, в данном случае он
+									снимается просто и без лишних усилий. На молоточках стоит
+									маркировка немецкого производителя высокого качества, да и на
+									ощупь сразу понятно, что это настоящая качественная овечья шерсть.
+									Звучание инструмента мягкое, чистый звук удара по струне и,
+									соответственно, резонанс. Отсутствуют резкие шлепающие или
+									лязгающие призвуки. Достойная протяженность звучания одной
+									отдельно взятой ноты. Динамика звука также приятно удивляет:
+									позволяет тонко извлекать тихие ноты и прекрасно выдает громкий
+									звук.
+								</div>
+								<div class="card-review__more-btn">Развернуть</div>
+								<div class="card-review__author">
+									<img src="img/avatar.jpg" alt="avatar" class="card-review__author-avatar" />
+									<div>
+										<div class="card-review__author-name">
+											Филатов Владимир Владимирович
+										</div>
+										<div class="sm-text mt-1 text-gray-4">Эксперт Росохранкультуры</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide card-review">
+								<div class="sm-text text-gray-4 mb-md-4 mb-3">30.03.2023</div>
+								<div class="text card-review__content">
+									Установлена хорошая так называемая репетиционная механика. Лично я
+									изъянов нигде не нашел. Взаимодействие узлов и деталей,
+									звуковоспроизведение – на хорошем уровне. Элементы выполнены из
+									норвежской ели самого высокого качества, как правило такая
+									древесина заготавливается в горных экологически чистых районах.
+									Также меня приятно удивил способ закрепления модератора. Обычно
+									модератор достаточно хлопотно снимать, в данном случае он
+									снимается просто и без лишних усилий. На молоточках стоит
+									маркировка немецкого производителя высокого качества, да и на
+									ощупь сразу понятно, что это настоящая качественная овечья шерсть.
+									Звучание инструмента мягкое, чистый звук удара по струне и,
+									соответственно, резонанс. Отсутствуют резкие шлепающие или
+									лязгающие призвуки. Достойная протяженность звучания одной
+									отдельно взятой ноты. Динамика звука также приятно удивляет:
+									позволяет тонко извлекать тихие ноты и прекрасно выдает громкий
+									звук.
+								</div>
+								<div class="card-review__more-btn">Развернуть</div>
+								<div class="card-review__author">
+									<img src="img/avatar.jpg" alt="avatar" class="card-review__author-avatar" />
+									<div>
+										<div class="card-review__author-name">
+											Филатов Владимир Владимирович
+										</div>
+										<div class="sm-text mt-1 text-gray-4">Эксперт Росохранкультуры</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="btn-s _gray d-md-none mt-4">
+					<span>Все отзывы</span>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+					</svg>
+				</a>
+			</div>
+		</section>
+
+
+	</main>
+	<div class="modal fade" id="connect-modal">
+		<div class="modal-dialog">
+			<div class="modal-content modal__body">
+				<h3 class="h3">Напишите нам</h3>
+				<div data-bs-dismiss="modal" class="modal__close">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-close"></use>
+					</svg>
+				</div>
+				<p class="text mb-md-5 mb-3 mt-md-4 mt-2 opacity-80">
+					Мы свяжемся с вами в ближайшее время и ответим на все интересующие
+					вопросы.
+				</p>
+				<form action="#" class="modal__form">
+					<div class="input-control">
+						<label for="connect-name" class="label-input">Ваше имя</label>
+						<input type="text" name="Имя" id="connect-name" class="input" />
+					</div>
+					<div class="input-control">
+						<label for="connect-email-tel" class="label-input">Email или Телефон для связи</label>
+						<input type="text" name="Email или Телефон" id="connect-email-tel" class="input" />
+					</div>
+					<div class="input-control">
+						<label for="connect-question" class="label-input">Ваш вопрос</label>
+						<textarea rows="4" class="input"></textarea>
+					</div>
+					<div class="form-footer">
+						<input type="checkbox" id="connect-policy" class="d-none form-policy-input" />
+						<label for="connect-policy" class="form-policy-label"><span>Подтверждаю, что согласен/согласна с
+								<a href="#">политикой конфиденциальности</a></span></label>
+						<button class="btn-s">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="call-modal">
+		<div class="modal-dialog">
+			<div class="modal-content modal__body">
+				<h3 class="h3">Заказать обратный звонок</h3>
+				<div data-bs-dismiss="modal" class="modal__close">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-close"></use>
+					</svg>
+				</div>
+				<p class="text mb-md-5 mb-3 mt-md-4 mt-2 opacity-80">
+					Мы свяжемся с вами в ближайшее время и ответим на все интересующие
+					вопросы.
+				</p>
+				<form action="#" class="modal__call-form">
+					<div class="input-control">
+						<label for="call-name" class="label-input">Ваше имя</label>
+						<input type="text" name="Имя" id="call-name" placeholder="Фамилия Имя Отчество" class="input" />
+					</div>
+					<div class="input-control">
+						<label for="call-tel" class="label-input">Телефон для связи</label>
+						<input type="tel" name="Телефон" placeholder="+7 (---) --- ----" id="call-tel" class="input" />
+					</div>
+					<div class="form-footer">
+						<input type="checkbox" id="call-policy" class="d-none form-policy-input" />
+						<label for="call-policy" class="form-policy-label"><span>Подтверждаю, что согласен/согласна с
+								<a href="#">политикой конфиденциальности</a></span></label>
+						<button class="btn-s">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="brands-modal">
+		<div class="modal-dialog brands">
+			<div class="modal-content modal__body">
+				<h3 class="h3 mb-4">Бренды</h3>
+				<div data-bs-dismiss="modal" class="modal__close">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-close"></use>
+					</svg>
+				</div>
+				<div class="d-flex align-items-center flex-wrap justify-content-between gap-2">
+					<form action="#" class="form-search brands__form-search">
+						<input type="text" placeholder="Поиск" class="input _min" />
+						<button class="btn-rect">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-search"></use>
+							</svg>
+						</button>
+					</form>
+					<div class="pagination mt-0 gap-0">
+						<a href="#" class="pagination__btn _disabled">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+							</svg>
+						</a>
+						<a href="#" class="pagination__btn _active">0-9</a>
+						<a href="#" class="pagination__btn">A</a>
+						<a href="#" class="pagination__btn">B</a>
+						<a href="#" class="pagination__btn">C</a>
+						<a href="#" class="pagination__btn">D</a>
+						<div class="pagination__btn">...</div>
+						<a href="#" class="pagination__btn">А-Я</a>
+						<a href="#" class="pagination__btn">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="brands__body _scrollbar">
+					<div class="brands__row">
+						<div class="brands__count">0-9</div>
+						<div class="brands__grid">
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="brands__row">
+						<div class="brands__count">A</div>
+						<div class="brands__grid">
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="brands__row">
+						<div class="brands__count">B</div>
+						<div class="brands__grid">
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="brands__row">
+						<div class="brands__count">C</div>
+						<div class="brands__grid">
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="brands__row">
+						<div class="brands__count">D</div>
+						<div class="brands__grid">
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+							<ul class="list brands__list">
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+								<li><a href="#">0BrandName</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="bg-dark-deep text-white sect-p">
+			<div class="container">
+				<div class="footer__grid">
+					<div class="footer__item">
+						<h4 class="h4 mb-4">Компания</h4>
+						<ul class="list footer__list">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Магазины</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Сертификаты и лицензии</a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h4 class="h4 mb-4">Покупателям</h4>
+						<ul class="list footer__list">
+							<li><a href="#">Сервис и поддержка</a></li>
+							<li><a href="#">Оплата и доставка</a></li>
+							<li><a href="#">Оптовым клиентам</a></li>
+							<li><a href="#">Отзывы о компании</a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h4 class="h4 mb-4">Свяжитесь с нами</h4>
+						<ul class="list footer__list">
+							<li><a href="tel:88005518070">8 (800) 551-80-70</a></li>
+							<li><a href="mailto:shop@svetomuz.ru">shop@svetomuz.ru</a></li>
+							<li>
+								<button data-bs-toggle="modal" data-bs-target="#call-modal" class="btn-reset footer__btn-call text-start">
+									Заказать обратный звонок
+								</button>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h4 class="h5 mb-4">Мы в социальных сетях</h4>
+						<div class="footer__social">
+							<a href="#" target="_blank" class="footer__social-btn">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-vk"></use>
+								</svg>
+							</a>
+							<a href="#" target="_blank" class="footer__social-btn">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-yt"></use>
+								</svg>
+							</a>
+							<a href="#" target="_blank" class="footer__social-btn">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="footer__bottom-wrapper">
+					<div class="footer__copyright">2025 © УК "Свет и Музыка"</div>
+					<ul class="list footer__bottom-list">
+						<li><a href="#">Пользовательское соглашение</a></li>
+						<li><a href="#">Договор оферты</a></li>
+					</ul>
+					<div class="footer__logo-wrapper">
+						<a href="/" class="footer__logo">
+							<img src="img/logo.svg" alt="image" />
+						</a>
+						<ul class="list footer__bottom-list">
+							<li><a href="#">Реквизиты организации</a></li>
+						</ul>
+					</div>
+					<div class="footer__dev">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-settings"></use>
+						</svg>
+						<span>
+							Разработка сайта –
+							<a href="https://xn--80adei2bu.xn--p1ai/" target="_blank">
+								Вангер.рф</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="tab-bar">
+		<div class="container">
+			<div class="tab-bar__wrapper">
+				<a href="#" class="nav-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-home"></use>
+					</svg>
+					<span>Главная</span>
+				</a>
+				<a href="#" class="nav-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-catalog"></use>
+					</svg>
+					<span>Каталог</span>
+				</a>
+				<a href="#" class="nav-btn _stroke">
+					<div class="nav-btn__number">2</div>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+					</svg>
+					<span>Избранное</span>
+				</a>
+				<a href="#" class="nav-btn">
+					<div class="nav-btn__number">2</div>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+					</svg>
+					<span>Корзина</span>
+				</a>
+				<a href="#" class="nav-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-profile"></use>
+					</svg>
+					<span>Войти</span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="./files/bootstrap/bootstrap.min.js?_v=20250707154939"></script>
+	<script src="./files/swiper/swiper.min.js?_v=20250707154939"></script>
+	<script src="./files/fancybox/fancybox.min.js?_v=20250707154939"></script>
+
+	<script src="js/app.min.js?_v=20250707154939"></script>
+</body>
+
+</html>
