@@ -143,3 +143,57 @@ textarea.input {
     flex-shrink: 0;
   }
 }
+
+.input-radio {
+  display: none;
+
+  &:checked + label {
+    &::before {
+      border-color: var(--pink);
+    }
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+.label-radio {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 0px;
+
+  font-size: 16px;
+  line-height: 175%;
+  transition: color .2s ease;
+
+  @include hover {
+    color: var(--primary);
+  }
+  @include pressed {
+    color: var(--primary-hover);
+  }
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--gray-3);
+  
+    transition: border-color .2s ease;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--pink);
+    left: 5px;
+    opacity: 0;
+
+    transition: opacity .2s ease;
+  }
+}

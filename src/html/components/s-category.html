@@ -407,12 +407,67 @@
                 <use xlink:href="img/icons/icons.svg#icon-filter"></use>
               </svg>
             </div>
-            <div class="sort-btn">
-              <span>Сначала популярные</span>
-              <svg>
-                <use xlink:href="img/icons/icons.svg#icon-sort"></use>
-              </svg>
+            <div class="dropdown sort-filters-dropdown">
+              <div class="dropdown-btn sort-btn">
+                <span>Сначала популярные</span>
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-sort"></use>
+                </svg>
+              </div>
+              <div class="dropdown__body sort-filters">
+                <div class="sort-filters__head">
+                  <span class="sort-filters__head-title"
+                    >Сначала показывать</span
+                  >
+                  <div class="dropdown-close">
+                    <svg>
+                      <use xlink:href="img/icons/icons.svg#icon-close"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="sort-filters__body">
+                  <input
+                    type="radio"
+                    id="radio-sort-1"
+                    name="radio-sort"
+                    checked
+                    class="input-radio"
+                  />
+                  <label for="radio-sort-1" class="label-radio"
+                    >Популярные</label
+                  >
+                  <input
+                    type="radio"
+                    id="radio-sort-2"
+                    name="radio-sort"
+                    class="input-radio"
+                  />
+                  <label for="radio-sort-2" class="label-radio">Дешёвые</label>
+                  <input
+                    type="radio"
+                    id="radio-sort-3"
+                    name="radio-sort"
+                    class="input-radio"
+                  />
+                  <label for="radio-sort-3" class="label-radio">Дорогие</label>
+                  <input
+                    type="radio"
+                    id="radio-sort-4"
+                    name="radio-sort"
+                    class="input-radio"
+                  />
+                  <label for="radio-sort-4" class="label-radio">По акции</label>
+                  <input
+                    type="radio"
+                    id="radio-sort-5"
+                    name="radio-sort"
+                    class="input-radio"
+                  />
+                  <label for="radio-sort-5" class="label-radio">Новые</label>
+                </div>
+              </div>
             </div>
+            <div class="sort-filters-overlay"></div>
             <div class="view">
               <a href="#" class="view__btn">
                 <svg>

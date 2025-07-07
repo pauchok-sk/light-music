@@ -1,9 +1,18 @@
 .sort-btn {
   display: flex;
   align-items: center;
+  cursor: pointer;
   gap: 10px;
   font-size: 16px;
   line-height: 175%;
+
+  transition: color 0.2s ease;
+  @include hover {
+    color: var(--primary);
+  }
+  @include pressed {
+    color: var(--primary-hover);
+  }
 
   @include tablet {
     justify-content: center;
@@ -25,6 +34,56 @@
     }
   }
 }
+.sort-filters-dropdown {
+  @include tablet {
+    &._open + .sort-filters-overlay {
+      opacity: 0.5;
+      visibility: visible;
+    }
+  }
+}
+.sort-filters {
+  width: 300px !important;
+  @include tablet {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 140 !important;
+  }
+  &__head {
+    @include flex-between;
+    padding: 12px 20px;
+    gap: 10px;
+  }
+  &__head-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+  }
+  &__body {
+    padding: 10px 20px 20px 20px;
+
+    .label-radio {
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--gray-2);
+      }
+    }
+  }
+}
+.sort-filters-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 130;
+
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
+}
+
 .view {
   display: flex;
   padding: 4px;
