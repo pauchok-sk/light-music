@@ -1,23 +1,50 @@
 .s-product {
+  @include tablet {
+    overflow: hidden;
+  }
   &__body {
     display: flex;
     align-items: start;
     gap: 20px;
+
+    @include laptop-middle {
+      flex-wrap: wrap;
+    }
   }
   &__wrapper {
     display: flex;
+    align-items: start;
     gap: 20px;
     flex: 1;
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 40px;
+      width: 100%;
+    }
   }
   &__gallery {
+    position: sticky;
+    top: 100px;
     display: flex;
     gap: 20px;
     flex-shrink: 0;
+    @include tablet {
+      width: 500px;
+      max-width: 100%;
+      margin: 0 auto;
+      position: static;
+    }
   }
   &__wrapper-thumb {
     position: relative;
     width: 110px;
     flex-shrink: 0;
+    @include desktop {
+      width: 90px;
+    }
+    @include laptop {
+      display: none;
+    }
 
     .slider-btn {
       &._prev {
@@ -35,13 +62,16 @@
   }
   &__thumb-slider {
     height: 500px;
+    @include desktop {
+      height: 425px;
+    }
   }
   &__thumb-slide {
     display: flex !important;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 110px !important;
+    aspect-ratio: 1/1;
     cursor: pointer;
     border: 1px solid var(--gray-3);
     box-sizing: border-box;
@@ -67,6 +97,34 @@
     margin: 0 !important;
     height: auto;
     aspect-ratio: 1/1;
+    @include desktop {
+      width: 425px !important;
+    }
+    @include laptop-min {
+      width: 300px !important;
+    }
+    @include tablet {
+      width: 100% !important;
+    }
+    @include tablet-min {
+      border-left: none;
+      border-right: none;
+      width: calc(100% + 20px) !important;
+      margin: 0 -10px !important;
+      height: 375px !important;
+    }
+
+    .slider-pagination {
+      position: absolute;
+      z-index: 10;
+      left: 0;
+      right: 0;
+      bottom: 12px;
+
+      @media (min-width: 1366px) {
+        display: none;
+      }
+    }
   }
   &__slide {
     display: flex !important;
@@ -80,6 +138,39 @@
       height: auto;
       max-height: 100%;
       object-fit: contain;
+    }
+  }
+  &__main-like {
+    @include flex-center;
+    width: 40px;
+    height: 40px;
+    color: transparent;
+
+    transition: color 0.2s ease;
+
+    &._active {
+      color: var(--primary);
+      svg {
+        stroke: var(--primary);
+      }
+    }
+
+    @include hover {
+      svg {
+        width: 20px;
+        height: 20px;
+        stroke: var(--primary);
+        transition: stroke 0.2s ease;
+      }
+    }
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--gray-4);
     }
   }
   &__btn-more {
@@ -105,16 +196,41 @@
     display: block;
     margin-top: 30px;
     max-width: 125px;
+    @include tablet {
+      margin-top: 20px;
+    }
   }
   &__nav {
+    position: sticky;
+    top: 100px;
+    width: 370px;
+    flex-shrink: 0;
+    @include laptop-middle {
+      position: static;
+      width: 100%;
+    }
+    @include tablet-min {
+      width: calc(100% + 20px);
+      margin-left: -10px;
+    }
+  }
+  &__nav-body {
     border-radius: 20px;
     padding: 30px 40px;
     background: var(--gray-1);
+    width: 100%;
+    @include tablet {
+      padding: 30px;
+    }
   }
   &__price {
     font-weight: 600;
     font-size: 24px;
     line-height: 125%;
+    @include tablet {
+      font-size: 20px;
+      line-height: 130%;
+    }
   }
   &__old-price {
     font-weight: 600;
@@ -122,5 +238,29 @@
     line-height: 130%;
     text-decoration: line-through;
     color: var(--gray-4);
+    @include tablet {
+      font-size: 16px;
+      line-height: 125%;
+    }
+  }
+  &__btn-like {
+    @include hover {
+      svg {
+        stroke: var(--primary);
+      }
+    }
+    svg {
+      color: transparent;
+      stroke: var(--gray-4);
+      transition: stroke 0.2s ease;
+    }
+  }
+  &__nav-consult {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include tablet {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 }

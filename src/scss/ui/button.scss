@@ -37,7 +37,7 @@
     border-color: var(--primary);
   }
   @include tablet {
-    padding: 8px 15px;
+    padding: 9px 15px;
     border-radius: 4px;
   }
 
@@ -231,6 +231,21 @@
     color: var(--primary-hover);
   }
 
+  @include tablet {
+    padding: 10px 16px;
+    border-radius: 4px;
+  }
+
+  &._primary {
+    color: var(--primary);
+    @include hover {
+      color: var(--black);
+    }
+    @include pressed {
+      color: var(--primary-hover);
+    }
+  }
+
   svg {
     width: 20px;
     height: 20px;
@@ -254,7 +269,10 @@
   color: var(--gray-4);
   text-align: center;
 
-  transition: color .2s ease, background-color .2s ease, border-color .2s ease;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 
   @include hover {
     border-color: var(--primary);

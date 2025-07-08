@@ -288,8 +288,8 @@ export default function sliders() {
       slidesPerView: 4,
       direction: "vertical",
       navigation: {
-        prevEl: ".s-product .slider-btn._prev",
-        nextEl: ".s-product .slider-btn._next",
+        prevEl: ".s-product__gallery .slider-btn._prev",
+        nextEl: ".s-product__gallery .slider-btn._next",
       },
     });
 
@@ -298,8 +298,11 @@ export default function sliders() {
       spaceBetween: 20,
       slidesPerView: 1,
       thumbs: {
-        swiper: thumbSwiper
-      }
+        swiper: thumbSwiper,
+      },
+      pagination: {
+        el: ".s-product__gallery .slider-pagination",
+      },
       // navigation: {
       //   prevEl: ".s-reviews .slider-btn._prev",
       //   nextEl: ".s-reviews .slider-btn._next",

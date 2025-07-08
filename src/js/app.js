@@ -10,6 +10,7 @@ import sliders from "./files/sliders.js";
 import spoller from "./files/spoller.js";
 import tabs from "./files/tabs.js";
 import tabsCatalog from "./files/tabsCatalog.js";
+import toggleText from "./files/toggleText.js";
 
 spoller();
 catalogChange();
@@ -22,6 +23,7 @@ reviewsOpen();
 filters();
 dropdown();
 productCounter();
+toggleText();
 
 Fancybox.bind("[data-fancybox]", {});
 
