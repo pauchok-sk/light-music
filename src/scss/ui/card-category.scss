@@ -7,6 +7,10 @@
   transition: color 0.2s ease;
   @include hover {
     color: var(--primary);
+
+    .card-category__img {
+      opacity: 0.7;
+    }
   }
 
   &__img {
@@ -14,6 +18,7 @@
     aspect-ratio: 1/1;
     border-radius: 20px;
     object-fit: cover;
+    transition: opacity .2s ease;
   }
   &__title {
     font-weight: 600;

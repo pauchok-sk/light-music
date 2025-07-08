@@ -28,6 +28,9 @@
       visibility 0.4s ease;
   }
 }
+.dropdown-btn {
+  cursor: pointer;
+}
 .dropdown-close {
   @include flex-center;
   cursor: pointer;
