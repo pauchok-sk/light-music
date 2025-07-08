@@ -1,0 +1,917 @@
+<div class="header-line">
+	<div class="container">
+		<div class="d-none d-lg-flex align-items-center xl-gap-4 gap-3">
+			<div class="header-line__location">
+				<div class="header-line__location-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-location"></use>
+					</svg>
+					<span>Улан-Удэ</span>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+					</svg>
+				</div>
+			</div>
+			<ul class="list d-flex xl-gap-4 gap-3 header-line__list">
+				<li><a href="#">Магазины</a></li>
+				<li><a href="#">Оплата и доставка</a></li>
+				<li><a href="#">Сервис и поддержка</a></li>
+				<li><a href="#">Оптовым клиентам</a></li>
+			</ul>
+			<div class="header-line__contacts ms-auto d-flex align-items-center xl-gap-4 gap-3">
+				<a href="tel:88005518070" class="header-line__contacts-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+					</svg>
+					<span>8 (800) 551-80-70</span>
+				</a>
+				<div data-bs-toggle="modal" data-bs-target="#connect-modal" class="header-line__contacts-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-chat"></use>
+					</svg>
+					<span>Напишите нам</span>
+				</div>
+			</div>
+		</div>
+		<div class="header-line__text d-lg-none text-center">
+			Музыкальные инструменты и оборудование
+		</div>
+	</div>
+</div>
+
+<header class="header">
+	<div class="container">
+		<div class="header__wrapper">
+			<div class="d-flex align-items-center gap-xl-3 gap-2 header__logo-wrapper">
+				<a href="/" class="header__logo">
+					<img src="img/logo.svg" alt="logo" />
+				</a>
+				<span class="header__logo-descr d-none d-sm-block">Музыкальные инструменты и оборудование</span>
+			</div>
+			<div class="d-none d-lg-flex gap-2">
+				<button class="btn-s header__btn-catalog" id="btn-catalog">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-catalog"></use>
+					</svg>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-close"></use>
+					</svg>
+					<span>Каталог</span>
+				</button>
+				<form action="#" class="form-search">
+					<input type="text" placeholder="Поиск" class="input" />
+					<button class="btn-rect">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-search"></use>
+						</svg>
+					</button>
+				</form>
+			</div>
+			<div class="d-none d-lg-flex gap-2">
+				<a href="#" class="nav-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-profile"></use>
+					</svg>
+					<span>Войти</span>
+				</a>
+				<a href="#" class="nav-btn _stroke">
+					<div class="nav-btn__number">2</div>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+					</svg>
+					<span>Избранное</span>
+				</a>
+				<div class="dropdown">
+					<div class="nav-btn dropdown-btn">
+						<div class="nav-btn__number">2</div>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-cart"></use>
+						</svg>
+						<span>Корзина</span>
+					</div>
+					<div class="dropdown__body cart">
+						<div class="d-flex flex-column gap-2">
+							<a href="#" class="cart__product">
+								<div class="cart__product-gallery">
+									<img src="img/product.png" alt="image" />
+								</div>
+								<div class="cart__product-body">
+									<div class="cart__product-main">
+										<div class="cart__product-title mb-2">Название товара</div>
+										<div class="d-flex align-items-center gap-2">
+											<div class="cart__product-price">15 000 ₽</div>
+											<div class="cart__product-old-price">30 000 ₽</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="cart__product">
+								<div class="cart__product-gallery">
+									<img src="img/product.png" alt="image" />
+								</div>
+								<div class="cart__product-body">
+									<div class="cart__product-main">
+										<div class="cart__product-title mb-2">
+											Название товара Название товара Название товара Название
+										</div>
+										<div class="d-flex align-items-center gap-2">
+											<div class="cart__product-price">15 000 ₽</div>
+											<div class="cart__product-old-price">30 000 ₽</div>
+										</div>
+									</div>
+									<div class="cart__product-num">x2</div>
+								</div>
+							</a>
+							<a href="#" class="cart__product">
+								<div class="cart__product-gallery">
+									<img src="img/product.png" alt="image" />
+								</div>
+								<div class="cart__product-body">
+									<div class="cart__product-main">
+										<div class="cart__product-title mb-2">Название товара</div>
+										<div class="d-flex align-items-center gap-2">
+											<div class="cart__product-price">15 000 ₽</div>
+											<div class="cart__product-old-price">30 000 ₽</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="cart__content">И ещё N товаров в корзине</div>
+						<a href="#" class="cart__btn btn-s">Перейти в корзину</a>
+					</div>
+				</div>
+			</div>
+			<ul class="list d-flex d-lg-none">
+				<li>
+					<a href="#" class="header__mob-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-location"></use>
+						</svg>
+						<span>Новосибирск</span>
+					</a>
+				</li>
+				<li>
+					<a href="tel:88005518070" class="header__mob-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+<div class="header-search">
+	<div class="container">
+		<form action="#" class="form-search">
+			<input type="text" placeholder="Поиск" class="input" />
+			<button class="btn-rect">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-search"></use>
+				</svg>
+			</button>
+		</form>
+	</div>
+</div>
+<div class="header-categories">
+	<div class="container">
+		<div class="swiper header-categories__slider">
+			<div class="swiper-wrapper">
+				<a href="#" class="swiper-slide d-flex align-items-center gap-2 w-fit header-categories__slide">
+					<img src="img/sound.svg" alt="icon" />
+					<span>Звук</span>
+				</a>
+				<a href="#" class="swiper-slide d-flex align-items-center gap-2 w-fit header-categories__slide">
+					<img src="img/sound.svg" alt="icon" />
+					<span>Свет и спецэффекты</span>
+				</a>
+				<a href="#" class="swiper-slide d-flex align-items-center gap-2 w-fit header-categories__slide">
+					<img src="img/sound.svg" alt="icon" />
+					<span>Музыкальные инструменты</span>
+				</a>
+				<a href="#" class="swiper-slide d-flex align-items-center gap-2 w-fit header-categories__slide">
+					<img src="img/sound.svg" alt="icon" />
+					<span>Видео</span>
+				</a>
+				<a href="#" class="swiper-slide d-flex align-items-center gap-2 w-fit header-categories__slide">
+					<img src="img/sound.svg" alt="icon" />
+					<span>Стойки и кейсы</span>
+				</a>
+				<a href="#" class="swiper-slide d-flex align-items-center gap-2 w-fit header-categories__slide">
+					<img src="img/sound.svg" alt="icon" />
+					<span>Коммутация</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="catalog" id="catalog">
+	<div class="catalog__wrapper">
+		<div class="catalog__menu">
+			<a data-tab-catalog="tab-1" href="#" class="catalog__menu-btn">
+				<img src="img/sound.svg" alt="icon" />
+				<span>Звук</span>
+			</a>
+			<a data-tab-catalog="tab-2" href="#" class="catalog__menu-btn">
+				<img src="img/sound.svg" alt="icon" />
+				<span>Свет и спецэффекты</span>
+			</a>
+			<a data-tab-catalog="tab-3" href="#" class="catalog__menu-btn">
+				<img src="img/sound.svg" alt="icon" />
+				<span>Музыкальные инструменты</span>
+			</a>
+			<a data-tab-catalog="tab-4" href="#" class="catalog__menu-btn _active">
+				<img src="img/sound.svg" alt="icon" />
+				<span>Видео</span>
+			</a>
+			<a data-tab-catalog="tab-5" href="#" class="catalog__menu-btn">
+				<img src="img/sound.svg" alt="icon" />
+				<span>Стойки и кейсы</span>
+			</a>
+			<a data-tab-catalog="tab-6" href="#" class="catalog__menu-btn">
+				<img src="img/sound.svg" alt="icon" />
+				<span>Коммутация</span>
+			</a>
+		</div>
+		<div data-tab-catalog-content="tab-1" class="catalog__tab">
+			<div class="catalog__body">
+				<div class="catalog__body-inside">
+					<div class="d-flex flex-wrap mb-4 gap-4">
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+					</div>
+					<h2 class="h1 mb-3">Звук</h2>
+					<p class="text mb-4">
+						В разделе «Видеооборудование» вы найдёте всё для профессиональной
+						съёмки и трансляций. Выбирайте оборудование для съёмки клипов,
+						концертов или онлайн-выступлений – и пусть ваш контент звучит и
+						выглядит безупречно!
+					</p>
+					<div class="catalog__categories">
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">
+									LCD Видеостены и Профессиональные дисплеи
+								</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">
+									LCD Видеостены и Профессиональные дисплеи
+								</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">
+									LCD Видеостены и Профессиональные дисплеи
+								</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+					</div>
+					<a href="#" class="catalog__btn-more">
+						<span class="btn-text">Все товары раздела</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div data-tab-catalog-content="tab-2" class="catalog__tab">
+			<div class="catalog__body">
+				<div class="catalog__body-inside">
+					<div class="d-flex flex-wrap mb-4 gap-4">
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+					</div>
+					<h2 class="h1 mb-3">Свет</h2>
+					<p class="text mb-4">
+						В разделе «Видеооборудование» вы найдёте всё для профессиональной
+						съёмки и трансляций. Выбирайте оборудование для съёмки клипов,
+						концертов или онлайн-выступлений – и пусть ваш контент звучит и
+						выглядит безупречно!
+					</p>
+					<div class="catalog__categories">
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">
+									LCD Видеостены и Профессиональные дисплеи
+								</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">
+									LCD Видеостены и Профессиональные дисплеи
+								</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">
+									LCD Видеостены и Профессиональные дисплеи
+								</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+					</div>
+					<a href="#" class="catalog__btn-more">
+						<span class="btn-text">Все товары раздела</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div data-tab-catalog-content="tab-3" class="catalog__tab">
+			<div class="catalog__body">
+				<div class="catalog__body-inside">
+					<div class="d-flex flex-wrap mb-4 gap-4">
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+					</div>
+					<h2 class="h1 mb-3">Музыка</h2>
+					<p class="text mb-4">
+						В разделе «Видеооборудование» вы найдёте всё для профессиональной
+						съёмки и трансляций. Выбирайте оборудование для съёмки клипов,
+						концертов или онлайн-выступлений – и пусть ваш контент звучит и
+						выглядит безупречно!
+					</p>
+					<div class="catalog__categories">
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">
+									LCD Видеостены и Профессиональные дисплеи
+								</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">
+									LCD Видеостены и Профессиональные дисплеи
+								</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">
+									LCD Видеостены и Профессиональные дисплеи
+								</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+					</div>
+					<a href="#" class="catalog__btn-more">
+						<span class="btn-text">Все товары раздела</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div data-tab-catalog-content="tab-4" class="catalog__tab _active">
+			<div class="catalog__body">
+				<div class="catalog__body-inside">
+					<div class="d-flex flex-wrap mb-4 gap-4">
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+					</div>
+					<h2 class="h1 mb-3">Видеооборудование</h2>
+					<p class="text mb-4">
+						В разделе «Видеооборудование» вы найдёте всё для профессиональной
+						съёмки и трансляций. Выбирайте оборудование для съёмки клипов,
+						концертов или онлайн-выступлений – и пусть ваш контент звучит и
+						выглядит безупречно!
+					</p>
+					<div class="catalog__categories">
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">
+									LCD Видеостены и Профессиональные дисплеи
+								</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">
+									LCD Видеостены и Профессиональные дисплеи
+								</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">
+									LCD Видеостены и Профессиональные дисплеи
+								</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+					</div>
+					<a href="#" class="catalog__btn-more">
+						<span class="btn-text">Все товары раздела</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div data-tab-catalog-content="tab-5" class="catalog__tab">
+			<div class="catalog__body">
+				<div class="catalog__body-inside">
+					<div class="d-flex flex-wrap mb-4 gap-4">
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+					</div>
+					<h2 class="h1 mb-3">Стойки</h2>
+					<p class="text mb-4">
+						В разделе «Видеооборудование» вы найдёте всё для профессиональной
+						съёмки и трансляций. Выбирайте оборудование для съёмки клипов,
+						концертов или онлайн-выступлений – и пусть ваш контент звучит и
+						выглядит безупречно!
+					</p>
+					<div class="catalog__categories">
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">
+									LCD Видеостены и Профессиональные дисплеи
+								</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">
+									LCD Видеостены и Профессиональные дисплеи
+								</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">
+									LCD Видеостены и Профессиональные дисплеи
+								</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+					</div>
+					<a href="#" class="catalog__btn-more">
+						<span class="btn-text">Все товары раздела</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div data-tab-catalog-content="tab-6" class="catalog__tab">
+			<div class="catalog__body">
+				<div class="catalog__body-inside">
+					<div class="d-flex flex-wrap mb-4 gap-4">
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+						<a href="#" target="_blank" class="catalog__brand-btn">
+							<img src="img/catalog-img.jpg" alt="image" />
+						</a>
+					</div>
+					<h2 class="h1 mb-3">Коммутация</h2>
+					<p class="text mb-4">
+						В разделе «Видеооборудование» вы найдёте всё для профессиональной
+						съёмки и трансляций. Выбирайте оборудование для съёмки клипов,
+						концертов или онлайн-выступлений – и пусть ваш контент звучит и
+						выглядит безупречно!
+					</p>
+					<div class="catalog__categories">
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">
+									LCD Видеостены и Профессиональные дисплеи
+								</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">
+									LCD Видеостены и Профессиональные дисплеи
+								</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">
+									LCD Видеостены и Профессиональные дисплеи
+								</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">LED (Светодиодные) экраны</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+						<a href="#" class="category-card">
+							<img src="img/category.jpg" alt="image" class="category-card__img" />
+							<div class="category-card__body text-center">
+								<div class="h6 mb-2">Аксессуары для видеооборудования</div>
+								<div class="sm-text">123 товаров</div>
+							</div>
+						</a>
+					</div>
+					<a href="#" class="catalog__btn-more">
+						<span class="btn-text">Все товары раздела</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
