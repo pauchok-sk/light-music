@@ -3,6 +3,7 @@ import catalogChange from "./files/catalogChange.js";
 import dropdown from "./files/dropdown.js";
 import filters from "./files/filters.js";
 import headerScroll from "./files/headerScroll.js";
+import productCounter from "./files/productCounter.js";
 import reviewsOpen from "./files/reviewsOpen.js";
 import scrollables from "./files/scrollables.js";
 import sliders from "./files/sliders.js";
@@ -20,6 +21,7 @@ tabs();
 reviewsOpen();
 filters();
 dropdown();
+productCounter();
 
 Fancybox.bind("[data-fancybox]", {});
 

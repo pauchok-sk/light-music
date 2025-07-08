@@ -2,7 +2,8 @@
   font-size: 16px;
   line-height: 175%;
 
-  .h4, p {
+  .h4,
+  p {
     margin-bottom: 0;
     &:not(:last-child) {
       margin-bottom: 16px;
@@ -25,4 +26,11 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 125%;
+}
+
+@media (min-width: 768px) {
+  .text-md {
+    font-size: 16px !important;
+    line-height: 175% !important;
+  }
 }

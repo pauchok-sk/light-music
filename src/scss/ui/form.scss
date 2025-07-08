@@ -165,7 +165,7 @@ textarea.input {
 
   font-size: 16px;
   line-height: 175%;
-  transition: color .2s ease;
+  transition: color 0.2s ease;
 
   @include hover {
     color: var(--primary);
@@ -180,8 +180,8 @@ textarea.input {
     height: 20px;
     border-radius: 50%;
     border: 1px solid var(--gray-3);
-  
-    transition: border-color .2s ease;
+
+    transition: border-color 0.2s ease;
   }
   &::after {
     position: absolute;
@@ -193,6 +193,75 @@ textarea.input {
     left: 5px;
     opacity: 0;
 
-    transition: opacity .2s ease;
+    transition: opacity 0.2s ease;
+  }
+}
+
+.input-control-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  background-color: white;
+  border: 1px solid var(--gray-3);
+  border-radius: 8px;
+
+  .input-simple {
+    text-align: center;
+    flex: 1;
+  }
+}
+.input-counter {
+  @include flex-center;
+  position: relative;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  color: var(--gray-4);
+  transition: color 0.2s ease;
+
+  @include hover {
+    color: var(--primary);
+  }
+
+  &._disable {
+    pointer-events: none;
+    color: var(--gray-3);
+  }
+
+  &._minus {
+    &::after {
+      display: none;
+    }
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 2px;
+    border-radius: 3px;
+    background-color: currentColor;
+  }
+  &::after {
+    transform: rotate(90deg);
+  }
+}
+.input-simple {
+  border: none;
+  font-size: 16px;
+  line-height: 175%;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+
+  &[type="number"]::-webkit-inner-spin-button,
+  &[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  &[type="number"] {
+    -moz-appearance: textfield;
   }
 }

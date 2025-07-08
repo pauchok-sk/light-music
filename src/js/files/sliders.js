@@ -178,7 +178,6 @@ export default function sliders() {
         1600: {
           spaceBetween: 20,
           slidesPerView: 6,
-          
         },
         768: {
           spaceBetween: 20,
@@ -275,6 +274,39 @@ export default function sliders() {
           slidesPerView: 3,
         },
       },
+    });
+  }
+
+  const productSlider = document.querySelector(".s-product__slider");
+
+  if (productSlider) {
+    const thumbSlider = document.querySelector(".s-product__thumb-slider");
+
+    const thumbSwiper = new Swiper(thumbSlider, {
+      speed: 800,
+      spaceBetween: 20,
+      slidesPerView: 4,
+      direction: "vertical",
+      navigation: {
+        prevEl: ".s-product .slider-btn._prev",
+        nextEl: ".s-product .slider-btn._next",
+      },
+    });
+
+    const swiper = new Swiper(productSlider, {
+      speed: 800,
+      spaceBetween: 20,
+      slidesPerView: 1,
+      thumbs: {
+        swiper: thumbSwiper
+      }
+      // navigation: {
+      //   prevEl: ".s-reviews .slider-btn._prev",
+      //   nextEl: ".s-reviews .slider-btn._next",
+      // },
+      // autoplay: {
+      //   delay: 3200,
+      // },
     });
   }
 }

@@ -549,6 +549,66 @@ textarea.input {
   opacity: 0;
   transition: opacity .2s ease
 }
+.input-control-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  background-color: #fff;
+  border: 1px solid var(--gray-3);
+  border-radius: 8px
+}
+.input-control-counter .input-simple {
+  text-align: center;
+  flex: 1
+}
+.input-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  color: var(--gray-4);
+  transition: color .2s ease
+}
+.input-counter._disable {
+  pointer-events: none;
+  color: var(--gray-3)
+}
+.input-counter._minus::after {
+  display: none
+}
+.input-counter::after,
+.input-counter::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 2px;
+  border-radius: 3px;
+  background-color: currentColor
+}
+.input-counter::after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg)
+}
+.input-simple {
+  border: none;
+  font-size: 16px;
+  line-height: 175%;
+  padding: 0;
+  outline: 0;
+  background-color: rgba(0,0,0,0)
+}
+.input-simple[type=number]::-webkit-inner-spin-button,
+.input-simple[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0
+}
+.input-simple[type=number] {
+  -moz-appearance: textfield
+}
 .modal-dialog {
   width: 800px!important;
   max-width: calc(100% - 30px);
@@ -666,6 +726,9 @@ textarea.input {
 }
 .text-gray-4 {
   color: var(--gray-4)
+}
+.text-primary {
+  color: var(--primary)!important
 }
 .pt-6 {
   padding-top: 60px
@@ -1066,9 +1129,10 @@ textarea.input {
 }
 .breadcrumbs {
   display: flex;
-  flex-wrap: wrap;
   gap: 8px;
   padding: 30px 0;
+  overflow-x: auto;
+  white-space: nowrap;
   font-size: 13px;
   line-height: 154%
 }
@@ -2083,6 +2147,9 @@ a.pagination__btn:active {
 .s-news__btn {
   padding-left: 24px!important
 }
+.intro {
+  overflow: hidden
+}
 .intro__img {
   display: block;
   width: 100%;
@@ -2267,6 +2334,121 @@ a.pagination__btn:active {
   grid-template-columns: 1fr;
   gap: 40px
 }
+.s-product__body {
+  display: flex;
+  align-items: start;
+  gap: 20px
+}
+.s-product__wrapper {
+  display: flex;
+  gap: 20px;
+  flex: 1
+}
+.s-product__gallery {
+  display: flex;
+  gap: 20px;
+  flex-shrink: 0
+}
+.s-product__wrapper-thumb {
+  position: relative;
+  width: 110px;
+  flex-shrink: 0
+}
+.s-product__wrapper-thumb .slider-btn._prev {
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%,-50%) rotate(90deg);
+  transform: translate(-50%,-50%) rotate(90deg)
+}
+.s-product__wrapper-thumb .slider-btn._next {
+  right: 50%;
+  top: auto;
+  bottom: 0;
+  -webkit-transform: translate(50%,50%) rotate(90deg);
+  transform: translate(50%,50%) rotate(90deg)
+}
+.s-product__thumb-slider {
+  height: 500px
+}
+.s-product__thumb-slide {
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 110px!important;
+  cursor: pointer;
+  border: 1px solid var(--gray-3);
+  box-sizing: border-box;
+  transition: border-color .2s ease
+}
+.s-product__thumb-slide.swiper-slide-thumb-active {
+  border-color: var(--primary)
+}
+.s-product__thumb-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain
+}
+.s-product__slider {
+  width: 500px!important;
+  margin: 0!important;
+  height: auto;
+  aspect-ratio: 1/1
+}
+.s-product__slide {
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid var(--gray-3)
+}
+.s-product__slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain
+}
+.s-product__btn-more {
+  position: relative
+}
+.s-product__btn-more::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: currentColor;
+  opacity: 0;
+  transition: opacity .2s ease
+}
+.s-product__brand {
+  display: block;
+  margin-top: 30px;
+  max-width: 125px
+}
+.s-product__nav {
+  border-radius: 20px;
+  padding: 30px 40px;
+  background: var(--gray-1)
+}
+.s-product__price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 125%
+}
+.s-product__old-price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  text-decoration: line-through;
+  color: var(--gray-4)
+}
 .footer__grid {
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -2355,6 +2537,10 @@ a.pagination__btn:active {
   transition: color .2s ease
 }
 @media (min-width:768px) {
+  .text-md {
+    font-size: 16px!important;
+    line-height: 175%!important
+  }
   .md-h1 {
     font-weight: 600!important;
     font-size: 40px!important;
@@ -2730,6 +2916,11 @@ a.pagination__btn:active {
   }
   .product-reklam-line {
     height: 200px
+  }
+  .breadcrumbs {
+    margin: 0 -10px;
+    padding-left: 10px;
+    padding-right: 10px
   }
   .card-certificate {
     padding: 10px
@@ -3169,6 +3360,9 @@ a.pagination__btn:active {
   .label-radio:hover {
     color: var(--primary)
   }
+  .input-counter:hover {
+    color: var(--primary)
+  }
   .modal__close:hover {
     color: var(--primary)
   }
@@ -3307,6 +3501,12 @@ a.pagination__btn:active {
   .s-category__filters-btn:hover {
     color: var(--primary)
   }
+  .s-product__thumb-slide:hover {
+    border-color: var(--primary-hover)
+  }
+  .s-product__btn-more:hover::before {
+    opacity: 1
+  }
   .footer__list a:hover,
   .footer__list button:hover {
     opacity: .7
@@ -3372,6 +3572,9 @@ a.pagination__btn:active {
     color: var(--primary)
   }
   .label-radio:active {
+    color: var(--primary)
+  }
+  .input-counter:active {
     color: var(--primary)
   }
   .modal__close:active {
@@ -3511,6 +3714,12 @@ a.pagination__btn:active {
   }
   .s-category__filters-btn:active {
     color: var(--primary)
+  }
+  .s-product__thumb-slide:active {
+    border-color: var(--primary-hover)
+  }
+  .s-product__btn-more:active::before {
+    opacity: 1
   }
   .footer__list a:active,
   .footer__list button:active {
