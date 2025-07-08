@@ -1,5 +1,11 @@
 .s-news {
   overflow: hidden;
+  &__btn {
+    padding-left: 24px !important;
+    @include tablet {
+      padding: 10px 8px 10px 16px !important;
+    }
+  }
   &__slider {
     @include desktop {
       overflow: visible !important;

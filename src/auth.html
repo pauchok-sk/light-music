@@ -1,7 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   @@include('html/head.html',{ "title":"pauchoo0k" })
   <body class="body">
+    <div class="header-line">
+      <div class="container">
+        <div class="d-none d-lg-flex align-items-center xl-gap-4 gap-3">
+          <div class="header-line__location">
+            <div class="header-line__location-btn">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-location"></use>
+              </svg>
+              <span>Улан-Удэ</span>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
+          </div>
+          <ul class="list d-flex xl-gap-4 gap-3 header-line__list">
+            <li><a href="#">Магазины</a></li>
+            <li><a href="#">Оплата и доставка</a></li>
+            <li><a href="#">Сервис и поддержка</a></li>
+            <li><a href="#">Оптовым клиентам</a></li>
+          </ul>
+          <div
+            class="header-line__contacts ms-auto d-flex align-items-center xl-gap-4 gap-3"
+          >
+            <a href="tel:88005518070" class="header-line__contacts-btn">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-tel"></use>
+              </svg>
+              <span>8 (800) 551-80-70</span>
+            </a>
+            <div
+              data-bs-toggle="modal"
+              data-bs-target="#connect-modal"
+              class="header-line__contacts-btn"
+            >
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-chat"></use>
+              </svg>
+              <span>Напишите нам</span>
+            </div>
+          </div>
+        </div>
+        <div class="header-line__text d-lg-none text-center">
+          Музыкальные инструменты и оборудование
+        </div>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
@@ -77,7 +123,6 @@
       </div>
     </header>
     <main>
-      
       @@include('html/components/hero.html')
       @@include('html/components/s-rec.html',{"title": "Популярные товары"})
       @@include('html/components/s-reklam.html')
@@ -97,13 +142,16 @@
                 <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
               </svg>
             </div>
-            <div class="swiper reklam-slider s-reklam__slider" data-autoplay-delay="3000">
+            <div
+              class="swiper reklam-slider s-reklam__slider"
+              data-autoplay-delay="3000"
+            >
               <div class="swiper-wrapper">
                 <div
                   class="swiper-slide reklam-slider__slide"
                   style="
-                    background: url(&quot;@img/reklam-2.jpg&quot;) center / cover
-                      no-repeat;
+                    background: url(&quot;@img/reklam-2.jpg&quot;) center /
+                      cover no-repeat;
                   "
                 >
                   <div class="reklam-slider__slide-title">
@@ -113,15 +161,17 @@
                   <a href="#" class="btn-s mt-4 _white">
                     <span>Перейти в раздел</span>
                     <svg>
-                      <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+                      <use
+                        xlink:href="img/icons/icons.svg#icon-arrow-next"
+                      ></use>
                     </svg>
                   </a>
                 </div>
                 <div
                   class="swiper-slide reklam-slider__slide"
                   style="
-                    background: url(&quot;@img/reklam-2.jpg&quot;) center / cover
-                      no-repeat;
+                    background: url(&quot;@img/reklam-2.jpg&quot;) center /
+                      cover no-repeat;
                   "
                 >
                   <div class="reklam-slider__slide-title">
@@ -131,15 +181,17 @@
                   <a href="#" class="btn-s mt-4 _white">
                     <span>Перейти в раздел</span>
                     <svg>
-                      <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+                      <use
+                        xlink:href="img/icons/icons.svg#icon-arrow-next"
+                      ></use>
                     </svg>
                   </a>
                 </div>
                 <div
                   class="swiper-slide reklam-slider__slide"
                   style="
-                    background: url(&quot;@img/reklam-2.jpg&quot;) center / cover
-                      no-repeat;
+                    background: url(&quot;@img/reklam-2.jpg&quot;) center /
+                      cover no-repeat;
                   "
                 >
                   <div class="reklam-slider__slide-title">
@@ -149,15 +201,17 @@
                   <a href="#" class="btn-s mt-4 _white">
                     <span>Перейти в раздел</span>
                     <svg>
-                      <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+                      <use
+                        xlink:href="img/icons/icons.svg#icon-arrow-next"
+                      ></use>
                     </svg>
                   </a>
                 </div>
                 <div
                   class="swiper-slide reklam-slider__slide"
                   style="
-                    background: url(&quot;@img/reklam-2.jpg&quot;) center / cover
-                      no-repeat;
+                    background: url(&quot;@img/reklam-2.jpg&quot;) center /
+                      cover no-repeat;
                   "
                 >
                   <div class="reklam-slider__slide-title">
@@ -167,7 +221,9 @@
                   <a href="#" class="btn-s mt-4 _white">
                     <span>Перейти в раздел</span>
                     <svg>
-                      <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+                      <use
+                        xlink:href="img/icons/icons.svg#icon-arrow-next"
+                      ></use>
                     </svg>
                   </a>
                 </div>
@@ -179,7 +235,6 @@
       </section>
       @@include('html/components/s-about.html')
       @@include('html/components/s-news.html')
-
     </main>
     @@include('html/components/modals.html')
     <footer class="footer">

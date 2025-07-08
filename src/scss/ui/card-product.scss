@@ -9,6 +9,10 @@
     width: 100%;
     aspect-ratio: 1/1;
     padding-top: 34px;
+    transition: opacity .2s ease;
+    @include hover {
+      opacity: 0.7;
+    }
     @include tablet {
       order: 1;
       padding-top: 0;
@@ -18,6 +22,9 @@
       position: absolute;
       top: 0;
       left: 0;
+      @include tablet {
+        top: 7px;
+      }
     }
 
     img {
@@ -67,6 +74,7 @@
   &__cart-btn {
     @include tablet {
       width: 100%;
+      border-radius: 4px !important;
     }
   }
   &__btn-like {
@@ -89,7 +97,7 @@
     }
     @include tablet {
       position: absolute;
-      top: 8px;
+      top: 5px;
       right: 8px;
       width: 32px;
       height: 32px;
@@ -177,13 +185,28 @@
     }
   }
   &__more {
+    position: relative;
     display: block;
     width: fit-content;
     font-size: 13px;
     line-height: 154%;
     color: var(--primary);
+    
     @include hover {
-      text-decoration: underline;
+      &::before {
+        opacity: 1;
+      }
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: currentColor;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      opacity: 0;
+      height: 1px;
+      transition: opacity .2s ease;
     }
   }
   &__price {

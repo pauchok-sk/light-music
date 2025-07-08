@@ -15,6 +15,7 @@
     position: relative;
     @include tablet {
       padding: 20px;
+      border-radius: 12px !important;
     }
   }
   &__close {
