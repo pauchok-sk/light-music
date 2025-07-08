@@ -3,7 +3,9 @@ import catalogChange from "./files/catalogChange.js";
 import dropdown from "./files/dropdown.js";
 import filters from "./files/filters.js";
 import headerScroll from "./files/headerScroll.js";
+import mediaAdaptive from "./files/mediaAdaptive.js";
 import productCounter from "./files/productCounter.js";
+import productMoreTabs from "./files/productMoreTabs.js";
 import reviewsOpen from "./files/reviewsOpen.js";
 import scrollables from "./files/scrollables.js";
 import sliders from "./files/sliders.js";
@@ -24,6 +26,8 @@ filters();
 dropdown();
 productCounter();
 toggleText();
+mediaAdaptive();
+productMoreTabs();
 
 Fancybox.bind("[data-fancybox]", {});
 

@@ -11,15 +11,20 @@
       flex-wrap: wrap;
     }
   }
+  &__col {
+    flex: 1;
+    @include tablet {
+      width: 100%;
+    }
+  }
   &__wrapper {
     display: flex;
     align-items: start;
     gap: 20px;
-    flex: 1;
+    width: 100%;
     @include tablet {
       flex-wrap: wrap;
-      gap: 40px;
-      width: 100%;
+      gap: 0;
     }
   }
   &__gallery {
@@ -33,6 +38,7 @@
       max-width: 100%;
       margin: 0 auto;
       position: static;
+      margin-bottom: 30px;
     }
   }
   &__wrapper-thumb {
@@ -200,6 +206,22 @@
       margin-top: 20px;
     }
   }
+  &__anchors {
+    display: none;
+    gap: 4px;
+    width: 100%;
+    margin-top: 20px;
+    @include tablet {
+      display: flex;
+    }
+    .btn-s {
+      flex: 1;
+      border-radius: 8px !important;
+
+      font-size: 13px !important;
+      line-height: 154% !important;
+    }
+  }
   &__nav {
     position: sticky;
     top: 100px;
@@ -208,6 +230,7 @@
     @include laptop-middle {
       position: static;
       width: 100%;
+      margin-top: 30px;
     }
     @include tablet-min {
       width: calc(100% + 20px);
@@ -261,6 +284,91 @@
     @include tablet {
       padding-top: 10px;
       padding-bottom: 10px;
+    }
+  }
+  &__tabs {
+    margin-top: 60px;
+    @include laptop-middle {
+      margin-top: 30px;
+    }
+    @include tablet {
+      [data-tab] {
+        display: block !important;
+
+        &:not(:first-child) {
+          margin-top: 30px;
+          padding-top: 30px;
+          border-top: 1px solid var(--gray-3);
+        }
+      }
+
+      .sm-text {
+        @include overflowText(14);
+      }
+    }
+  }
+  &__tab-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+  }
+  &__specifications {
+  }
+  &__specifications-item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  &__specifications-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    margin-bottom: 10px;
+
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+
+    @include tablet {
+      font-size: 13px;
+      line-height: 123%;
+      margin-bottom: 20px;
+    }
+  }
+  &__specifications-row {
+    display: flex;
+    gap: 4px;
+    width: 100%;
+
+    font-size: 16px;
+    line-height: 175%;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    @include tablet {
+      font-size: 13px;
+      line-height: 154%;
+      flex-wrap: wrap;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    span {
+      @include tablet-min {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    div {
+      border-bottom: 1px dashed var(--gray-3);
+      flex: 1;
+      @include tablet-min {
+        display: none;
+      }
     }
   }
 }

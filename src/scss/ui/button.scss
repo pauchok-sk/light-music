@@ -41,6 +41,10 @@
     border-radius: 4px;
   }
 
+  &._min {
+    padding: 9px 15px;
+  }
+
   &._white {
     background-color: white;
     color: var(--black);
@@ -68,6 +72,13 @@
     }
     @include pressed {
       background-color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    &._active {
+      pointer-events: none;
+      background-color: var(--primary);
+      color: white;
       border-color: var(--primary);
     }
   }

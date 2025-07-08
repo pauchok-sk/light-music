@@ -1,14 +1,14 @@
 export default function toggleText() {
   $(".toggle-text").each(function (index, element) {
-    $(this).prevAll("p").not(':last').slideUp(0);
+    $(this).prevAll().not(':last').slideUp(0);
 
     $(this).click(function() {
       if (!$(this).hasClass("_active")) {
-        $(this).prevAll("p").slideDown(300)
+        $(this).prevAll().slideDown(300)
         $(this).addClass("_active");
         $(this).text("Скрыть");
       } else {
-        $(this).prevAll("p").not(':first').slideUp(300)
+        $(this).prevAll().not(':last').slideUp(300)
         $(this).removeClass("_active");
         $(this).text("Подробнее");
       }
