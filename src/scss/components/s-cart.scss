@@ -1,0 +1,457 @@
+.s-cart {
+  @include tablet {
+    overflow: hidden;
+  }
+
+  .input-radio {
+    &[disabled] + .s-cart__check-btn {
+      pointer-events: none;
+      background-color: transparent;
+      border-color: var(--gray-1);
+      color: var(--gray-3);
+    }
+    &:checked + .s-cart__check-btn {
+      background-color: var(--primary);
+      color: white;
+      &::before {
+        border-color: currentColor !important;
+      }
+      &::after {
+        background-color: currentColor !important;
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    gap: 50px;
+    @include laptop {
+      gap: 30px;
+    }
+    @include laptop-middle {
+      flex-wrap: wrap;
+    }
+    @include tablet-min {
+      margin: 0 -10px;
+    }
+  }
+  &__body {
+    flex: 1;
+    @include laptop-middle {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__products {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__product {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 24px 20px;
+    background-color: white;
+    border: 1px solid var(--gray-2);
+    border-radius: 20px;
+    box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.09);
+    @include laptop-min {
+      align-items: start;
+      gap: 20px;
+    }
+    @include tablet {
+      padding: 10px;
+    }
+  }
+  &__product-gallery {
+    @include flex-center;
+    width: 110px;
+    border: 1px solid var(--gray-3);
+    border-radius: 12px;
+    aspect-ratio: 1/1;
+    flex-shrink: 0;
+
+    transition: opacity 0.2s ease;
+    @include hover {
+      opacity: 0.7;
+    }
+    @include tablet-min {
+      border-radius: 12px;
+      width: 48px;
+    }
+
+    img {
+      display: block;
+      object-fit: contain;
+      max-height: 100%;
+    }
+  }
+  &__product-body {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+    @include laptop-min {
+      flex-wrap: wrap;
+      gap: 20px;
+      row-gap: 15px;
+    }
+  }
+  &__product-main {
+    flex-basis: 430px;
+    @include laptop-middle {
+      flex-basis: 350px;
+    }
+    @include laptop-min {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__product-like {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    @include hover {
+      color: var(--primary) !important;
+
+      svg {
+        stroke: var(--primary);
+      }
+    }
+
+    @include tablet-min {
+      position: absolute;
+      top: 65px;
+      left: 10px;
+      padding: 0 !important;
+      width: 48px;
+      height: 40px;
+      span {
+        display: none;
+      }
+    }
+
+    &._active {
+      color: var(--black);
+
+      svg {
+        stroke: var(--pink);
+        color: var(--pink);
+      }
+    }
+
+    svg {
+      color: transparent;
+      stroke: var(--gray-4);
+
+      transition:
+        stroke 0.2s ease,
+        color 0.2s ease;
+    }
+  }
+  &__product-counter {
+    flex-basis: 160px;
+    @include tablet-min {
+      order: 2;
+      flex-basis: 120px;
+      margin-left: auto;
+    }
+  }
+  &__product-title {
+    display: block;
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--primary);
+    }
+    @include tablet {
+      max-width: calc(100% - 40px);
+    }
+  }
+  &__product-prices {
+    margin-left: auto;
+    text-align: right;
+    flex-shrink: 0;
+    @include tablet {
+      text-align: start;
+    }
+    @include tablet-min {
+      order: 1;
+      margin-left: 0;
+    }
+  }
+  &__product-price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    @include tablet {
+      font-size: 16px;
+      line-height: 125%;
+    }
+  }
+  &__product-old-price {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 187%;
+    text-decoration: line-through;
+    color: var(--gray-4);
+    @include tablet {
+      font-size: 13px;
+      line-height: 123%;
+    }
+  }
+  &__product-remove {
+    @include flex-center;
+    width: 60px;
+    height: 48px;
+
+    color: var(--gray-4);
+
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--primary);
+    }
+    @include tablet-min {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &__aside {
+    position: sticky;
+    top: 100px;
+    width: 370px;
+    flex-shrink: 0;
+    @include laptop-middle {
+      position: static;
+      width: 600px;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }
+  &__aside-body {
+    width: 100%;
+    padding: 30px 40px 40px 40px;
+    background-color: white;
+    box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.09);
+    border-radius: 20px;
+    @include tablet {
+      padding: 20px;
+    }
+  }
+  &__aside-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__aside-item {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    gap: 4px;
+    div {
+      border-bottom: 1px dashed var(--gray-4);
+      flex: 1;
+    }
+  }
+  &__aside-item-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    @include tablet {
+      font-size: 13px;
+      line-height: 123%;
+    }
+  }
+  &__aside-item-price {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    @include tablet {
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+  &__aside-res {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    width: 100%;
+    margin-top: 40px;
+    @include tablet {
+      margin-top: 30px;
+    }
+
+    div {
+      flex: 1;
+      border-bottom: 1px dashed var(--gray-4);
+    }
+  }
+  &__aside-res-name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    @include tablet {
+      font-size: 16px;
+      line-height: 125%;
+    }
+  }
+  &__aside-res-price {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    @include tablet {
+      font-size: 20px;
+      line-height: 150%;
+    }
+  }
+  &__aside-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px !important;
+
+    font-size: 20px !important;
+    line-height: 100% !important;
+
+    @include tablet {
+      padding: 10px !important;
+    }
+  }
+  &__aside-consult {
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include tablet {
+      padding: 10px;
+    }
+  }
+  &__btn-consult {
+    width: 100%;
+  }
+  &__sect-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 133%;
+    margin-bottom: 20px;
+    @include tablet {
+      font-size: 20px;
+      line-height: 130%;
+    }
+    @include tablet-min {
+      padding: 0 10px;
+    }
+  }
+  &__spollers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__spoller {
+    border-radius: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.09);
+  }
+  &__check-btn {
+    padding: 20px;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 125%;
+    }
+
+    &::before,
+    &::after {
+      transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+    }
+    &::after {
+      left: 25px;
+    }
+  }
+  &__spoller-body {
+    padding: 20px 24px;
+    @include tablet {
+      padding: 20px;
+    }
+    .label-radio {
+      gap: 20px;
+      width: fit-content;
+
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 125%;
+      &:not(:last-child) {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 125%;
+      }
+    }
+  }
+  &__pay-nav {
+    @include tablet-min {
+      .label-radio {
+        width: 100%;
+      }
+    }
+  }
+  &__buyer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 24px;
+    background-color: white;
+
+    box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.09);
+
+    @include tablet {
+      padding: 20px;
+    }
+
+    .input-control {
+      &:first-child {
+        flex: 1;
+      }
+      &:nth-child(2) {
+        flex: 0 1 330px;
+      }
+      &:nth-child(3) {
+        flex: 0 1 180px;
+      }
+
+      @include laptop {
+        &:nth-child(2) {
+          flex: 1;
+        }
+        &:nth-child(3) {
+          flex: 1;
+        }
+      }
+      @include tablet {
+        flex: none !important;
+        width: 100%;
+      }
+    }
+  }
+}

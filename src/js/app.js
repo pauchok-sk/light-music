@@ -9,12 +9,12 @@ import productMoreTabs from "./files/productMoreTabs.js";
 import reviewsOpen from "./files/reviewsOpen.js";
 import scrollables from "./files/scrollables.js";
 import sliders from "./files/sliders.js";
-import spoller from "./files/spoller.js";
 import tabs from "./files/tabs.js";
 import tabsCatalog from "./files/tabsCatalog.js";
 import toggleText from "./files/toggleText.js";
+import cartPay from "./files/cartPay.js";
+import inputmask from "./files/inputmask.js";
 
-spoller();
 catalogChange();
 sliders();
 tabsCatalog();
@@ -28,6 +28,8 @@ productCounter();
 toggleText();
 mediaAdaptive();
 productMoreTabs();
+cartPay();
+inputmask();
 
 Fancybox.bind("[data-fancybox]", {});
 
