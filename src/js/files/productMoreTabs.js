@@ -1,38 +1,51 @@
 export default function productMoreTabs() {
-  $("#product-descr-more").click(function () {
-    const text = $("#product-descr");
+  const productDescrBtn = document.querySelector("#product-descr-more");
 
-    // Меняем текст кнопки
-    if (text.hasClass("_open")) {
-      text.removeClass("_open");
-      $(this).text("Читать далее");
-      text.slideUp(300);
-      text.slideDown(0);
-    } else {
-      $(this).text("Скрыть");
-      text.addClass("_open");
-      text.slideUp(0);
-      text.slideDown(300);
-    }
-  });
+  if (productDescrBtn) {
+    const text = document.querySelector("#product-descr");
+    const textBtn = productDescrBtn.textContent;
 
-  if (window.matchMedia("(max-width: 767px)").matches) {
-    const items = $("#product-specifications-more").prevAll();
-
-    items.slice(0, items.length - 6).slideUp(0);
-
-    $("#product-specifications-more").addClass("_active");
-
-    $("#product-specifications-more").click(function () {
-      if (!$("#product-specifications-more").hasClass("_active")) {
-        $(this).text("Читать далее");
-        items.slice(0, items.length - 6).slideUp(300);
-        $("#product-specifications-more").addClass("_active");
+    productDescrBtn.addEventListener("click", () => {
+      if (text.classList.contains("_open")) {
+        hide();
       } else {
-        $(this).text("Скрыть");
-        items.slice(0, items.length - 6).slideDown(300);
-        $("#product-specifications-more").removeClass("_active");
+        open();
       }
     });
+
+    function hide() {
+      text.classList.remove("_open");
+
+      productDescrBtn.textContent = textBtn;
+    }
+    function open() {
+      text.classList.add("_open");
+
+      productDescrBtn.textContent = "Скрыть";
+    }
+  }
+
+  const productSpecBtn = document.querySelector("#product-specifications-more");
+  if (productSpecBtn && window.matchMedia("(max-width: 767px)").matches) {
+    const specifications = document.querySelector("#product-specifications");
+    const textBtn = productDescrBtn.textContent;
+
+    productSpecBtn.addEventListener("click", () => {
+      if (specifications.classList.contains("_open")) {
+        hide();
+      } else {
+        open();
+      }
+    });
+    function hide() {
+      specifications.classList.remove("_open");
+
+      productSpecBtn.textContent = textBtn;
+    }
+    function open() {
+      specifications.classList.add("_open");
+
+      productSpecBtn.textContent = "Скрыть";
+    }
   }
 }

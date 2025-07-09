@@ -1,0 +1,14 @@
+.toggle-text {
+  &._open {
+    p {
+      &:not(:first-child) {
+        display: block;
+      }
+    }
+  }
+  p {
+    &:not(:first-child) {
+      display: none;
+    }
+  }
+}

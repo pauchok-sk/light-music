@@ -1456,6 +1456,12 @@ textarea.input {
   width: 20px;
   height: 20px
 }
+.toggle-text._open p:not(:first-child) {
+  display: block
+}
+.toggle-text p:not(:first-child) {
+  display: none
+}
 .catalog {
   position: fixed;
   left: 0;
@@ -3467,6 +3473,12 @@ a.pagination__btn:active {
   }
   .s-product__tabs .sm-text._open {
     -webkit-line-clamp: unset
+  }
+  .s-product__specifications .s-product__specifications-row:nth-child(n+8) {
+    display: none
+  }
+  .s-product__specifications._open .s-product__specifications-row:nth-child(n+8) {
+    display: block
   }
   .s-product__specifications-title {
     font-size: 13px;

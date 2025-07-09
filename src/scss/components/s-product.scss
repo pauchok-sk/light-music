@@ -313,6 +313,17 @@
     line-height: 130%;
   }
   &__specifications {
+    @include tablet {
+      .s-product__specifications-row:nth-child(n + 8) {
+        display: none;
+      }
+
+      &._open {
+        .s-product__specifications-row:nth-child(n + 8) {
+          display: block;
+        }
+      }
+    }
   }
   &__specifications-item {
     &:not(:last-child) {

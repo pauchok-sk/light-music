@@ -226,35 +226,37 @@
         });
     }
     function productMoreTabs() {
-        $("#product-descr-more").click(function() {
-            const text = $("#product-descr");
-            if (text.hasClass("_open")) {
-                text.removeClass("_open");
-                $(this).text("Читать далее");
-                text.slideUp(300);
-                text.slideDown(0);
-            } else {
-                $(this).text("Скрыть");
-                text.addClass("_open");
-                text.slideUp(0);
-                text.slideDown(300);
-            }
-        });
-        if (window.matchMedia("(max-width: 767px)").matches) {
-            const items = $("#product-specifications-more").prevAll();
-            items.slice(0, items.length - 6).slideUp(0);
-            $("#product-specifications-more").addClass("_active");
-            $("#product-specifications-more").click(function() {
-                if (!$("#product-specifications-more").hasClass("_active")) {
-                    $(this).text("Читать далее");
-                    items.slice(0, items.length - 6).slideUp(300);
-                    $("#product-specifications-more").addClass("_active");
-                } else {
-                    $(this).text("Скрыть");
-                    items.slice(0, items.length - 6).slideDown(300);
-                    $("#product-specifications-more").removeClass("_active");
-                }
+        const productDescrBtn = document.querySelector("#product-descr-more");
+        if (productDescrBtn) {
+            const text = document.querySelector("#product-descr");
+            const textBtn = productDescrBtn.textContent;
+            productDescrBtn.addEventListener("click", () => {
+                if (text.classList.contains("_open")) hide(); else open();
             });
+            function hide() {
+                text.classList.remove("_open");
+                productDescrBtn.textContent = textBtn;
+            }
+            function open() {
+                text.classList.add("_open");
+                productDescrBtn.textContent = "Скрыть";
+            }
+        }
+        const productSpecBtn = document.querySelector("#product-specifications-more");
+        if (productSpecBtn && window.matchMedia("(max-width: 767px)").matches) {
+            const specifications = document.querySelector("#product-specifications");
+            const textBtn = productDescrBtn.textContent;
+            productSpecBtn.addEventListener("click", () => {
+                if (specifications.classList.contains("_open")) hide(); else open();
+            });
+            function hide() {
+                specifications.classList.remove("_open");
+                productSpecBtn.textContent = textBtn;
+            }
+            function open() {
+                specifications.classList.add("_open");
+                productSpecBtn.textContent = "Скрыть";
+            }
         }
     }
     function reviewsOpen() {
@@ -808,24 +810,19 @@
         }
     }
     function toggleText() {
-        $(".toggle-text").each(function(index, element) {
-            $(this).prevAll().not(":last").slideUp(0);
-            $(this).click(function() {
-                if (!$(this).hasClass("_active")) {
-                    $(this).prevAll().slideDown(300);
-                    $(this).addClass("_active");
-                    $(this).text("Скрыть");
+        const buttons = document.querySelectorAll(".toggle-text-btn");
+        if (buttons.length) buttons.forEach(btn => {
+            const textBtn = btn.textContent;
+            btn.addEventListener("click", () => {
+                const toggleText = btn.previousElementSibling;
+                if (toggleText.classList.contains("_open")) {
+                    toggleText.classList.remove("_open");
+                    btn.textContent = textBtn;
                 } else {
-                    $(this).prevAll().not(":last").slideUp(300);
-                    $(this).removeClass("_active");
-                    $(this).text("Подробнее");
+                    toggleText.classList.add("_open");
+                    btn.textContent = "Скрыть";
                 }
             });
-        });
-        $(".toggle-text-btn").click(function() {
-            $(this).prev(".toggle-text").slideToggle(300);
-            $(".toggle-text-btn").removeClass("_active");
-            $(this).toggleClass("_active");
         });
     }
     spoller();

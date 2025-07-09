@@ -1,26 +1,20 @@
 export default function toggleText() {
-  $(".toggle-text").each(function (index, element) {
-    $(this).prevAll().not(':last').slideUp(0);
+  const buttons = document.querySelectorAll(".toggle-text-btn");
 
-    $(this).click(function() {
-      if (!$(this).hasClass("_active")) {
-        $(this).prevAll().slideDown(300)
-        $(this).addClass("_active");
-        $(this).text("Скрыть");
-      } else {
-        $(this).prevAll().not(':last').slideUp(300)
-        $(this).removeClass("_active");
-        $(this).text("Подробнее");
-      }
+  if (buttons.length) {
+    buttons.forEach(btn => {
+      const textBtn = btn.textContent;
+      btn.addEventListener("click", () => {
+        const toggleText = btn.previousElementSibling;
+
+        if (toggleText.classList.contains("_open")) {
+          toggleText.classList.remove("_open");
+          btn.textContent = textBtn;
+        } else {
+          toggleText.classList.add("_open");
+          btn.textContent = "Скрыть";
+        }
+      })
     })
-  });
-
-  $(".toggle-text-btn").click(function () {
-    // Затем показываем только предыдущий
-    $(this).prev(".toggle-text").slideToggle(300);
-    // Убираем активные классы у всех кнопок
-    $(".toggle-text-btn").removeClass("_active");
-    // Добавляем класс только текущей кнопке
-    $(this).toggleClass("_active");
-  });
+  }
 }
