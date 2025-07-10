@@ -31,6 +31,7 @@
 @import "./ui/sort";
 @import "./ui/dropdown";
 @import "./ui/toggle-text";
+@import "./ui/location-item";
 
 // widgets
 @import "./widgets/catalog";
@@ -62,5 +63,10 @@
 @import "./components/s-category";
 @import "./components/s-product";
 @import "./components/s-cart";
+@import "./components/s-inform";
+@import "./components/s-shops";
+@import "./components/s-help";
+@import "./components/s-centers";
+@import "./components/s-delivery-pay";
 
 @import "./components/footer";

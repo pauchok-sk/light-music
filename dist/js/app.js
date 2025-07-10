@@ -694,6 +694,31 @@
         const im = new Inputmask("+7 (999) 999-99-99");
         im.mask(inputs);
     }
+    function map() {
+        const contactsMap = document.querySelector("#map");
+        if (contactsMap) {
+            const centerArr = JSON.parse(contactsMap.dataset.centers);
+            const zoom = Number(contactsMap.dataset.zoom);
+            function init() {
+                const htmlMap = new ymaps.Map(contactsMap, {
+                    center: centerArr[0],
+                    zoom
+                });
+                centerArr.forEach(center => {
+                    const placemark = new ymaps.Placemark(center, {}, {});
+                    htmlMap.geoObjects.add(placemark);
+                });
+                htmlMap.controls.remove("geolocationControl");
+                htmlMap.controls.remove("searchControl");
+                htmlMap.controls.remove("trafficControl");
+                htmlMap.controls.remove("typeSelector");
+                htmlMap.controls.remove("fullscreenControl");
+                htmlMap.controls.remove("zoomControl");
+                htmlMap.controls.remove("rulerControl");
+            }
+            ymaps.ready(init);
+        }
+    }
     catalogChange();
     sliders();
     tabsCatalog();
@@ -709,5 +734,6 @@
     productMoreTabs();
     cartPay();
     inputmask();
+    map();
     Fancybox.bind("[data-fancybox]", {});
 })();

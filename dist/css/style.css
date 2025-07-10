@@ -1472,6 +1472,84 @@ select.input::-ms-expand {
 .toggle-text p:not(:first-child) {
   display: none
 }
+.location-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  row-gap: 10px;
+  border: 1px solid var(--gray-2);
+  border-radius: 20px;
+  padding: 20px 20px 20px 40px;
+  box-shadow: 0 2px 15px 1px rgba(0,0,0,.09)
+}
+.location-item__main {
+  display: flex;
+  gap: 10px;
+  flex-basis: 740px
+}
+.location-item__city {
+  flex-basis: 200px
+}
+.location-item__street {
+  flex: 1
+}
+.location-item__tel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-basis: 200px;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 15px
+}
+.location-item__tel a {
+  display: block;
+  transition: color .2s ease
+}
+.location-item__tel svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0
+}
+.location-item__mail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-basis: 300px;
+  font-weight: 500;
+  font-size: 15px
+}
+.location-item__mail a {
+  color: var(--primary);
+  transition: color .2s ease
+}
+.location-item__mail svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0
+}
+.location-item__location-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 48px;
+  border: 1px solid var(--primary);
+  border-radius: 16px;
+  background-color: var(--primary);
+  flex-shrink: 0;
+  color: #fff;
+  transition: color .2s ease,background-color .2s ease,border-color .2s ease
+}
+.location-item__location-btn:active {
+  background-color: rgba(0,0,0,0);
+  color: var(--primary-hover)
+}
+.location-item__location-btn svg {
+  width: 20px;
+  height: 20px
+}
 .catalog {
   position: fixed;
   left: 0;
@@ -2869,6 +2947,95 @@ a.pagination__btn:active {
 .s-cart__buyer-wrapper .input-control:nth-child(3) {
   flex: 0 1 180px
 }
+.s-inform__btn {
+  border-radius: 8px!important;
+  padding: 13px 19px!important
+}
+.s-shops {
+  overflow: hidden
+}
+.s-shops__map {
+  width: 100%;
+  height: 400px
+}
+.s-shops__items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+.s-help {
+  overflow: hidden
+}
+.s-help__grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 50px;
+  gap: 20px
+}
+.s-help__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 30px;
+  background: var(--gray-1);
+  border-radius: 20px
+}
+.s-help__icon {
+  display: block;
+  width: 56px;
+  margin-bottom: 40px
+}
+.s-help__item-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  margin-bottom: 30px
+}
+.s-help__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%
+}
+.s-help__list li {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+  font-size: 16px;
+  line-height: 175%
+}
+.s-help__list li::before {
+  content: "—"
+}
+.s-help__list li a {
+  position: relative;
+  color: var(--primary);
+  transition: color .2s ease
+}
+.s-help__list li a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 2px;
+  border-bottom: 1px dotted currentColor
+}
+.s-centers {
+  overflow: hidden
+}
+.s-centers__items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+.s-centers__items .location-item svg {
+  color: var(--gray-4)
+}
+.s-centers__content {
+  max-width: 890px;
+  margin: 50px auto 0 auto
+}
 .footer__grid {
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -3251,6 +3418,14 @@ a.pagination__btn:active {
     margin: 0 auto;
     max-width: 100%
   }
+  .s-help__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+  }
+  .s-help__item {
+    flex: 0 1 calc(50% - 10px)
+  }
 }
 @media (max-width:991px) {
   .nav-btn {
@@ -3275,6 +3450,20 @@ a.pagination__btn:active {
     align-items: start;
     flex-direction: column;
     gap: 20px
+  }
+  .location-item {
+    flex-wrap: wrap;
+    justify-content: start
+  }
+  .location-item__main {
+    flex: none;
+    width: 100%
+  }
+  .location-item__city {
+    flex: none
+  }
+  .location-item__location-btn {
+    margin-left: auto
   }
   .tab-bar {
     display: block
@@ -3322,6 +3511,12 @@ a.pagination__btn:active {
   .s-cart__product-main {
     flex: none;
     width: 100%
+  }
+  .s-help__grid {
+    margin-top: 30px
+  }
+  .s-help__item {
+    padding: 25px
   }
   .footer__grid {
     grid-template-columns: repeat(2,1fr)
@@ -3374,10 +3569,6 @@ a.pagination__btn:active {
   .modal__call-form .input-control {
     flex: none!important;
     width: 100%
-  }
-  .h4 {
-    font-size: 16px;
-    line-height: 125%
   }
   .sect-m {
     margin: 30px 0
@@ -3493,6 +3684,32 @@ a.pagination__btn:active {
     -webkit-transform: translate(-50%,-50%)!important;
     transform: translate(-50%,-50%)!important;
     z-index: 140!important
+  }
+  .location-item {
+    padding: 20px;
+    flex-direction: column;
+    align-items: start
+  }
+  .location-item__tel {
+    padding-left: 10px;
+    gap: 20px;
+    flex: none
+  }
+  .location-item__tel a {
+    color: var(--primary)
+  }
+  .location-item__mail {
+    padding-left: 10px;
+    gap: 20px;
+    flex: none
+  }
+  .location-item__location-btn {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,0);
+    color: var(--primary);
+    border-color: transparent;
+    border-radius: 12px
   }
   .reklam-wrapper {
     overflow: visible;
@@ -3870,13 +4087,46 @@ a.pagination__btn:active {
     flex: none!important;
     width: 100%
   }
+  .s-help__item {
+    flex: none;
+    width: 100%;
+    align-items: start
+  }
+  .s-help__icon {
+    width: 40px;
+    margin-bottom: 20px;
+    margin-left: 24px
+  }
+  .s-help__item-title {
+    text-align: start;
+    font-size: 16px;
+    line-height: 125%;
+    margin-bottom: 20px;
+    margin-left: 24px
+  }
+  .s-help__item-title br {
+    display: none
+  }
+  .s-help__list li {
+    font-size: 13px;
+    line-height: 154%
+  }
+  .s-centers__content {
+    margin-top: 40px
+  }
 }
 @media (max-width:767px)and (any-hover:hover) {
+  .location-item__tel a:hover {
+    color: var(--black)
+  }
   .header-categories__slide:hover {
     background-color: var(--gray-3)
   }
 }
 @media (max-width:767px)and (hover:none) {
+  .location-item__tel a:active {
+    color: var(--black)
+  }
   .header-categories__slide:active {
     background-color: var(--gray-3)
   }
@@ -3916,6 +4166,12 @@ a.pagination__btn:active {
   .card-product-line__btn-like {
     width: 40px;
     min-height: 40px
+  }
+  .location-item {
+    padding: 10px
+  }
+  .location-item__city {
+    width: 100%
   }
   .brands__grid {
     grid-template-columns: 1fr;
@@ -3994,6 +4250,16 @@ a.pagination__btn:active {
   }
   .s-cart__pay-nav .label-radio {
     width: 100%
+  }
+  .s-shops__items {
+    margin: 0 -10px
+  }
+  .s-help__grid {
+    margin-left: -10px;
+    margin-right: -10px
+  }
+  .s-centers__items {
+    margin: 0 -10px
   }
   .footer__grid {
     grid-template-columns: 1fr
@@ -4160,6 +4426,16 @@ a.pagination__btn:active {
   .dropdown-close:hover {
     color: var(--primary)
   }
+  .location-item__tel a:hover {
+    color: var(--primary)
+  }
+  .location-item__mail a:hover {
+    color: var(--black)
+  }
+  .location-item__location-btn:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover)
+  }
   .catalog__menu-btn:hover {
     background-color: #fff
   }
@@ -4251,6 +4527,9 @@ a.pagination__btn:active {
   }
   .s-cart__product-remove:hover {
     color: var(--primary)
+  }
+  .s-help__list li a:hover {
+    color: var(--pink)
   }
   .footer__list a:hover,
   .footer__list button:hover {
@@ -4404,6 +4683,16 @@ a.pagination__btn:active {
   .dropdown-close:active {
     color: var(--primary)
   }
+  .location-item__tel a:active {
+    color: var(--primary)
+  }
+  .location-item__mail a:active {
+    color: var(--black)
+  }
+  .location-item__location-btn:active {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover)
+  }
   .catalog__menu-btn:active {
     background-color: #fff
   }
@@ -4495,6 +4784,9 @@ a.pagination__btn:active {
   }
   .s-cart__product-remove:active {
     color: var(--primary)
+  }
+  .s-help__list li a:active {
+    color: var(--pink)
   }
   .footer__list a:active,
   .footer__list button:active {

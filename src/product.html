@@ -1,10 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   @@include('html/head.html',{ "title":"pauchoo0k" })
   <body class="body">
     @@include('html/components/header.html')
     <main>
-      
+      <section class="intro">
+        <div class="container">
+          <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <a href="#">Каталог</a>
+            <a href="#">Категория</a>
+            <a href="#">Подкатегория + название бренда</a>
+            <span>Название товара</span>
+          </div>
+        </div>
+      </section>
       @@include('html/components/s-product.html')
       @@include('html/components/s-reklam.html')
       @@include('html/components/s-rec.html',{"title": "Сопутствующие товары"})
@@ -87,7 +97,9 @@
                     <div class="tag">Акция!</div>
                     <img src="@img/product.png" alt="image" />
                   </a>
-                  <a href="#" class="card-product__title"> EUROSOUND ESL-10FA </a>
+                  <a href="#" class="card-product__title">
+                    EUROSOUND ESL-10FA
+                  </a>
                   <div
                     class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2"
                   >
@@ -172,7 +184,9 @@
                     <div class="tag">Акция!</div>
                     <img src="@img/product.png" alt="image" />
                   </a>
-                  <a href="#" class="card-product__title"> EUROSOUND ESL-10FA </a>
+                  <a href="#" class="card-product__title">
+                    EUROSOUND ESL-10FA
+                  </a>
                   <div
                     class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2"
                   >
@@ -257,7 +271,9 @@
                     <div class="tag">Акция!</div>
                     <img src="@img/product.png" alt="image" />
                   </a>
-                  <a href="#" class="card-product__title"> EUROSOUND ESL-10FA </a>
+                  <a href="#" class="card-product__title">
+                    EUROSOUND ESL-10FA
+                  </a>
                   <div
                     class="d-flex align-items-center gap-md-2 gap-1 mt-md-auto mt-2 order-md-0 order-2 mb-md-0 mb-2"
                   >
@@ -284,7 +300,6 @@
           </div>
         </div>
       </section>
-
     </main>
     @@include('html/components/modals.html')
     @@include('html/components/footer.html')

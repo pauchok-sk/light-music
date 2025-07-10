@@ -1,0 +1,24 @@
+.s-centers {
+  overflow: hidden;
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @include tablet-min {
+      margin: 0 -10px;
+    }
+
+    .location-item {
+      svg {
+        color: var(--gray-4);
+      }
+    }
+  }
+  &__content {
+    max-width: 890px;
+    margin: 50px auto 0px auto;
+    @include tablet {
+      margin-top: 40px;
+    }
+  }
+}

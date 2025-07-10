@@ -1,0 +1,108 @@
+.s-help {
+  overflow: hidden;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    gap: 20px;
+    @include laptop-middle {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include laptop-min {
+      margin-top: 30px;
+    }
+    @include tablet-min {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 30px;
+    background: var(--gray-1);
+    border-radius: 20px;
+    @include laptop-middle {
+      flex: 0 1 calc(50% - 10px);
+    }
+    @include laptop-min {
+      padding: 25px;
+    }
+    @include tablet {
+      flex: none;
+      width: 100%;
+      align-items: start;
+    }
+  }
+  &__icon {
+    display: block;
+    width: 56px;
+    margin-bottom: 40px;
+    @include tablet {
+      width: 40px;
+      margin-bottom: 20px;
+      margin-left: 24px;
+    }
+  }
+  &__item-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    margin-bottom: 30px;
+    @include tablet {
+      text-align: start;
+      font-size: 16px;
+      line-height: 125%;
+      margin-bottom: 20px;
+      margin-left: 24px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+
+    li {
+      display: flex;
+      align-items: start;
+      gap: 12px;
+      font-size: 16px;
+      line-height: 175%;
+      &::before {
+        content: "—";
+      }
+
+      @include tablet {
+        font-size: 13px;
+        line-height: 154%;
+      }
+
+      a {
+        position: relative;
+        color: var(--primary);
+        transition: color 0.2s ease;
+        @include hover {
+          color: var(--pink);
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          left: 0;
+          right: 0;
+          bottom: 2px;
+          border-bottom: 1px dotted currentColor;
+        }
+      }
+    }
+  }
+}

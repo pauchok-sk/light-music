@@ -14,6 +14,7 @@ import tabsCatalog from "./files/tabsCatalog.js";
 import toggleText from "./files/toggleText.js";
 import cartPay from "./files/cartPay.js";
 import inputmask from "./files/inputmask.js";
+import map from "./files/map.js";
 
 catalogChange();
 sliders();
@@ -30,6 +31,7 @@ mediaAdaptive();
 productMoreTabs();
 cartPay();
 inputmask();
+map();
 
 Fancybox.bind("[data-fancybox]", {});
 

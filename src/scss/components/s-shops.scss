@@ -1,0 +1,15 @@
+.s-shops {
+  overflow: hidden;
+  &__map {
+    width: 100%;
+    height: 400px;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @include tablet-min {
+      margin: 0 -10px;
+    }
+  }
+}

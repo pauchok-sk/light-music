@@ -1,0 +1,149 @@
+.location-item {
+  @include flex-between;
+  gap: 20px;
+  row-gap: 10px;
+  border: 1px solid var(--gray-2);
+  border-radius: 20px;
+  padding: 20px 20px 20px 40px;
+  box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.09);
+  @include laptop-min {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  @include tablet {
+    padding: 20px;
+    flex-direction: column;
+    align-items: start;
+  }
+  @include tablet-min {
+    padding: 10px;
+  }
+  &__main {
+    display: flex;
+    gap: 10px;
+    flex-basis: 740px;
+    @include laptop-min {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__city {
+    flex-basis: 200px;
+    @include laptop-min {
+      flex: none;
+    }
+    @include tablet-min {
+      width: 100%;
+    }
+  }
+  &__street {
+    flex: 1;
+  }
+  &__tel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-basis: 200px;
+
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 15px;
+
+    @include tablet {
+      padding-left: 10px;
+      gap: 20px;
+      flex: none;
+    }
+
+    a {
+      display: block;
+      transition: color 0.2s ease;
+      @include hover {
+        color: var(--primary);
+      }
+
+      @include tablet {
+        color: var(--primary);
+        @include hover {
+          color: var(--black);
+        }
+      }
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+  }
+  &__mail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-basis: 300px;
+
+    font-weight: 500;
+    font-size: 15px;
+
+    @include tablet {
+      padding-left: 10px;
+      gap: 20px;
+      flex: none;
+    }
+
+    a {
+      color: var(--primary);
+      transition: color 0.2s ease;
+      @include hover {
+        color: var(--black);
+      }
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+  }
+  &__location-btn {
+    @include flex-center;
+    width: 60px;
+    height: 48px;
+    border: 1px solid var(--primary);
+    border-radius: 16px;
+    background-color: var(--primary);
+    flex-shrink: 0;
+
+    color: white;
+
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease,
+      border-color 0.2s ease;
+
+    @include hover {
+      background-color: var(--primary-hover);
+      border-color: var(--primary-hover);
+    }
+    @include pressed {
+      background-color: transparent;
+      color: var(--primary-hover);
+    }
+    @include laptop-min {
+      margin-left: auto;
+    }
+    @include tablet {
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      color: var(--primary);
+      border-color: transparent;
+      border-radius: 12px;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
