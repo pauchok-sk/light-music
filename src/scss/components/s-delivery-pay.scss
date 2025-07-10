@@ -1,0 +1,51 @@
+.s-delivery-pay {
+  margin-bottom: 60px;
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  &__contacts-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+
+    transition: color .2s ease;
+    @include hover {
+      color: var(--primary);
+    }
+    @include tablet {
+      font-size: 16px;
+      gap: 10px;
+    }
+
+    &._primary {
+      color: var(--primary);
+      @include hover {
+        color: var(--black);
+      }
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+      color: var(--black);
+      @include tablet {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .btn-s {
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
