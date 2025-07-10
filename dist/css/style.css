@@ -2569,8 +2569,8 @@ a.pagination__btn:active {
   transition: stroke .2s ease
 }
 .s-product__nav-consult {
-  padding-top: 20px;
-  padding-bottom: 20px
+  padding-top: 35px;
+  padding-bottom: 35px
 }
 .s-product__tabs {
   margin-top: 60px
@@ -2653,8 +2653,9 @@ a.pagination__btn:active {
   width: 110px;
   border: 1px solid var(--gray-3);
   border-radius: 12px;
-  aspect-ratio: 1/1;
+  height: 110px;
   flex-shrink: 0;
+  overflow: hidden;
   transition: opacity .2s ease
 }
 .s-cart__product-gallery img {
@@ -3430,8 +3431,7 @@ a.pagination__btn:active {
   }
   .breadcrumbs {
     margin: 0 -10px;
-    padding-left: 10px;
-    padding-right: 10px
+    padding: 20px 10px
   }
   .card-certificate {
     padding: 10px
@@ -3763,13 +3763,13 @@ a.pagination__btn:active {
     line-height: 125%
   }
   .s-product__nav-consult {
-    padding-top: 10px;
-    padding-bottom: 10px
+    padding-top: 20px;
+    padding-bottom: 20px
   }
   .s-product__tabs [data-tab] {
     display: block!important
   }
-  .s-product__tabs [data-tab]:not(:first-child) {
+  .s-product__tabs [data-tab]:not(:nth-child(2)) {
     margin-top: 30px;
     padding-top: 30px;
     border-top: 1px solid var(--gray-3)
@@ -3959,7 +3959,8 @@ a.pagination__btn:active {
   }
   .s-cart__product-gallery {
     border-radius: 12px;
-    width: 48px
+    width: 48px;
+    height: 48px
   }
   .s-cart__product-like {
     position: absolute;

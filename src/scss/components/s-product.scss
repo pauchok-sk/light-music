@@ -283,11 +283,11 @@
     }
   }
   &__nav-consult {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     @include tablet {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
   }
   &__tabs {
@@ -299,7 +299,7 @@
       [data-tab] {
         display: block !important;
 
-        &:not(:first-child) {
+        &:not(:nth-child(2)){
           margin-top: 30px;
           padding-top: 30px;
           border-top: 1px solid var(--gray-3);
