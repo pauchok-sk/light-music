@@ -1,0 +1,47 @@
+.s-archive-certificates {
+  margin-bottom: 60px;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+    @include laptop-middle {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      row-gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card-certificate {
+      @include tablet {
+        border-radius: 8px !important;
+      }
+      &__img {
+        @include tablet {
+          border-radius: 4px !important;
+        }
+        @include tablet-min {
+          aspect-ratio: 1/1.2;
+        }
+      }
+      &__body {
+        @include laptop-min {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        @include tablet-min {
+          padding: 10px 0px !important;
+        }
+      }
+      &__title {
+        @include tablet-min {
+          font-size: 13px !important;
+          line-height: 123% !important;
+        }
+      }
+    }
+  }
+}
