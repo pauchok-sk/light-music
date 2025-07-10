@@ -2477,7 +2477,8 @@ a.pagination__btn:active {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  border: 1px solid var(--gray-3)
+  border: 1px solid var(--gray-3);
+  transition: opacity .2s ease
 }
 .s-product__slide img {
   display: block;
@@ -4220,6 +4221,9 @@ a.pagination__btn:active {
   .s-product__thumb-slide:hover {
     border-color: var(--primary-hover)
   }
+  .s-product__slide:hover {
+    opacity: .7
+  }
   .s-product__main-like:hover svg {
     width: 20px;
     height: 20px;
@@ -4460,6 +4464,9 @@ a.pagination__btn:active {
   }
   .s-product__thumb-slide:active {
     border-color: var(--primary-hover)
+  }
+  .s-product__slide:active {
+    opacity: .7
   }
   .s-product__main-like:active svg {
     width: 20px;
