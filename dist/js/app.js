@@ -719,6 +719,14 @@
             ymaps.ready(init);
         }
     }
+    function spollers() {
+        const buttons = document.querySelectorAll("[data-spoller]");
+        if (buttons.length) buttons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                btn.classList.toggle("_active");
+            });
+        });
+    }
     catalogChange();
     sliders();
     tabsCatalog();
@@ -735,5 +743,6 @@
     cartPay();
     inputmask();
     map();
+    spollers();
     Fancybox.bind("[data-fancybox]", {});
 })();

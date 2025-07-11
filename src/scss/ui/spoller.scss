@@ -1,0 +1,11 @@
+[data-spoller] {
+  & + * {
+    display: none;
+  }
+
+  &._active {
+    & + * {
+      display: block;
+    }
+  }
+}

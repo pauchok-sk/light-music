@@ -86,11 +86,16 @@
         line-height: 154%;
       }
 
-      a {
+      [data-spoller] {
         position: relative;
+        cursor: pointer;
         color: var(--primary);
         transition: color 0.2s ease;
         @include hover {
+          color: var(--pink);
+        }
+
+        &._active {
           color: var(--pink);
         }
 

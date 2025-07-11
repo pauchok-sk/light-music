@@ -1567,6 +1567,12 @@ select.input::-ms-expand {
   width: 20px;
   height: 20px
 }
+[data-spoller]+* {
+  display: none
+}
+[data-spoller]._active+* {
+  display: block
+}
 .catalog {
   position: fixed;
   left: 0;
@@ -3025,12 +3031,16 @@ a.pagination__btn:active {
 .s-help__list li::before {
   content: "—"
 }
-.s-help__list li a {
+.s-help__list li [data-spoller] {
   position: relative;
+  cursor: pointer;
   color: var(--primary);
   transition: color .2s ease
 }
-.s-help__list li a::after {
+.s-help__list li [data-spoller]._active {
+  color: var(--pink)
+}
+.s-help__list li [data-spoller]::after {
   position: absolute;
   content: "";
   left: 0;
@@ -3751,6 +3761,13 @@ a.pagination__btn:active {
     padding: 20px;
     flex-direction: column;
     align-items: start
+  }
+  .location-item__city {
+    margin-top: 5px
+  }
+  .location-item__street {
+    flex: none;
+    width: 100%
   }
   .location-item__tel {
     padding-left: 10px;
@@ -4627,7 +4644,7 @@ a.pagination__btn:active {
   .s-cart__product-remove:hover {
     color: var(--primary)
   }
-  .s-help__list li a:hover {
+  .s-help__list li [data-spoller]:hover {
     color: var(--pink)
   }
   .s-delivery-pay__contacts-btn:hover {
@@ -4894,7 +4911,7 @@ a.pagination__btn:active {
   .s-cart__product-remove:active {
     color: var(--primary)
   }
-  .s-help__list li a:active {
+  .s-help__list li [data-spoller]:active {
     color: var(--pink)
   }
   .s-delivery-pay__contacts-btn:active {

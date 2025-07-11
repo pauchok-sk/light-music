@@ -15,6 +15,7 @@ import toggleText from "./files/toggleText.js";
 import cartPay from "./files/cartPay.js";
 import inputmask from "./files/inputmask.js";
 import map from "./files/map.js";
+import spollers from "./files/spollers.js";
 
 catalogChange();
 sliders();
@@ -32,6 +33,7 @@ productMoreTabs();
 cartPay();
 inputmask();
 map();
+spollers();
 
 Fancybox.bind("[data-fancybox]", {});
 
