@@ -1459,6 +1459,7 @@ select.input::-ms-expand {
   box-shadow: 0 2px 15px 1px rgba(0,0,0,.09);
   border-radius: 20px;
   z-index: 30;
+  overflow: hidden;
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(20px);
@@ -2046,16 +2047,59 @@ a.pagination__btn:active {
   font-size: 14px;
   line-height: 143%
 }
+.header-line__location._open .header-line__location-btn {
+  background-color: var(--primary)
+}
+.header-line__location._open .header-line__location-btn svg:last-child {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
 .header-line__location-btn {
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 10px 20px;
-  cursor: pointer
+  cursor: pointer;
+  transition: background-color .2s ease
 }
 .header-line__location-btn svg {
   width: 16px;
-  height: 16px
+  height: 16px;
+  transition: -webkit-transform .2s ease;
+  transition: transform .2s ease;
+  transition: transform .2s ease,-webkit-transform .2s ease
+}
+.header-line__location-dropdown {
+  z-index: 130;
+  width: 255px
+}
+.header-line__location-body {
+  padding: 10px 0;
+  max-height: 180px;
+  overflow-y: auto
+}
+.header-line__location-body::-webkit-scrollbar {
+  width: 2px
+}
+.header-line__location-body::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0)
+}
+.header-line__location-body::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 3px
+}
+.header-line__location-item {
+  padding: 10px 20px;
+  display: block;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--black);
+  transition: color .2s ease,background-color .2s ease
+}
+.header-line__location-item._active {
+  color: var(--primary)
 }
 .header-line__list a {
   position: relative
@@ -5105,6 +5149,10 @@ a.pagination__btn:active {
   .cart__product:hover {
     color: var(--primary)
   }
+  .header-line__location-item:hover {
+    background-color: var(--gray-1);
+    color: var(--primary-hover)
+  }
   .header-line__list a:hover::before {
     right: 0
   }
@@ -5397,6 +5445,10 @@ a.pagination__btn:active {
   }
   .cart__product:active {
     color: var(--primary)
+  }
+  .header-line__location-item:active {
+    background-color: var(--gray-1);
+    color: var(--primary-hover)
   }
   .header-line__list a:active::before {
     right: 0
