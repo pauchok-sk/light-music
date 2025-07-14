@@ -1,0 +1,122 @@
+.s-archive-reviews {
+  overflow: hidden;
+  &__head {
+    border-bottom: 1px solid var(--gray-3);
+  }
+  &__nav {
+    display: flex;
+    gap: 20px;
+    @include tablet {
+      gap: 0px;
+      margin: 0 -10px;
+      padding: 0 10px;
+    }
+  }
+  &__nav-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 10px;
+    flex-shrink: 0;
+
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    transition: color 0.2s ease;
+
+    @include hover {
+      color: var(--primary);
+    }
+    @include tablet {
+      padding: 12px 10px;
+
+      font-size: 13px;
+      line-height: 123%;
+    }
+
+    &._active {
+      color: var(--primary);
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 2px;
+      opacity: 0;
+      background-color: currentColor;
+      transition: opacity 0.2s ease;
+    }
+
+    img {
+      display: block;
+      width: 20px;
+      @include tablet {
+        width: 16px;
+      }
+    }
+  }
+  &__body {
+    padding: 40px 0px 60px 0px;
+    @include tablet {
+      padding-top: 20px;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    @include laptop-middle {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include tablet {
+      gap: 10px;
+    }
+    @include tablet-min {
+      grid-template-columns: 1fr;
+      margin: 0 -10px;
+    }
+  }
+  &__grid-thanks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    @include laptop-middle {
+      grid-template-columns: repeat(3, 1fr)
+    }
+    @include laptop-min {
+      grid-template-columns: repeat(2, 1fr)
+    }
+    @include tablet {
+      gap: 10px
+    }
+  }
+  &__thank-item {
+    @include flex-center;
+    box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.09);
+    background-color: white;
+    border: 1px solid var(--gray-2);
+    border-radius: 20px;
+    padding: 10px;
+    transition: opacity .2s ease;
+    @include hover {
+      opacity: 0.7;
+    }
+    @include tablet {
+      border-radius: 8px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
