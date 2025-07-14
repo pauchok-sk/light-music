@@ -12,12 +12,8 @@ export default function map() {
       });
 
       centerArr.forEach((center) => {
-        const placemark = new ymaps.Placemark(
-          center,
-          {},
-          {}
-        );
-        
+        const placemark = new ymaps.Placemark(center, {}, {});
+
         htmlMap.geoObjects.add(placemark);
       });
 
@@ -29,6 +25,35 @@ export default function map() {
       htmlMap.controls.remove("zoomControl"); // удаляем контрол зуммирования
       htmlMap.controls.remove("rulerControl"); // удаляем контрол правил
       // htmlMap.behaviors.disable(["scrollZoom"]);
+    }
+
+    ymaps.ready(init);
+  }
+
+  const officeMap = document.querySelector("#office-map");
+
+  if (officeMap) {
+    const center = JSON.parse(officeMap.dataset.center);
+    const zoom = Number(officeMap.dataset.zoom);
+
+    function init() {
+      const htmlMap = new ymaps.Map(officeMap, {
+        center,
+        zoom,
+      });
+
+      const placemark = new ymaps.Placemark(center, {}, {});
+
+      htmlMap.geoObjects.add(placemark);
+
+      htmlMap.controls.remove("geolocationControl"); // удаляем геолокацию
+      htmlMap.controls.remove("searchControl"); // удаляем поиск
+      htmlMap.controls.remove("trafficControl"); // удаляем контроль трафика
+      htmlMap.controls.remove("typeSelector"); // удаляем тип
+      htmlMap.controls.remove("fullscreenControl"); // удаляем кнопку перехода в полноэкранный режим
+      htmlMap.controls.remove("zoomControl"); // удаляем контрол зуммирования
+      htmlMap.controls.remove("rulerControl"); // удаляем контрол правил
+      htmlMap.behaviors.disable(["scrollZoom"]);
     }
 
     ymaps.ready(init);

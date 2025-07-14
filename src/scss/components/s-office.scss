@@ -1,0 +1,102 @@
+.s-office {
+  @include tablet-min {
+    overflow: hidden;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    @include laptop-middle {
+      grid-template-columns: 1fr;
+    }
+    @include tablet {
+      gap: 10px;
+    }
+    @include tablet-min {
+      margin: 0 -10px;
+    }
+  }
+  &__body {
+    border-radius: 20px;
+    padding: 40px;
+    background: var(--gray-1);
+    @include tablet {
+      padding: 30px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+    @include tablet {
+      margin-top: 30px;
+      gap: 30px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+
+    @include tablet {
+      gap: 10px;
+
+      font-size: 16px;
+      line-height: 125%;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+      @include tablet {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    a {
+      transition: color 0.2s ease;
+      @include hover {
+        color: var(--primary);
+      }
+      @include pressed {
+        color: var(--black);
+      }
+
+      @include tablet {
+        color: var(--primary);
+        @include hover {
+          color: var(--black);
+        }
+        @include pressed {
+          color: var(--primary-hover);
+        }
+      }
+    }
+    &._primary {
+      a {
+        color: var(--primary);
+        @include hover {
+          color: var(--black);
+        }
+        @include pressed {
+          color: var(--primary-hover);
+        }
+      }
+    }
+  }
+  &__map {
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 400px;
+
+    @include tablet {
+      min-height: 375px;
+    }
+  }
+}

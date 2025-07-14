@@ -719,6 +719,28 @@
             }
             ymaps.ready(init);
         }
+        const officeMap = document.querySelector("#office-map");
+        if (officeMap) {
+            const center = JSON.parse(officeMap.dataset.center);
+            const zoom = Number(officeMap.dataset.zoom);
+            function init() {
+                const htmlMap = new ymaps.Map(officeMap, {
+                    center,
+                    zoom
+                });
+                const placemark = new ymaps.Placemark(center, {}, {});
+                htmlMap.geoObjects.add(placemark);
+                htmlMap.controls.remove("geolocationControl");
+                htmlMap.controls.remove("searchControl");
+                htmlMap.controls.remove("trafficControl");
+                htmlMap.controls.remove("typeSelector");
+                htmlMap.controls.remove("fullscreenControl");
+                htmlMap.controls.remove("zoomControl");
+                htmlMap.controls.remove("rulerControl");
+                htmlMap.behaviors.disable([ "scrollZoom" ]);
+            }
+            ymaps.ready(init);
+        }
     }
     function spollers() {
         const buttons = document.querySelectorAll("[data-spoller]");
