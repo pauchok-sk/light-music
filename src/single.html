@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  @@include('html/head.html',{ "title":"pauchoo0k" })
+  <body class="body">
+    @@include('html/components/header.html')
+    <main>
+      <section class="intro">
+        <div class="container">
+          <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <a href="#">Новости и акции</a>
+            <span>Поставки оборудования в самые удаленные уголки России</span>
+          </div>
+        </div>
+      </section>
+      @@include('html/components/s-single.html')
+      @@include('html/components/s-rec.html',{"title": "Продукты компании"})
+      @@include('html/components/s-news.html')
+
+    </main>
+    @@include('html/components/modals.html')
+    @@include('html/components/footer.html')
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b46e9249-4925-4460-b11c-3aaf76ad0115&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

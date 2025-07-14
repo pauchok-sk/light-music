@@ -1,0 +1,155 @@
+.s-single {
+  @include tablet-min {
+    overflow: hidden;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    gap: 60px;
+    @include laptop-middle {
+      gap: 30px;
+    }
+    @include laptop-min {
+      flex-wrap: wrap;
+    }
+  }
+  &__main {
+    flex: 1;
+  }
+  &__reklam {
+    position: sticky;
+    top: 100px;
+    width: 435px;
+    flex-shrink: 0;
+    @include laptop {
+      width: 360px;
+    }
+    @include laptop-middle {
+      width: 300px;
+    }
+    @include laptop-min {
+      width: 100%;
+      position: static;
+    }
+  }
+  &__reklam-item {
+    position: relative;
+    display: block;
+    border-radius: 8px;
+    color: white;
+    padding: 60px 45px;
+    width: 100%;
+    min-height: 640px;
+    @include laptop {
+      min-height: 530px;
+      padding: 30px;
+    }
+    @include laptop-middle {
+      min-height: 440px;
+    }
+    @include laptop-min {
+      min-height: 350px;
+    }
+    @include tablet {
+      min-height: 300px;
+    }
+    @include tablet-min {
+      min-height: 200px;
+      margin-left: -10px;
+      width: calc(100vw);
+      padding: 20px 25px;
+    }
+  }
+  &__reklam-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    @include laptop {
+      font-size: 28px;
+    }
+    @include tablet {
+      font-size: 24px;
+      line-height: 125%;
+    }
+  }
+  &__info-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-size: 13px;
+    line-height: 154%;
+    color: var(--gray-4);
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__video {
+    @include flex-center;
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 1/0.55;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.12);
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__video-btn {
+    position: absolute;
+    width: 95px;
+
+    transition: transform 0.2s ease;
+
+    @include hover {
+      transform: scale(1.07);
+    }
+  }
+  &__content {
+    font-size: 20px;
+    line-height: 150%;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    @include tablet {
+      margin-top: 30px;
+    }
+
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__share {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--primary);
+
+    transition: color .2s ease;
+    @include hover {
+      color: var(--black);
+    }
+    @include pressed {
+      color: var(--primary-hover);
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
