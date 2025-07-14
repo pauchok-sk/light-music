@@ -3306,6 +3306,83 @@ a.pagination__btn:active {
   width: 24px;
   height: 24px
 }
+.s-contacts__wrapper {
+  display: flex;
+  gap: 20px
+}
+.s-contacts__block {
+  position: relative;
+  background: var(--gray-1);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 60px;
+  z-index: 1
+}
+.s-contacts__block:first-child {
+  flex-basis: 62.5%
+}
+.s-contacts__block:last-child {
+  flex: 1
+}
+.s-contacts__form .form-policy-input:checked+label::before {
+  background-color: #fff
+}
+.s-contacts__form-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px
+}
+.s-contacts__form-control .input {
+  flex: 1
+}
+.s-contacts__form-label {
+  display: block;
+  flex: 0 1 35%;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%
+}
+.s-contacts__form-policy-label {
+  font-size: 16px;
+  line-height: 175%
+}
+.s-contacts__form-policy-label::before {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--gray-3);
+  border-radius: 8px;
+  background-color: #fff
+}
+.s-contacts__social {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px
+}
+.s-contacts__social-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--primary);
+  transition: color .2s ease
+}
+.s-contacts__social-btn:active {
+  color: var(--primary-hover)
+}
+.s-contacts__social-btn svg {
+  width: 32px;
+  height: 32px
+}
+.s-contacts__block-picture {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1
+}
 .footer__grid {
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -3566,6 +3643,9 @@ a.pagination__btn:active {
   }
   .s-single__reklam-title {
     font-size: 28px
+  }
+  .s-contacts__block {
+    padding: 30px
   }
 }
 @media (max-width:1199px) {
@@ -3835,6 +3915,13 @@ a.pagination__btn:active {
   }
   .s-single__reklam-item {
     min-height: 350px
+  }
+  .s-contacts__wrapper {
+    flex-wrap: wrap
+  }
+  .s-contacts__block:first-child {
+    flex: none;
+    width: 100%
   }
   .footer__grid {
     grid-template-columns: repeat(2,1fr)
@@ -4498,6 +4585,38 @@ a.pagination__btn:active {
   .s-single__content {
     margin-top: 30px
   }
+  .s-contacts__wrapper {
+    gap: 10px
+  }
+  .s-contacts__form-control {
+    flex-wrap: wrap;
+    gap: 5px
+  }
+  .s-contacts__form-control .input {
+    flex: none;
+    width: 100%
+  }
+  .s-contacts__form-label {
+    flex: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 13px;
+    line-height: 154%
+  }
+  .s-contacts__form-policy-label {
+    font-size: 13px;
+    line-height: 154%
+  }
+  .s-contacts__form-policy-label::before {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border-width: 1px
+  }
+  .s-contacts__block-picture {
+    width: 235px
+  }
 }
 @media (max-width:767px)and (any-hover:hover) {
   .location-item__tel a:hover {
@@ -4670,6 +4789,15 @@ a.pagination__btn:active {
     margin-left: -10px;
     width: 100vw;
     padding: 20px 25px
+  }
+  .s-contacts {
+    overflow: hidden
+  }
+  .s-contacts__wrapper {
+    margin: 0 -10px
+  }
+  .s-contacts__form .btn-s {
+    width: 100%
   }
   .footer__grid {
     grid-template-columns: 1fr
@@ -4971,6 +5099,9 @@ a.pagination__btn:active {
   .s-single__share:hover {
     color: var(--black)
   }
+  .s-contacts__social-btn:hover {
+    color: var(--black)
+  }
   .footer__list a:hover,
   .footer__list button:hover {
     opacity: .7
@@ -5253,6 +5384,9 @@ a.pagination__btn:active {
     transform: scale(1.07)
   }
   .s-single__share:active {
+    color: var(--black)
+  }
+  .s-contacts__social-btn:active {
     color: var(--black)
   }
   .footer__list a:active,

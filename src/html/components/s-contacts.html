@@ -1,0 +1,87 @@
+<section class="s-contacts sect-m mt-3">
+  <div class="container">
+    <h1 class="md-h1 h3 mb-4">Контакты</h1>
+    <div class="s-contacts__wrapper">
+      <div class="s-contacts__block">
+        <h3 class="md-h3 h4 mb-2">Оставить заявку</h3>
+        <p class="text-md sm-text mb-3">
+          Оставьте заявку, и наши менеджеры свяжутся с вами в ближайшее время.
+        </p>
+        <form action="#" class="s-contacts__form">
+          <div class="input-control s-contacts__form-control">
+            <label for="contacts-name" class="s-contacts__form-label"
+              >Ваше имя:</label
+            >
+            <input
+              type="text"
+              placeholder="Иванов Иван Иванович"
+              id="contacts-name"
+              class="input"
+            />
+          </div>
+          <div class="input-control s-contacts__form-control">
+            <label for="contacts-tel" class="s-contacts__form-label"
+              >Телефон для связи:</label
+            >
+            <input
+              type="tel"
+              placeholder="+7 (---) --- ----"
+              id="contacts-tel"
+              class="input"
+            />
+          </div>
+          <div class="input-control s-contacts__form-control">
+            <label for="contacts-email" class="s-contacts__form-label"
+              >E-mail:</label
+            >
+            <input
+              type="email"
+              placeholder="name@example.ru"
+              id="contacts-email"
+              class="input"
+            />
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-between flex-wrap gap-3 mt-3"
+          >
+            <input
+              type="checkbox"
+              id="contacts-policy"
+              class="d-none form-policy-input"
+            />
+            <label
+              for="contacts-policy"
+              class="form-policy-label s-contacts__form-policy-label"
+              ><span
+                >Подтверждаю, что согласен/согласна с
+                <a href="#">политикой конфиденциальности</a></span
+              ></label
+            >
+            <button class="btn-s">Оставить заявку</button>
+          </div>
+        </form>
+      </div>
+      <div class="s-contacts__block">
+        <h3 class="md-h3 h4 mb-2">Пишите в мессенджеры – ответим быстро!</h3>
+        <p class="text-md sm-text mb-3">
+          Наши менеджеры помогут с выбором, оформлением заказа и ответят на любые вопросы. Работаем без выходных!
+        </p>
+        <div class="s-contacts__social">
+          <a href="#" target="_blank" class="s-contacts__social-btn">
+            <svg>
+              <use xlink:href='img/icons/icons.svg#icon-tg'></use>
+            </svg>
+            <span>Telegram</span>
+          </a>
+          <a href="#" target="_blank" class="s-contacts__social-btn">
+            <svg>
+              <use xlink:href='img/icons/icons.svg#icon-whats'></use>
+            </svg>
+            <span>Whatsapp</span>
+          </a>
+        </div>
+        <img src="@img/chat.png" alt="image" class="s-contacts__block-picture">
+      </div>
+    </div>
+  </div>
+</section>
