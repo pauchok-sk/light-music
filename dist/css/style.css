@@ -879,9 +879,33 @@ select.input::-ms-expand {
   width: 535px;
   max-width: 100%
 }
+.form-search .input {
+  padding-right: 60px
+}
 .form-search .btn-rect {
   position: absolute;
   right: 4px
+}
+.form-search._search .input {
+  padding-right: 90px!important
+}
+.form-search__clear {
+  display: block;
+  position: absolute;
+  right: 60px;
+  width: 24px;
+  height: 24px;
+  color: var(--gray-4);
+  cursor: pointer;
+  transition: color .2s ease
+}
+.form-search__clear:active {
+  color: var(--black)
+}
+.form-search__clear svg {
+  display: block;
+  width: 100%;
+  height: 100%
 }
 .category-card {
   padding: 16px;
@@ -1575,10 +1599,10 @@ select.input::-ms-expand {
   width: 20px;
   height: 20px
 }
-[data-spoller]+* {
+[data-spoller-btn]+* {
   display: none
 }
-[data-spoller]._active+* {
+[data-spoller-btn]._active+* {
   display: block
 }
 .card-video-review {
@@ -2187,6 +2211,7 @@ a.pagination__btn:active {
   display: block
 }
 .header__mob-btn {
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -2200,6 +2225,15 @@ a.pagination__btn:active {
   width: 16px;
   height: 16px;
   color: var(--primary)
+}
+.header__location-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: #000;
+  z-index: 130;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease,visibility .3s ease
 }
 .header-search {
   display: none
@@ -2546,6 +2580,9 @@ a.pagination__btn:active {
 }
 .s-category__body .form-search {
   width: 300px
+}
+.s-category__body .form-search._search {
+  width: 640px
 }
 .s-category__filters-wrapper {
   display: flex;
@@ -3111,16 +3148,16 @@ a.pagination__btn:active {
 .s-help__list li::before {
   content: "—"
 }
-.s-help__list li [data-spoller] {
+.s-help__list li [data-spoller-btn] {
   position: relative;
   cursor: pointer;
   color: var(--primary);
   transition: color .2s ease
 }
-.s-help__list li [data-spoller]._active {
+.s-help__list li [data-spoller-btn]._active {
   color: var(--pink)
 }
-.s-help__list li [data-spoller]::after {
+.s-help__list li [data-spoller-btn]::after {
   position: absolute;
   content: "";
   left: 0;
@@ -3809,6 +3846,9 @@ a.pagination__btn:active {
   .s-archive-brands__grid {
     grid-template-columns: repeat(5,1fr)
   }
+  .s-category__body .form-search._search {
+    width: 400px
+  }
   .s-category__grid {
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
@@ -4066,8 +4106,23 @@ a.pagination__btn:active {
   .header-line {
     padding: 10px 0
   }
+  .header-line__location-dropdown {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%)!important;
+    transform: translate(-50%,-50%)!important;
+    z-index: 140
+  }
+  .header-line__location-body {
+    max-height: calc(100vh - 200px)
+  }
   .header {
     position: static
+  }
+  .header__location._open+.header__location-overlay {
+    opacity: .5;
+    visibility: visible
   }
   .header-search {
     display: block
@@ -4083,6 +4138,9 @@ a.pagination__btn:active {
   }
   .s-archive-brands__grid {
     grid-template-columns: repeat(3,1fr)
+  }
+  .s-category__body .form-search._search {
+    width: 300px
   }
   .s-product__slider {
     width: 300px!important
@@ -4193,6 +4251,17 @@ a.pagination__btn:active {
   }
   .sect-p {
     padding: 30px 0
+  }
+  .form-search .input {
+    padding-right: 40px
+  }
+  .form-search._search .input {
+    padding-right: 70px!important
+  }
+  .form-search__clear {
+    width: 16px;
+    height: 16px;
+    right: 50px
   }
   .slider-btn {
     display: none
@@ -4552,6 +4621,9 @@ a.pagination__btn:active {
     gap: 10px
   }
   .s-category__body .form-search {
+    width: 100%
+  }
+  .s-category__body .form-search._search {
     width: 100%
   }
   .s-category__filters-wrapper {
@@ -5174,6 +5246,9 @@ a.pagination__btn:active {
   .nav-btn:hover {
     color: var(--primary)
   }
+  .form-search__clear:hover {
+    color: var(--primary)
+  }
   .category-card:hover {
     background-color: var(--gray-3)
   }
@@ -5360,7 +5435,7 @@ a.pagination__btn:active {
   .s-cart__product-remove:hover {
     color: var(--primary)
   }
-  .s-help__list li [data-spoller]:hover {
+  .s-help__list li [data-spoller-btn]:hover {
     color: var(--pink)
   }
   .s-delivery-pay__contacts-btn:hover {
@@ -5484,6 +5559,9 @@ a.pagination__btn:active {
     stroke: var(--primary)
   }
   .nav-btn:active {
+    color: var(--primary)
+  }
+  .form-search__clear:active {
     color: var(--primary)
   }
   .category-card:active {
@@ -5672,7 +5750,7 @@ a.pagination__btn:active {
   .s-cart__product-remove:active {
     color: var(--primary)
   }
-  .s-help__list li [data-spoller]:active {
+  .s-help__list li [data-spoller-btn]:active {
     color: var(--pink)
   }
   .s-delivery-pay__contacts-btn:active {

@@ -14,6 +14,7 @@ export default function cartPay() {
           labelAddress.classList.add("d-none");
         } else {
           inputPayReceipt.disabled = true;
+          inputPayReceipt.checked = false;
           inputAddress.classList.remove("d-none");
           labelAddress.classList.remove("d-none");
         }

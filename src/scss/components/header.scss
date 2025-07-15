@@ -40,11 +40,22 @@
   &__location-dropdown {
     z-index: 130;
     width: 255px;
+    @include laptop-min {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) !important;
+      z-index: 140;
+    }
   }
   &__location-body {
     padding: 10px 0px;
     max-height: 180px;
     overflow-y: auto;
+
+    @include laptop-min {
+      max-height: calc(100vh - 200px);
+    }
 
     &::-webkit-scrollbar {
       width: 2px;
@@ -199,6 +210,7 @@
     }
   }
   &__mob-btn {
+    cursor: pointer;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -219,6 +231,28 @@
       height: 16px;
       color: var(--primary);
     }
+  }
+  &__location {
+    &._open {
+      @include laptop-min {
+        & + .header__location-overlay {
+          opacity: 0.5;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  &__location-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    z-index: 130;
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
   }
 }
 .header-search {

@@ -15,6 +15,19 @@
       @include tablet {
         width: 100%;
       }
+
+      &._search {
+        width: 640px;
+        @include laptop {
+          width: 400px;
+        }
+        @include laptop-min {
+          width: 300px;
+        }
+        @include tablet {
+          width: 100%;
+        }
+      }
     }
   }
   &__filters-wrapper {
@@ -35,7 +48,7 @@
     width: 60px;
     height: 48px;
 
-    transition: color .2s ease;
+    transition: color 0.2s ease;
     @include hover {
       color: var(--primary);
     }
