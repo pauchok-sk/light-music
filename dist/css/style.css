@@ -3643,17 +3643,20 @@ a.pagination__btn:active {
   gap: 20px
 }
 .s-auth__body {
-  flex: 0 1 480px
-}
-.s-auth__form {
   width: 480px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0 auto
+}
+.s-auth__form {
   margin-top: 40px
+}
+.s-auth__form .btn-s {
+  min-width: 200px
 }
 .s-auth__img {
   display: block;
-  width: 100%;
+  width: 555px;
+  margin: 0 auto;
   height: auto
 }
 .footer__grid {
@@ -4245,7 +4248,7 @@ a.pagination__btn:active {
   .s-not-found__num {
     font-size: 160px
   }
-  .s-auth__form {
+  .s-auth__body {
     width: 100%
   }
   .footer__grid {
