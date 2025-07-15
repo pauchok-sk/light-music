@@ -429,10 +429,18 @@ img {
 .sm-text p:last-child {
   margin-bottom: 0
 }
+.sm-text a {
+  color: var(--primary)
+}
 .btn-text {
   font-weight: 600;
   font-size: 16px;
   line-height: 125%
+}
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center
 }
 .label-input {
   display: block;
@@ -652,6 +660,27 @@ select.input::-ms-expand {
 }
 .input-simple[type=number] {
   -moz-appearance: textfield
+}
+.password-btn {
+  position: absolute;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: color .2s ease
+}
+.password-btn svg {
+  width: 100%;
+  height: 100%
+}
+.password-btn svg:last-child {
+  display: none
+}
+.password-btn._active svg:first-child {
+  display: none
+}
+.password-btn._active svg:last-child {
+  display: block
 }
 .modal-dialog {
   width: 800px!important;
@@ -3605,6 +3634,28 @@ a.pagination__btn:active {
   padding: 13px 19px!important;
   border-radius: 8px!important
 }
+.s-auth {
+  padding-bottom: 100px
+}
+.s-auth__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px
+}
+.s-auth__body {
+  flex: 0 1 480px
+}
+.s-auth__form {
+  width: 480px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 40px
+}
+.s-auth__img {
+  display: block;
+  width: 100%;
+  height: auto
+}
 .footer__grid {
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -4194,6 +4245,9 @@ a.pagination__btn:active {
   .s-not-found__num {
     font-size: 160px
   }
+  .s-auth__form {
+    width: 100%
+  }
   .footer__grid {
     grid-template-columns: repeat(2,1fr)
   }
@@ -4231,6 +4285,11 @@ a.pagination__btn:active {
   }
   .form-footer {
     margin-top: 10px
+  }
+  .password-btn {
+    width: 20px;
+    height: 20px;
+    right: 10px
   }
   .modal__body {
     padding: 20px;
@@ -4946,6 +5005,15 @@ a.pagination__btn:active {
   .s-not-found__list li::after {
     display: none
   }
+  .s-auth {
+    padding-bottom: 60px
+  }
+  .s-auth__wrapper {
+    grid-template-columns: 1fr
+  }
+  .s-auth__form {
+    margin-top: 30px
+  }
 }
 @media (max-width:767px)and (any-hover:hover) {
   .location-item__tel a:hover {
@@ -5144,6 +5212,12 @@ a.pagination__btn:active {
     row-gap: 40px;
     grid-template-columns: repeat(2,1fr)
   }
+  .s-auth__form .btn-s {
+    width: 100%
+  }
+  .s-auth__img {
+    display: none
+  }
   .footer__grid {
     grid-template-columns: 1fr
   }
@@ -5221,6 +5295,9 @@ a.pagination__btn:active {
     color: var(--primary);
     background-color: var(--gray-2)
   }
+  .sm-text a:hover {
+    text-decoration: underline
+  }
   .form-policy-label a:hover {
     text-decoration: underline
   }
@@ -5231,6 +5308,9 @@ a.pagination__btn:active {
     color: var(--primary)
   }
   .input-counter:hover {
+    color: var(--primary)
+  }
+  .password-btn:hover {
     color: var(--primary)
   }
   .modal__close:hover {
@@ -5536,6 +5616,9 @@ a.pagination__btn:active {
     color: var(--primary);
     background-color: var(--gray-2)
   }
+  .sm-text a:active {
+    text-decoration: underline
+  }
   .form-policy-label a:active {
     text-decoration: underline
   }
@@ -5546,6 +5629,9 @@ a.pagination__btn:active {
     color: var(--primary)
   }
   .input-counter:active {
+    color: var(--primary)
+  }
+  .password-btn:active {
     color: var(--primary)
   }
   .modal__close:active {

@@ -17,6 +17,7 @@ import inputmask from "./files/inputmask.js";
 import map from "./files/map.js";
 import spollersSimple from "./files/spollersSimple.js";
 import spoller from "./files/spoller.js";
+import passwordsInputs from "./files/passwordsInputs.js";
 
 catalogChange();
 sliders();
@@ -36,6 +37,7 @@ inputmask();
 map();
 spollersSimple();
 spoller();
+passwordsInputs();
 
 Fancybox.bind("[data-fancybox]", {});
 

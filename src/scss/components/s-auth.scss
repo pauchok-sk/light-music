@@ -1,0 +1,42 @@
+.s-auth {
+  padding-bottom: 100px;
+  @include tablet {
+    padding-bottom: 60px;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__body {
+    flex: 0 1 480px;
+  }
+  &__form {
+    width: 480px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    @include laptop-min {
+      width: 100%;
+    }
+    @include tablet {
+      margin-top: 30px;
+    }
+    @include tablet-min {
+      .btn-s {
+        width: 100%;
+      }
+    }
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    @include tablet-min {
+      display: none;
+    }
+  }
+}

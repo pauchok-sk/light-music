@@ -970,41 +970,73 @@
 
 	<main>
 
-		<section class="s-not-found">
-			<img src="img/bg-not-found.jpg" alt="image" class="s-not-found__bg" />
+		<section class="intro">
 			<div class="container">
-				<div class="breadcrumbs _white">
+				<div class="breadcrumbs">
 					<a href="#">Главная</a>
-					<span>О компании</span>
+					<span>Регистрация</span>
 				</div>
 			</div>
-			<div class="s-not-found__wrapper">
-				<div class="container">
-					<div class="s-not-found__wrapper-body">
-						<div class="s-not-found__num mb-3">404</div>
-						<h1 class="md-h1 h2">Страница не найдена</h1>
-						<p class="text-md sm-text mb-3">
-							К сожалению, запрашиваемая страница отсутствует. Возможно, она была
-							перемещена или удалена.
-						</p>
-						<form action="#" class="form-search">
-							<input type="text" placeholder="Поиск" class="input" />
-							<button class="btn-rect">
-								<svg>
-									<use xlink:href="img/icons/icons.svg#icon-search"></use>
-								</svg>
-							</button>
+		</section>
+		<section class="s-auth mt-md-4 mt-3">
+			<div class="container">
+				<h1 class="h3 mb-2">Регистрация</h1>
+				<div class="d-flex align-items-center flex-wrap gap-2 sm-text">
+					<p class="mb-0">Уже зарегистрированы?</p>
+					<a href="#">Войти</a>
+				</div>
+				<div class="s-auth__wrapper">
+					<div class="s-auth__body">
+						<form class="s-auth__form">
+							<div class="input-control mb-md-3 mb-2 w-full">
+								<label for="auth-email" class="label-input">Email</label>
+								<input type="email" id="auth-email" placeholder="email@example.com" class="input" />
+							</div>
+							<div class="input-control mb-md-3 mb-2 w-full">
+								<label for="auth-email" class="label-input">Телефон</label>
+								<input type="tel" id="auth-tel" placeholder="+7 (---) --- ----" class="input" />
+							</div>
+							<div class="input-control mb-md-3 mb-2 w-full">
+								<label for="auth-password" class="label-input">Пароль</label>
+								<div class="input-wrapper">
+									<input type="password" id="auth-password" class="input" />
+									<div class="password-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-eye"></use>
+										</svg>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-eye-slash"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="input-control mb-md-3 mb-2 w-full">
+								<label for="auth-password-2" class="label-input">
+									Повторите пароль
+								</label>
+								<div class="input-wrapper">
+									<input type="password" id="auth-password-2" class="input" />
+									<div class="password-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-eye"></use>
+										</svg>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-eye-slash"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<input type="checkbox" id="auth-policy" class="d-none form-policy-input" />
+							<label for="auth-policy" class="form-policy-label align-items-center mt-4 mb-3">
+								<span>
+									Подтверждаю, что согласен/согласна с
+									<a href="#">политикой конфиденциальности</a>
+								</span>
+							</label>
+							<button type="submit" class="btn-s ms-auto">Зарегистрироваться</button>
 						</form>
-						<p class="sm-text mb-0 mt-3 s-not-found__content">
-							Если вам нужна помощь в подборе оборудования, наши специалисты
-							<a href="#">всегда на связи.</a>
-						</p>
-						<ul class="list s-not-found__list">
-							<li><a href="#">На главную страницу</a></li>
-							<li><a href="#">В каталог товаров</a></li>
-							<li><a href="#">Страница контактов</a></li>
-						</ul>
 					</div>
+					<img src="img/auth.png" alt="" class="s-auth__img">
 				</div>
 			</div>
 		</section>

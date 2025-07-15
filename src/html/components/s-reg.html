@@ -1,0 +1,76 @@
+<section class="s-auth mt-md-4 mt-3">
+  <div class="container">
+    <h1 class="h3 mb-2">Регистрация</h1>
+    <div class="d-flex align-items-center flex-wrap gap-2 sm-text">
+      <p class="mb-0">Уже зарегистрированы?</p>
+      <a href="#">Войти</a>
+    </div>
+    <div class="s-auth__wrapper">
+      <div class="s-auth__body">
+        <form class="s-auth__form">
+          <div class="input-control mb-md-3 mb-2 w-full">
+            <label for="auth-email" class="label-input">Email</label>
+            <input
+              type="email"
+              id="auth-email"
+              placeholder="email@example.com"
+              class="input"
+            />
+          </div>
+          <div class="input-control mb-md-3 mb-2 w-full">
+            <label for="auth-email" class="label-input">Телефон</label>
+            <input
+              type="tel"
+              id="auth-tel"
+              placeholder="+7 (---) --- ----"
+              class="input"
+            />
+          </div>
+          <div class="input-control mb-md-3 mb-2 w-full">
+            <label for="auth-password" class="label-input">Пароль</label>
+            <div class="input-wrapper">
+              <input type="password" id="auth-password" class="input" />
+              <div class="password-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-eye"></use>
+                </svg>
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-eye-slash"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="input-control mb-md-3 mb-2 w-full">
+            <label for="auth-password-2" class="label-input">
+              Повторите пароль
+            </label>
+            <div class="input-wrapper">
+              <input type="password" id="auth-password-2" class="input" />
+              <div class="password-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-eye"></use>
+                </svg>
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-eye-slash"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <input
+            type="checkbox"
+            id="auth-policy"
+            class="d-none form-policy-input"
+          />
+          <label for="auth-policy" class="form-policy-label align-items-center mt-4 mb-3">
+            <span>
+              Подтверждаю, что согласен/согласна с
+              <a href="#">политикой конфиденциальности</a>
+            </span>
+          </label>
+          <button type="submit" class="btn-s ms-auto">Зарегистрироваться</button>
+        </form>
+      </div>
+      <img src="@img/auth.png" alt="" class="s-auth__img">
+    </div>
+  </div>
+</section>

@@ -44,6 +44,13 @@
       margin-bottom: 0;
     }
   }
+
+  a {
+    color: var(--primary);
+    @include hover {
+      text-decoration: underline;
+    }
+  }
 }
 .btn-text {
   font-weight: 600;
