@@ -1,0 +1,31 @@
+.s-search {
+  overflow: hidden;
+  &__sect {
+    border-bottom: 1px solid var(--gray-3);
+  }
+  &__products {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    row-gap: 40px;
+    padding-bottom: 30px;
+    @include desktop {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    @include laptop {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include laptop-middle {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include tablet-min {
+      gap: 9px;
+      row-gap: 40px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__btn-sect {
+    padding: 13px 19px !important;
+    border-radius: 8px !important;
+  }
+}
