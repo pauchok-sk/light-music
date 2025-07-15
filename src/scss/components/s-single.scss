@@ -21,6 +21,10 @@
     top: 100px;
     width: 435px;
     flex-shrink: 0;
+    transition: opacity .2s ease;
+    @include hover {
+      opacity: 0.7;
+    }
     @include laptop {
       width: 360px;
     }

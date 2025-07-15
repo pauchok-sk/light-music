@@ -12,6 +12,11 @@
     overflow: hidden;
     padding-bottom: 73%;
 
+    transition: opacity .2s ease;
+    @include hover {
+      opacity: 0.7;
+    }
+
     img {
       position: absolute;
       left: 0;
