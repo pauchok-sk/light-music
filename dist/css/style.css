@@ -1212,6 +1212,12 @@ select.input::-ms-expand {
 .breadcrumbs span {
   color: var(--gray-4)
 }
+.breadcrumbs._white {
+  color: #fff
+}
+.breadcrumbs._white span {
+  color: var(--gray-3)
+}
 [data-tab] {
   display: none
 }
@@ -3475,6 +3481,76 @@ a.pagination__btn:active {
   overflow: hidden;
   min-height: 400px
 }
+.s-not-found {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 120px;
+  min-height: 915px;
+  z-index: 1
+}
+.s-not-found__bg {
+  position: absolute;
+  display: block;
+  -o-object-position: top;
+  object-position: top;
+  -o-object-fit: cover;
+  object-fit: cover;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 0;
+  height: 100%;
+  min-width: 2665px;
+  z-index: -1
+}
+.s-not-found__wrapper {
+  margin-top: 160px
+}
+.s-not-found__wrapper-body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 650px;
+  margin: 0 auto
+}
+.s-not-found__wrapper-body .form-search {
+  width: 100%
+}
+.s-not-found__content a {
+  color: var(--primary);
+  text-underline-offset: 2px
+}
+.s-not-found__num {
+  font-weight: 600;
+  font-size: 240px;
+  line-height: 100%;
+  text-align: center
+}
+.s-not-found__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px
+}
+.s-not-found__list li {
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+.s-not-found__list li:not(:last-child)::after {
+  content: "|";
+  font-size: 13px;
+  line-height: 154%
+}
+.s-not-found__list a {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 154%;
+  color: var(--primary);
+  transition: color .2s ease
+}
 .footer__grid {
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -3906,6 +3982,12 @@ a.pagination__btn:active {
   .s-office__wrapper {
     grid-template-columns: 1fr
   }
+  .s-not-found {
+    padding-bottom: 100px
+  }
+  .s-not-found__num {
+    font-size: 200px
+  }
 }
 @media (max-width:991px) {
   .nav-btn {
@@ -4021,6 +4103,12 @@ a.pagination__btn:active {
   .s-contacts__block:first-child {
     flex: none;
     width: 100%
+  }
+  .s-not-found {
+    min-height: auto
+  }
+  .s-not-found__num {
+    font-size: 160px
   }
   .footer__grid {
     grid-template-columns: repeat(2,1fr)
@@ -4744,6 +4832,22 @@ a.pagination__btn:active {
   .s-office__map {
     min-height: 375px
   }
+  .s-not-found {
+    padding-bottom: 55px
+  }
+  .s-not-found__num {
+    font-size: 120px
+  }
+  .s-not-found__list {
+    flex-direction: column;
+    gap: 20px
+  }
+  .s-not-found__list li {
+    display: block
+  }
+  .s-not-found__list li::after {
+    display: none
+  }
 }
 @media (max-width:767px)and (any-hover:hover) {
   .location-item__tel a:hover {
@@ -4773,10 +4877,6 @@ a.pagination__btn:active {
   }
   .form-footer .btn-s {
     width: 100%
-  }
-  .h2 {
-    font-size: 20px;
-    line-height: 130%
   }
   .card-product-line {
     gap: 10px
@@ -4937,6 +5037,9 @@ a.pagination__btn:active {
   }
   .s-office__wrapper {
     margin: 0 -10px
+  }
+  .s-not-found__wrapper-body {
+    padding: 0 30px
   }
   .footer__grid {
     grid-template-columns: 1fr
@@ -5260,6 +5363,12 @@ a.pagination__btn:active {
   .s-office__item._primary a:hover {
     color: var(--black)
   }
+  .s-not-found__content a:hover {
+    text-decoration: underline
+  }
+  .s-not-found__list a:hover {
+    color: var(--black)
+  }
   .footer__list a:hover,
   .footer__list button:hover {
     opacity: .7
@@ -5564,6 +5673,12 @@ a.pagination__btn:active {
     color: var(--primary)
   }
   .s-office__item._primary a:active {
+    color: var(--black)
+  }
+  .s-not-found__content a:active {
+    text-decoration: underline
+  }
+  .s-not-found__list a:active {
     color: var(--black)
   }
   .footer__list a:active,

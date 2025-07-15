@@ -15,7 +15,7 @@
   a {
     display: flex;
     gap: 8px;
-    transition: color .2s ease;
+    transition: color 0.2s ease;
     @include hover {
       color: var(--primary);
     }
@@ -26,5 +26,13 @@
   }
   span {
     color: var(--gray-4);
+  }
+
+  &._white {
+    color: white;
+
+    span {
+      color: var(--gray-3);
+    }
   }
 }
