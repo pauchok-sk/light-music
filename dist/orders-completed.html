@@ -984,315 +984,68 @@
 			<div class="container">
 				<div class="breadcrumbs">
 					<a href="#">Главная</a>
-					<span>Сервис и поддержка</span>
+					<a href="#">Личный кабинет</a>
+					<span>Заказы</span>
 				</div>
 			</div>
 		</section>
-		<section class="sect-m mt-2 s-help">
+		<section class="s-personal pt-3">
 			<div class="container">
-				<h1 class="md-h1 h3">Сервис и поддержка</h1>
-				<div class="s-help__grid">
-					<div class="s-help__item">
-						<img src="img/sound.svg" alt="icon" class="s-help__icon" />
-						<div class="s-help__item-title">
-							Ремонт <br />
-							светового оборудования
-						</div>
-						<ul class="list s-help__list">
-							<li>
-								<div>
-									<span data-spoller-btn>Интеллектуальных световых приборов</span>
-									<span>приборов движения, сканеров, центральных эффектов</span>
-								</div>
-							</li>
-							<li>
-								<div>
-									<span data-spoller-btn>Театральных световых приборов</span>
-									<span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
-								</div>
-							</li>
-							<li>
-								<div>
-									<span data-spoller-btn>Световых приборов</span>
-									<span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
-								</div>
-							</li>
-							<li>
-								<div>
-									<span data-spoller-btn>Систем управления световым оборудованием</span>
-									<span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
-								</div>
-							</li>
-							<li>
-								<div><span>LED-экранов</span></div>
-							</li>
-						</ul>
+				<div class="s-personal__wrapper">
+					<div class="s-personal__menu d-md-block d-none">
+						<a href="#" class="s-personal__menu-btn">
+							<span>Профиль</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</a>
+						<a href="#" class="s-personal__menu-btn _active">
+							<span>Заказы</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</a>
+						<a href="#" class="s-personal__menu-btn">
+							<span>Избранное</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</a>
 					</div>
-					<div class="s-help__item">
-						<img src="img/sound.svg" alt="icon" class="s-help__icon" />
-						<div class="s-help__item-title">
-							Ремонт звукового <br />
-							и трансляционного оборудования
+					<div class="s-personal__body">
+						<div class="s-personal__head">
+							<h1 class="md-h1 h3 mb-0">Заказы</h1>
 						</div>
-						<ul class="list s-help__list">
-							<li>
-								<div>
-									<span data-spoller-btn>Приборов обработки звука</span>
-									<span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
-								</div>
-							</li>
-							<li>
-								<div>
-									<span>Проигрывателей и рекордеров</span>
-								</div>
-							</li>
-							<li>
-								<div>
-									<span>Аудио-видео оборудования</span>
-								</div>
-							</li>
-							<li>
-								<div>
-									<span>Усилителей мощности</span>
-								</div>
-							</li>
-							<li>
-								<div>
-									<span data-spoller-btn>Акустических систем</span>
-									<span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
-								</div>
-							</li>
-							<li>
-								<div>
-									<span data-spoller-btn>Микшерных пультов</span>
-									<span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
-								</div>
-							</li>
-							<li>
-								<div>
-									<span data-spoller-btn>Микрофонов</span>
-									<span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="s-help__item">
-						<img src="img/sound.svg" alt="icon" class="s-help__icon" />
-						<div class="s-help__item-title">
-							Ремонт <br />
-							музыкальных инструментов
+						<div class="d-flex flex-wrap gap-2 mb-3 mb-md-4">
+							<a href="#" class="btn-s s-orders__nav-btn _gray">
+								Текущие заказы
+							</a>
+							<a href="#" class="btn-s s-orders__nav-btn _gray _active">Завершенные</a>
 						</div>
-						<ul class="list s-help__list">
-							<li>
-								<div><span>Гитар и гитарного оборудования</span></div>
-							</li>
-							<li>
-								<div><span>Скрипок, виолончелей и контрабасов</span></div>
-							</li>
-							<li>
-								<div><span>Синтезаторов и цифровых фортепиано</span></div>
-							</li>
-							<li>
-								<div><span>Электронных инструментов</span></div>
-							</li>
-						</ul>
+						<div class="s-personal__content-body">
+							<div class="s-orders__item _completed">
+								<a href="#" class="s-orders__item-head">
+									<div>
+										<div class="s-orders__item-title">Заказ от 9 мая</div>
+										<div class="s-orders__item-id">#123456789</div>
+									</div>
+									<div class="s-orders__item-price">2 471 000 ₽</div>
+								</a>
+							</div>
+							<div class="s-orders__item _completed">
+								<a href="#" class="s-orders__item-head">
+									<div>
+										<div class="s-orders__item-title">Заказ от 9 мая</div>
+										<div class="s-orders__item-id">#123456789</div>
+									</div>
+									<div class="s-orders__item-price">2 471 000 ₽</div>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
-		<section class="s-centers sect-m">
-			<div class="container">
-				<h2 class="md-h2 h4 mb-md-4 mb-3">Сервисные центры «Свет и Музыка»</h2>
-				<div class="s-centers__items">
-					<div class="location-item">
-						<div class="location-item__main">
-							<a href="#" target="_blank" class="location-item__location-btn d-flex d-md-none">
-								<svg>
-									<use xlink:href="img/icons/icons.svg#icon-location"></use>
-								</svg>
-							</a>
-							<div class="d-flex align-items-start flex-wrap gap-3 row-gap-1 w-full">
-								<div class="text location-item__city">
-									<strong>г. Иркутск</strong>
-								</div>
-								<div class="text-md sm-text location-item__street">
-									664510, Иркутская обл., Иркутский р-н, п. Дзержинск, ул.
-									Ушаковская, дом № 3, корпус «А»
-								</div>
-							</div>
-						</div>
-						<div class="location-item__tel">
-							<svg>
-								<use xlink:href="img/icons/icons.svg#icon-tel"></use>
-							</svg>
-							<div>
-								<a href="tel:+73952707838">+7 (3952) 707-838</a>
-							</div>
-						</div>
-						<div class="location-item__mail">
-							<svg>
-								<use xlink:href="img/icons/icons.svg#icon-mail"></use>
-							</svg>
-							<a href="mailto:info@asiamusic.ru">info@asiamusic.ru</a>
-						</div>
-					</div>
-					<div class="location-item">
-						<div class="location-item__main">
-							<a href="#" target="_blank" class="location-item__location-btn d-flex d-md-none">
-								<svg>
-									<use xlink:href="img/icons/icons.svg#icon-location"></use>
-								</svg>
-							</a>
-							<div class="d-flex align-items-start flex-wrap gap-3 row-gap-1 w-full">
-								<div class="text location-item__city">
-									<strong>г. Новосибирск</strong>
-								</div>
-								<div class="text-md sm-text location-item__street">
-									630091, г. Новосибирск, ул. Советская, 58
-								</div>
-							</div>
-						</div>
-						<div class="location-item__tel">
-							<svg>
-								<use xlink:href="img/icons/icons.svg#icon-tel"></use>
-							</svg>
-							<div>
-								<a href="tel:+73952707838">+7 (3952) 707-838</a>
-							</div>
-						</div>
-						<div class="location-item__mail">
-							<svg>
-								<use xlink:href="img/icons/icons.svg#icon-mail"></use>
-							</svg>
-							<a href="mailto:iservicensk@asiamusic.ru">servicensk@asiamusic.ru</a>
-						</div>
-					</div>
-					<div class="location-item">
-						<div class="location-item__main">
-							<a href="#" target="_blank" class="location-item__location-btn d-flex d-md-none">
-								<svg>
-									<use xlink:href="img/icons/icons.svg#icon-location"></use>
-								</svg>
-							</a>
-							<div class="d-flex align-items-start flex-wrap gap-3 row-gap-1 w-full">
-								<div class="text location-item__city">
-									<strong>г. Новосибирск</strong>
-								</div>
-								<div class="text-md sm-text location-item__street">
-									630091, г. Новосибирск, ул. Советская, 58
-								</div>
-							</div>
-						</div>
-						<div class="location-item__tel">
-							<svg>
-								<use xlink:href="img/icons/icons.svg#icon-tel"></use>
-							</svg>
-							<div>
-								<a href="tel:+73952707838">+7 (3952) 707-838</a>
-							</div>
-						</div>
-						<div class="location-item__mail"></div>
-					</div>
-					<div class="location-item">
-						<div class="location-item__main">
-							<a href="#" target="_blank" class="location-item__location-btn d-flex d-md-none">
-								<svg>
-									<use xlink:href="img/icons/icons.svg#icon-location"></use>
-								</svg>
-							</a>
-							<div class="d-flex align-items-start flex-wrap gap-3 row-gap-1 w-full">
-								<div class="text location-item__city">
-									<strong>г. Иркутск</strong>
-								</div>
-								<div class="text-md sm-text location-item__street">
-									664510, Иркутская обл., Иркутский р-н, п. Дзержинск, ул.
-									Ушаковская, дом № 3, корпус «А»
-								</div>
-							</div>
-						</div>
-						<div class="location-item__tel">
-							<svg>
-								<use xlink:href="img/icons/icons.svg#icon-tel"></use>
-							</svg>
-							<div>
-								<a href="tel:+73952707838">+7 (3952) 707-838</a>
-							</div>
-						</div>
-						<div class="location-item__mail">
-							<svg>
-								<use xlink:href="img/icons/icons.svg#icon-mail"></use>
-							</svg>
-							<a href="mailto:info@asiamusic.ru">info@asiamusic.ru</a>
-						</div>
-					</div>
-					<div class="location-item">
-						<div class="location-item__main">
-							<a href="#" target="_blank" class="location-item__location-btn d-flex d-md-none">
-								<svg>
-									<use xlink:href="img/icons/icons.svg#icon-location"></use>
-								</svg>
-							</a>
-							<div class="d-flex align-items-start flex-wrap gap-3 row-gap-1 w-full">
-								<div class="text location-item__city">
-									<strong>г. Новосибирск</strong>
-								</div>
-								<div class="text-md sm-text location-item__street">
-									630091, г. Новосибирск, ул. Советская, 58
-								</div>
-							</div>
-						</div>
-						<div class="location-item__tel">
-							<svg>
-								<use xlink:href="img/icons/icons.svg#icon-tel"></use>
-							</svg>
-							<div>
-								<a href="tel:+73952707838">+7 (3952) 707-838</a>
-							</div>
-						</div>
-						<div class="location-item__mail">
-							<svg>
-								<use xlink:href="img/icons/icons.svg#icon-mail"></use>
-							</svg>
-							<a href="mailto:iservicensk@asiamusic.ru">servicensk@asiamusic.ru</a>
-						</div>
-					</div>
-					<div class="location-item">
-						<div class="location-item__main">
-							<a href="#" target="_blank" class="location-item__location-btn d-flex d-md-none">
-								<svg>
-									<use xlink:href="img/icons/icons.svg#icon-location"></use>
-								</svg>
-							</a>
-							<div class="d-flex align-items-start flex-wrap gap-3 row-gap-1 w-full">
-								<div class="text location-item__city">
-									<strong>г. Новосибирск</strong>
-								</div>
-								<div class="text-md sm-text location-item__street">
-									630091, г. Новосибирск, ул. Советская, 58
-								</div>
-							</div>
-						</div>
-						<div class="location-item__tel">
-							<svg>
-								<use xlink:href="img/icons/icons.svg#icon-tel"></use>
-							</svg>
-							<div>
-								<a href="tel:+73952707838">+7 (3952) 707-838</a>
-							</div>
-						</div>
-						<div class="location-item__mail"></div>
-					</div>
-				</div>
-				<p class="text-md sm-text text-center s-centers__content">
-					Если в вашем городе нет нашего сервисного центра, мы всегда готовы
-					обсудить транспортировку вашего оборудования до ближайшего сервисного
-					центра. Оставьте заявку и наши менеджеры свяжутся с вами в ближайшее время
-				</p>
-				<button data-bs-target="#connect-modal" data-bs-toggle="modal" class="btn-s mx-auto mt-3">Оставить заявку</button>
-			</div>
-		</section>
-
 
 	</main>
 	<div class="modal fade" id="connect-modal">

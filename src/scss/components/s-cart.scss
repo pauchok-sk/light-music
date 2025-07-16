@@ -336,7 +336,15 @@
     }
   }
   &__btn-consult {
+    padding: 34px 40px !important;
+    box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.09);
     width: 100%;
+    border-radius: 20px !important;
+    background-color: white;
+    margin-top: 10px;
+    @include tablet {
+      padding: 20px !important;
+    }
   }
   &__sect-title {
     font-weight: 600;
