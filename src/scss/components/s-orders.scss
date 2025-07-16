@@ -1,0 +1,140 @@
+.s-orders {
+  &__item {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.09);
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+      @include tablet {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__item-head {
+    @include flex-between;
+    padding: 20px;
+    background: var(--gray-1);
+    gap: 20px;
+  }
+  &__item-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    margin-bottom: 8px;
+    @include tablet {
+      font-size: 16px;
+      line-height: 125%;
+    }
+  }
+  &__item-id {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 0.2s ease;
+    @include hover {
+      text-decoration-color: var(--primary);
+    }
+    @include tablet {
+      font-size: 16px;
+      line-height: 125%;
+    }
+  }
+  &__item-price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    @include tablet {
+      font-size: 16px;
+      line-height: 125%;
+    }
+  }
+  &__item-body {
+  }
+  &__item-product {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 20px;
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--primary);
+    }
+    @include tablet {
+      gap: 20px;
+    }
+    @include tablet-min {
+      align-items: start;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--gray-2);
+    }
+  }
+  &__product-gallery {
+    @include flex-center;
+    border: 1px solid var(--gray-3);
+    border-radius: 12px;
+    width: 64px;
+    height: 64px;
+
+    img {
+      width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__product-body {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 10px;
+      row-gap: 5px;
+    }
+  }
+  &__product-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    flex: 1;
+    @include tablet {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 175%;
+    }
+    @include tablet-min {
+      flex: none;
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+  &__product-num {
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--gray-4);
+    @include tablet {
+      font-size: 13px;
+      line-height: 154%;
+    }
+    @include tablet-min {
+      width: 100%;
+    }
+  }
+  &__product-price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: right;
+    flex: 0 1 160px;
+    @include tablet {
+      font-size: 16px;
+      flex: none;
+    }
+  }
+}
