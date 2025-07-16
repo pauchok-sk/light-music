@@ -16,9 +16,9 @@
   }
 
   .input {
-    padding-right: 60px;
+    padding-right: 90px;
     @include tablet {
-      padding-right: 40px;
+      padding-right: 70px;
     }
   }
 
@@ -28,16 +28,14 @@
   }
 
   &._search {
-    .input {
-      padding-right: 90px !important;
-      @include tablet {
-        padding-right: 70px !important;
-      }
+    .form-search__clear {
+      display: block;
     }
   }
 
   &__clear {
-    display: block;
+    display: none;
+    cursor: pointer;
     position: absolute;
     right: 60px;
     width: 24px;

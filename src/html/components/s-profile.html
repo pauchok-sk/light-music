@@ -1,0 +1,143 @@
+<section class="s-personal pt-3">
+  <div class="container">
+    <div class="s-personal__wrapper">
+      <div class="s-personal__menu">
+        <a href="#" class="s-personal__menu-btn _active">
+          <span>Профиль</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+          </svg>
+        </a>
+        <a href="#" class="s-personal__menu-btn">
+          <span>Заказы</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+          </svg>
+        </a>
+        <a href="#" class="s-personal__menu-btn">
+          <span>Избранное</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="s-personal__body">
+        <div class="s-personal__head">
+          <h1 class="md-h1 h3 mb-0">Профиль</h1>
+          <a href="#" class="btn-simple s-profile__btn-logout">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-logout"></use>
+            </svg>
+            <span class="d-md-none">Выйти</span>
+            <span class="d-md-block d-none">Выйти из профиля</span>
+          </a>
+        </div>
+        <div class="s-personal__content-body" id="organization-container">
+          <div class="s-profile__form-wrapper">
+            <form class="s-profile__form">
+              <div class="input-control">
+                <label for="profile-fio" class="label-input">ФИО</label>
+                <input
+                  type="text"
+                  id="profile-fio"
+                  value="Константинопольский Константин Константинович"
+                  class="input"
+                />
+              </div>
+              <div class="input-control">
+                <label for="profile-email" class="label-input">Email</label>
+                <input
+                  type="email"
+                  id="profile-email"
+                  value="konstantimopolsky@example.com"
+                  class="input"
+                />
+              </div>
+              <div class="input-control">
+                <label for="profile-tel" class="label-input">Телефон</label>
+                <input
+                  type="tel"
+                  id="profile-tel"
+                  value="+7 (123) 456 7890"
+                  class="input"
+                />
+              </div>
+              <div class="input-control">
+                <label for="profile-address" class="label-input">
+                  Адрес доставки
+                </label>
+                <textarea id="profile-address" class="input">
+Россия, г. Москва, ул. Подвойского, д. 14, стр. 7</textarea
+                >
+              </div>
+              <button class="btn-s">Сохранить изменения</button>
+            </form>
+          </div>
+          <div class="s-profile__form-wrapper" id="organization-1">
+            <div class="s-profile__organization-del">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-trash"></use>
+              </svg>
+            </div>
+            <form action="#" class="s-profile__form-organization">
+              <div class="input-control">
+                <label for="organization-name" class="label-input">
+                  Название организации
+                </label>
+                <input
+                  type="text"
+                  id="organization-name"
+                  value="ООО «Компания #1»"
+                  class="input"
+                />
+              </div>
+              <div class="input-control">
+                <label for="organization-requizites" class="label-input">
+                  Реквизиты организации
+                </label>
+                <textarea rows="3" id="organization-requizites" class="input">
+ЮРИДИЧЕСКИЙ АДРЕС 123456, г. Москва, ул. Подвойского, д. 14, стр. 7 Почтовый адрес 123456, г. Москва, ул. Подвойского, д. 14, стр. 7 ИНН 7712345678 КПП 779101001 БИК 044521234 Р/С 40702810123450101230 в Московский банк ПАО Сбербанк г. Москва К/С 30101234500000000225 ОКПО 12345678 ОКАТО 87654321000 ОКВЭД (основной) 18.15 ОГРН 1047712345678</textarea
+                >
+              </div>
+            </form>
+          </div>
+          <div class="s-profile__form-wrapper" id="organization-2">
+            <div class="s-profile__organization-del">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-trash"></use>
+              </svg>
+            </div>
+            <form action="#" class="s-profile__form-organization">
+              <div class="input-control">
+                <label for="organization-name-2" class="label-input">
+                  Название организации
+                </label>
+                <input
+                  type="text"
+                  id="organization-name-2"
+                  value="ООО «Компания #2»"
+                  class="input"
+                />
+              </div>
+              <div class="input-control">
+                <label for="organization-requizites-2" class="label-input">
+                  Реквизиты организации
+                </label>
+                <textarea rows="3" id="organization-requizites-2" class="input">
+ЮРИДИЧЕСКИЙ АДРЕС 123456, г. Москва, ул. Подвойского, д. 14, стр. 7 Почтовый адрес 123456, г. Москва, ул. Подвойского, д. 14, стр. 7 ИНН 7712345678 КПП 779101001 БИК 044521234 Р/С 40702810123450101230 в Московский банк ПАО Сбербанк г. Москва К/С 30101234500000000225 ОКПО 12345678 ОКАТО 87654321000 ОКВЭД (основной) 18.15 ОГРН 1047712345678</textarea
+                >
+              </div>
+            </form>
+          </div>
+          <div class="btn-simple s-profile__add-btn" id="btn-organization-add">
+            <svg>
+              <use xlink:href='img/icons/icons.svg#icon-plus'></use>
+            </svg>
+            <span class="d-md-block d-none">Добавить ещё организацию</span>
+            <span class="d-md-none">Добавить реквизиты</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

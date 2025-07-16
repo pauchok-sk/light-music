@@ -956,6 +956,46 @@
             });
         });
     }
+    function formSearch() {
+        const forms = document.querySelectorAll(".form-search");
+        if (forms.length) forms.forEach(form => {
+            const input = form.querySelector("input");
+            const clear = form.querySelector(".form-search__clear");
+            input.addEventListener("input", e => {
+                if (e.target.value) form.classList.add("_search"); else form.classList.remove("_search");
+            });
+            clear.addEventListener("click", () => {
+                input.value = "";
+                form.classList.remove("_search");
+            });
+        });
+    }
+    function profileOrganization() {
+        const container = document.querySelector("#organization-container");
+        if (container) {
+            const btnAdd = document.querySelector("#btn-organization-add");
+            btnAdd.addEventListener("click", addOrganization);
+            const removeButtons = document.querySelectorAll(".s-profile__organization-del");
+            if (removeButtons.length) removeButtons.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    const wrapper = btn.closest(".s-profile__form-wrapper");
+                    wrapper.remove();
+                });
+            });
+            function addOrganization() {
+                const id = Date.now();
+                const html = `\n            <div class="s-profile__organization-del">\n              <svg>\n                <use xlink:href="img/icons/icons.svg#icon-trash"></use>\n              </svg>\n            </div>\n            <form action="#" class="s-profile__form-organization">\n              <div class="input-control">\n                <label for="organization-name-${id}" class="label-input">\n                  Название организации\n                </label>\n                <input\n                  type="text"\n                  id="organization-name-2"\n                  class="input"\n                />\n              </div>\n              <div class="input-control">\n                <label for="organization-requizites-${id}" class="label-input">\n                  Реквизиты организации\n                </label>\n                <textarea rows="3" id="organization-requizites-${id}" class="input"></textarea\n                >\n              </div>\n            </form>\n      `;
+                const wrapper = document.createElement("div");
+                wrapper.classList.add("s-profile__form-wrapper");
+                wrapper.setAttribute("id", `organization-${id}`);
+                wrapper.innerHTML = html;
+                container.insertBefore(wrapper, btnAdd);
+                const addedWrapper = container.querySelector(`#organization-${id}`);
+                const btnDel = addedWrapper.querySelector(".s-profile__organization-del");
+                btnDel.addEventListener("click", () => addedWrapper.remove());
+            }
+        }
+    }
     catalogChange();
     sliders();
     tabsCatalog();
@@ -975,5 +1015,7 @@
     spollersSimple();
     spoller();
     passwordsInputs();
+    formSearch();
+    profileOrganization();
     Fancybox.bind("[data-fancybox]", {});
 })();

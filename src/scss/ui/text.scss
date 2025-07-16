@@ -47,8 +47,11 @@
 
   a {
     color: var(--primary);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color .2s ease;
     @include hover {
-      text-decoration: underline;
+      text-decoration-color: var(--primary);
     }
   }
 }

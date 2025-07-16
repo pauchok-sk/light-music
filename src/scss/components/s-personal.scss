@@ -1,0 +1,73 @@
+.s-personal {
+  padding-bottom: 90px;
+  @include laptop-min {
+    padding-bottom: 60px;
+  }
+  @include tablet-min {
+    overflow: hidden;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    gap: 60px;
+    @include laptop {
+      gap: 30px;
+    }
+    @include laptop-min {
+      flex-wrap: wrap;
+    }
+  }
+  &__menu {
+    position: sticky;
+    top: 100px;
+    width: 305px;
+    flex-shrink: 0;
+    @include laptop-min {
+      width: 100%;
+      position: static
+    }
+  }
+  &__menu-btn {
+    @include flex-between;
+    width: 100%;
+    gap: 10px;
+    padding: 16px 0px;
+    border-bottom: 1px solid var(--gray-3);
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 143%;
+
+    transition: color 0.2s ease;
+
+    @include hover {
+      color: var(--primary);
+    }
+    &._active {
+      color: var(--primary);
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__body {
+    flex: 1;
+  }
+  &__head {
+    @include flex-between;
+    margin-bottom: 50px;
+    @include laptop-min {
+      margin-bottom: 30px;
+    }
+    @include tablet {
+      flex-direction: row-reverse;
+    }
+  }
+  &__content-body {
+    @include tablet-min {
+      margin: 0 -10px;
+    }
+  }
+}

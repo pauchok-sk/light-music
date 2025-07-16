@@ -18,6 +18,8 @@ import map from "./files/map.js";
 import spollersSimple from "./files/spollersSimple.js";
 import spoller from "./files/spoller.js";
 import passwordsInputs from "./files/passwordsInputs.js";
+import formSearch from "./files/formSearch.js";
+import profileOrganization from "./files/profileOrganization.js";
 
 catalogChange();
 sliders();
@@ -38,6 +40,8 @@ map();
 spollersSimple();
 spoller();
 passwordsInputs();
+formSearch();
+profileOrganization();
 
 Fancybox.bind("[data-fancybox]", {});
 

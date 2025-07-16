@@ -1,6 +1,8 @@
 .s-not-found {
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 120px;
   min-height: 915px;
   z-index: 1;
@@ -26,7 +28,8 @@
     z-index: -1;
   }
   &__wrapper {
-    margin-top: 160px;
+    margin-top: auto;
+    padding-top: 160px;
   }
   &__wrapper-body {
     text-align: center;

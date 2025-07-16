@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  @@include('html/head.html',{ "title":"pauchoo0k" })
+  <body class="body">
+    @@include('html/components/header.html')
+    <main>
+      
+      <section class="intro">
+        <div class="container">
+          <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <span>Личный кабинет</span>
+          </div>
+        </div>
+      </section>
+      <section class="s-personal pt-3">
+        <div class="container">
+          <h1 class="md-h1 h3 mb-4">Личный кабинет</h1>
+          <div class="s-personal__wrapper">
+            <div class="s-personal__menu w-full">
+              <a href="#" class="s-personal__menu-btn _active">
+                <span>Профиль</span>
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+                </svg>
+              </a>
+              <a href="#" class="s-personal__menu-btn">
+                <span>Заказы</span>
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+                </svg>
+              </a>
+              <a href="#" class="s-personal__menu-btn">
+                <span>Избранное</span>
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    @@include('html/components/modals.html')
+    @@include('html/components/footer.html')
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
