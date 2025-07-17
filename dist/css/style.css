@@ -3827,7 +3827,8 @@ a.pagination__btn:active {
   border: 1px solid var(--gray-3);
   border-radius: 12px;
   width: 64px;
-  height: 64px
+  height: 64px;
+  transition: opacity .2s ease
 }
 .s-orders__product-gallery img {
   width: 100%;
@@ -5543,6 +5544,12 @@ a.pagination__btn:active {
     width: 24px;
     height: 24px
   }
+  .s-orders__nav-btn {
+    border-radius: 8px!important;
+    padding: 5px 8px!important;
+    font-size: 13px!important;
+    line-height: 154%!important
+  }
   .s-orders__item:not(:last-child) {
     margin-bottom: 20px
   }
@@ -6258,6 +6265,9 @@ a.pagination__btn:active {
   .s-orders__item-product:hover {
     color: var(--primary)
   }
+  .s-orders__product-gallery:hover {
+    opacity: .7
+  }
   .s-order__product-title:hover {
     color: var(--primary)
   }
@@ -6605,6 +6615,9 @@ a.pagination__btn:active {
   }
   .s-orders__item-product:active {
     color: var(--primary)
+  }
+  .s-orders__product-gallery:active {
+    opacity: .7
   }
   .s-order__product-title:active {
     color: var(--primary)
