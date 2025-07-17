@@ -64,9 +64,6 @@
     @include laptop-min {
       margin-bottom: 30px;
     }
-    @include tablet {
-      flex-direction: row-reverse;
-    }
   }
   &__head-btn {
     display: block;

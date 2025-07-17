@@ -5537,9 +5537,6 @@ a.pagination__btn:active {
     gap: 8px;
     margin: 0 auto
   }
-  .s-personal__head {
-    flex-direction: row-reverse
-  }
   .s-personal__head-btn {
     width: 24px;
     height: 24px
