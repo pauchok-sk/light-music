@@ -20,6 +20,7 @@ import spoller from "./files/spoller.js";
 import passwordsInputs from "./files/passwordsInputs.js";
 import formSearch from "./files/formSearch.js";
 import profileOrganization from "./files/profileOrganization.js";
+import filtersSearch from "./files/filtersSearch.js";
 
 catalogChange();
 sliders();
@@ -42,6 +43,7 @@ spoller();
 passwordsInputs();
 formSearch();
 profileOrganization();
+filtersSearch();
 
 Fancybox.bind("[data-fancybox]", {});
 

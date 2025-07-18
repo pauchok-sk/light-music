@@ -10,6 +10,7 @@
     @include tablet {
       grid-template-columns: repeat(2, 1fr);
       gap: 10px;
+      row-gap: 30px;
     }
     @include tablet-min {
       grid-template-columns: 1fr;

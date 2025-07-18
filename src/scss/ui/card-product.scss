@@ -9,7 +9,7 @@
     width: 100%;
     aspect-ratio: 1/1;
     padding-top: 34px;
-    transition: opacity .2s ease;
+    transition: opacity 0.2s ease;
     @include hover {
       opacity: 0.7;
     }
@@ -95,6 +95,12 @@
         stroke: var(--primary);
       }
     }
+    &._active-pink {
+      color: var(--pink);
+      svg {
+        stroke: var(--pink);
+      }
+    }
     @include tablet {
       position: absolute;
       top: 5px;
@@ -145,6 +151,12 @@
     border: 1px solid var(--gray-3);
     flex-shrink: 0;
     border-radius: 12px;
+    transition: opacity 0.2s ease;
+
+    @include hover {
+      opacity: 0.7;
+    }
+
     @include laptop-min {
       position: sticky;
       top: 20px;
@@ -191,7 +203,7 @@
     font-size: 13px;
     line-height: 154%;
     color: var(--primary);
-    
+
     @include hover {
       &::before {
         opacity: 1;
@@ -206,7 +218,7 @@
       bottom: 0;
       opacity: 0;
       height: 1px;
-      transition: opacity .2s ease;
+      transition: opacity 0.2s ease;
     }
   }
   &__price {
@@ -252,6 +264,12 @@
       color: var(--pink);
       svg {
         stroke: var(--pink);
+      }
+    }
+    &._active-primary {
+      color: var(--primary);
+      svg {
+        stroke: var(--primary);
       }
     }
 

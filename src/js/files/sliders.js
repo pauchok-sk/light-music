@@ -9,6 +9,7 @@ export default function sliders() {
       spaceBetween: 5,
       slidesPerView: "auto",
       autoplay: {
+        pauseOnMouseEnter: true,
         delay: 3000,
       },
       breakpoints: {
@@ -29,8 +30,10 @@ export default function sliders() {
       speed: 800,
       spaceBetween: 15,
       autoplay: {
+        pauseOnMouseEnter: true,
         delay: 3500,
       },
+      loop: true,
       navigation: {
         prevEl: ".hero__reklam-slider .slider-btn._prev",
         nextEl: ".hero__reklam-slider .slider-btn._next",
@@ -50,8 +53,10 @@ export default function sliders() {
       spaceBetween: 10,
       slidesPerView: "auto",
       autoplay: {
+        pauseOnMouseEnter: true,
         delay: 2500,
       },
+      loop: true,
       navigation: {
         prevEl: ".hero__hit .slider-btn._prev",
         nextEl: ".hero__hit .slider-btn._next",
@@ -84,6 +89,7 @@ export default function sliders() {
         spaceBetween: 20,
         slidesPerView: "auto",
         autoplay: {
+          pauseOnMouseEnter: true,
           delay: autoplayDelay || 3000,
         },
         navigation: {
@@ -115,8 +121,10 @@ export default function sliders() {
         spaceBetween: 20,
         initialSlide: 2,
         autoplay: {
+          pauseOnMouseEnter: true,
           delay: autoplayDelay || 3000,
         },
+        loop: true,
         navigation: {
           prevEl: slider
             .closest(".s-reklam__slider-wrapper")
@@ -141,8 +149,10 @@ export default function sliders() {
       spaceBetween: 10,
       slidesPerView: "auto",
       autoplay: {
+        pauseOnMouseEnter: true,
         delay: 3500,
       },
+      loop: true,
       navigation: {
         prevEl: ".s-categories .slider-btn._prev",
         nextEl: ".s-categories .slider-btn._next",
@@ -168,6 +178,7 @@ export default function sliders() {
       spaceBetween: 10,
       slidesPerView: "auto",
       autoplay: {
+        pauseOnMouseEnter: true,
         delay: 3000,
       },
       navigation: {
@@ -195,6 +206,7 @@ export default function sliders() {
       spaceBetween: 20,
       slidesPerView: "auto",
       autoplay: {
+        pauseOnMouseEnter: true,
         delay: 3000,
       },
       navigation: {
@@ -222,6 +234,7 @@ export default function sliders() {
         nextEl: ".s-production .slider-btn._next",
       },
       autoplay: {
+        pauseOnMouseEnter: true,
         delay: 3000,
       },
       pagination: {
@@ -243,6 +256,7 @@ export default function sliders() {
         nextEl: ".s-certificates .slider-btn._next",
       },
       autoplay: {
+        pauseOnMouseEnter: true,
         delay: 3200,
       },
       breakpoints: {
@@ -266,6 +280,7 @@ export default function sliders() {
         nextEl: ".s-reviews .slider-btn._next",
       },
       autoplay: {
+        pauseOnMouseEnter: true,
         delay: 3200,
       },
       breakpoints: {
@@ -275,6 +290,18 @@ export default function sliders() {
         },
       },
     });
+
+    const buttonsStop = reviewsSlider.querySelectorAll(
+      ".card-review__more-btn"
+    );
+
+    if (buttonsStop.length) {
+      buttonsStop.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          swiper.autoplay.stop();
+        });
+      });
+    }
   }
 
   const productSlider = document.querySelector(".s-product__slider");
@@ -287,6 +314,7 @@ export default function sliders() {
       spaceBetween: 20,
       slidesPerView: 4,
       direction: "vertical",
+      loop: true,
       navigation: {
         prevEl: ".s-product__gallery .slider-btn._prev",
         nextEl: ".s-product__gallery .slider-btn._next",
@@ -308,6 +336,7 @@ export default function sliders() {
       //   nextEl: ".s-reviews .slider-btn._next",
       // },
       // autoplay: {
+      //    pauseOnMouseEnter: true,
       //   delay: 3200,
       // },
     });

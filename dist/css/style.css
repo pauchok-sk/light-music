@@ -1102,6 +1102,12 @@ select.input::-ms-expand {
 .card-product__btn-like._active svg {
   stroke: var(--primary)
 }
+.card-product__btn-like._active-pink {
+  color: var(--pink)
+}
+.card-product__btn-like._active-pink svg {
+  stroke: var(--pink)
+}
 .card-product__btn-like svg {
   width: 20px;
   height: 20px;
@@ -1134,7 +1140,8 @@ select.input::-ms-expand {
   aspect-ratio: 1/1;
   border: 1px solid var(--gray-3);
   flex-shrink: 0;
-  border-radius: 12px
+  border-radius: 12px;
+  transition: opacity .2s ease
 }
 .card-product-line__body {
   display: flex;
@@ -1199,6 +1206,12 @@ select.input::-ms-expand {
 }
 .card-product-line__btn-like._active svg {
   stroke: var(--pink)
+}
+.card-product-line__btn-like._active-primary {
+  color: var(--primary)
+}
+.card-product-line__btn-like._active-primary svg {
+  stroke: var(--primary)
 }
 .card-product-line__btn-like svg {
   width: 20px;
@@ -2433,9 +2446,6 @@ a.pagination__btn:active {
   overflow: hidden;
   padding-left: 24px!important
 }
-.s-about {
-  padding-left: 24px!important
-}
 .s-about__wrapper {
   display: grid;
   align-items: start;
@@ -2449,6 +2459,9 @@ a.pagination__btn:active {
 .s-about__logo img {
   display: block;
   width: 100%
+}
+.s-about__btn {
+  padding-left: 24px!important
 }
 .s-news {
   overflow: hidden
@@ -4063,6 +4076,9 @@ a.pagination__btn:active {
 .s-favourites__btn-more {
   margin-top: 60px!important
 }
+.footer {
+  padding-top: 20px
+}
 .footer__grid {
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -4141,14 +4157,13 @@ a.pagination__btn:active {
   align-items: center;
   gap: 5px;
   font-size: 14px;
-  line-height: 143%
+  line-height: 143%;
+  text-decoration: underline;
+  transition: color .2s ease
 }
 .footer__dev svg {
   width: 20px;
   height: 20px
-}
-.footer__dev a {
-  transition: color .2s ease
 }
 @media (min-width:768px) {
   .text-md {
@@ -5103,7 +5118,7 @@ a.pagination__btn:active {
     width: 120px!important;
     height: 90px!important
   }
-  .s-about {
+  .s-about__btn {
     padding: 10px 8px 10px 16px!important
   }
   .s-news__btn {
@@ -5417,7 +5432,8 @@ a.pagination__btn:active {
   }
   .s-archive-news__grid {
     grid-template-columns: repeat(2,1fr);
-    gap: 10px
+    gap: 10px;
+    row-gap: 30px
   }
   .s-single__reklam-item {
     min-height: 300px
@@ -6046,6 +6062,9 @@ a.pagination__btn:active {
   .card-product__btn-like:hover svg {
     stroke: var(--primary)
   }
+  .card-product-line__gallery:hover {
+    opacity: .7
+  }
   .card-product-line__title:hover {
     color: var(--primary)
   }
@@ -6290,9 +6309,9 @@ a.pagination__btn:active {
   .footer__bottom-list a:hover {
     text-decoration: none
   }
-  .footer__dev a:hover {
+  .footer__dev:hover {
     color: var(--primary);
-    text-decoration: underline
+    text-decoration: none
   }
 }
 @media (hover:none) {
@@ -6396,6 +6415,9 @@ a.pagination__btn:active {
   }
   .card-product__btn-like:active svg {
     stroke: var(--primary)
+  }
+  .card-product-line__gallery:active {
+    opacity: .7
   }
   .card-product-line__title:active {
     color: var(--primary)
@@ -6641,8 +6663,8 @@ a.pagination__btn:active {
   .footer__bottom-list a:active {
     text-decoration: none
   }
-  .footer__dev a:active {
+  .footer__dev:active {
     color: var(--primary);
-    text-decoration: underline
+    text-decoration: none
   }
 }

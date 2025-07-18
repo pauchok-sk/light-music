@@ -330,6 +330,7 @@
                 spaceBetween: 5,
                 slidesPerView: "auto",
                 autoplay: {
+                    pauseOnMouseEnter: true,
                     delay: 3e3
                 },
                 breakpoints: {
@@ -348,8 +349,10 @@
                 speed: 800,
                 spaceBetween: 15,
                 autoplay: {
+                    pauseOnMouseEnter: true,
                     delay: 3500
                 },
+                loop: true,
                 navigation: {
                     prevEl: ".hero__reklam-slider .slider-btn._prev",
                     nextEl: ".hero__reklam-slider .slider-btn._next"
@@ -367,8 +370,10 @@
                 spaceBetween: 10,
                 slidesPerView: "auto",
                 autoplay: {
+                    pauseOnMouseEnter: true,
                     delay: 2500
                 },
+                loop: true,
                 navigation: {
                     prevEl: ".hero__hit .slider-btn._prev",
                     nextEl: ".hero__hit .slider-btn._next"
@@ -397,6 +402,7 @@
                 spaceBetween: 20,
                 slidesPerView: "auto",
                 autoplay: {
+                    pauseOnMouseEnter: true,
                     delay: autoplayDelay || 3e3
                 },
                 navigation: {
@@ -419,8 +425,10 @@
                 spaceBetween: 20,
                 initialSlide: 2,
                 autoplay: {
+                    pauseOnMouseEnter: true,
                     delay: autoplayDelay || 3e3
                 },
+                loop: true,
                 navigation: {
                     prevEl: slider.closest(".s-reklam__slider-wrapper").querySelector(".slider-btn._prev"),
                     nextEl: slider.closest(".s-reklam__slider-wrapper").querySelector(".slider-btn._next")
@@ -438,8 +446,10 @@
                 spaceBetween: 10,
                 slidesPerView: "auto",
                 autoplay: {
+                    pauseOnMouseEnter: true,
                     delay: 3500
                 },
+                loop: true,
                 navigation: {
                     prevEl: ".s-categories .slider-btn._prev",
                     nextEl: ".s-categories .slider-btn._next"
@@ -463,6 +473,7 @@
                 spaceBetween: 10,
                 slidesPerView: "auto",
                 autoplay: {
+                    pauseOnMouseEnter: true,
                     delay: 3e3
                 },
                 navigation: {
@@ -488,6 +499,7 @@
                 spaceBetween: 20,
                 slidesPerView: "auto",
                 autoplay: {
+                    pauseOnMouseEnter: true,
                     delay: 3e3
                 },
                 navigation: {
@@ -513,6 +525,7 @@
                     nextEl: ".s-production .slider-btn._next"
                 },
                 autoplay: {
+                    pauseOnMouseEnter: true,
                     delay: 3e3
                 },
                 pagination: {
@@ -532,6 +545,7 @@
                     nextEl: ".s-certificates .slider-btn._next"
                 },
                 autoplay: {
+                    pauseOnMouseEnter: true,
                     delay: 3200
                 },
                 breakpoints: {
@@ -544,7 +558,7 @@
         }
         const reviewsSlider = document.querySelector(".s-reviews__slider");
         if (reviewsSlider) {
-            new Swiper(reviewsSlider, {
+            const swiper = new Swiper(reviewsSlider, {
                 speed: 800,
                 spaceBetween: 20,
                 slidesPerView: "auto",
@@ -553,6 +567,7 @@
                     nextEl: ".s-reviews .slider-btn._next"
                 },
                 autoplay: {
+                    pauseOnMouseEnter: true,
                     delay: 3200
                 },
                 breakpoints: {
@@ -561,6 +576,12 @@
                         slidesPerView: 3
                     }
                 }
+            });
+            const buttonsStop = reviewsSlider.querySelectorAll(".card-review__more-btn");
+            if (buttonsStop.length) buttonsStop.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    swiper.autoplay.stop();
+                });
             });
         }
         const productSlider = document.querySelector(".s-product__slider");
@@ -571,6 +592,7 @@
                 spaceBetween: 20,
                 slidesPerView: 4,
                 direction: "vertical",
+                loop: true,
                 navigation: {
                     prevEl: ".s-product__gallery .slider-btn._prev",
                     nextEl: ".s-product__gallery .slider-btn._next"
@@ -695,6 +717,13 @@
         const inputs = document.querySelectorAll('input[type="tel"]');
         const im = new Inputmask("+7 (999) 999-99-99");
         im.mask(inputs);
+        inputs.forEach(input => {
+            input.addEventListener("keydown", e => {
+                const value = e.target.value;
+                value.split("");
+                if (value.length === 0 && (e.key === "8" || e.key === "7")) e.preventDefault();
+            });
+        });
     }
     function map() {
         const contactsMap = document.querySelector("#map");
@@ -996,6 +1025,23 @@
             }
         }
     }
+    function filtersSearch() {
+        const form = document.querySelector(".filters .form-search");
+        if (form) {
+            const input = form.querySelector(".input");
+            const filters = form.nextElementSibling.querySelectorAll(".label-check");
+            const formClear = form.querySelector(".form-search__clear");
+            formClear.addEventListener("click", () => {
+                filters.forEach(f => f.style.display = "flex");
+            });
+            input.addEventListener("input", e => {
+                const value = e.target.value.toLowerCase();
+                filters.forEach(filter => {
+                    if (filter.textContent.toLocaleLowerCase().includes(value)) filter.style.display = "flex"; else filter.style.display = "none";
+                });
+            });
+        }
+    }
     catalogChange();
     sliders();
     tabsCatalog();
@@ -1017,5 +1063,6 @@
     passwordsInputs();
     formSearch();
     profileOrganization();
+    filtersSearch();
     Fancybox.bind("[data-fancybox]", {});
 })();

@@ -1,8 +1,4 @@
 .s-about {
-  padding-left: 24px !important;
-  @include tablet {
-    padding: 10px 8px 10px 16px !important;
-  }
   &__wrapper {
     display: grid;
     align-items: start;
@@ -19,6 +15,12 @@
     img {
       display: block;
       width: 100%;
+    }
+  }
+  &__btn {
+    padding-left: 24px !important;
+    @include tablet {
+      padding: 10px 8px 10px 16px !important;
     }
   }
 }
